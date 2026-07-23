@@ -1,44 +1,47 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_07_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
 
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
+
 # Exercício 1
-def soma_pesos(p1, p2):
-    return p1 + p2
+# def soma_pesos(p1, p2):
+#     return p1 + p2
 print(soma_pesos(15.5, 20.0))
 
 # Exercício 2
-def verificar_caminhao(placa):
-    if placa == "":
-        return "Placa inválida"
-    return f"Placa registrada: {placa}"
+# def verificar_caminhao(placa):
+#     if placa == "":
+#         return "Placa inválida"
+#     return f"Placa registrada: {placa}"
 print(verificar_caminhao("ABC-1234"))
 
 # Exercício 3
-def calcular_eta(distancia_km, velocidade_media=60):
-    return distancia_km / velocidade_media
+# def calcular_eta(distancia_km, velocidade_media=60):
+#     return distancia_km / velocidade_media
 print(f"Tempo de viagem: {calcular_eta(120)} horas")
 
 # Exercício 4
-def min_max_pesos(pesos):
-    return (min(pesos), max(pesos))
+# def min_max_pesos(pesos):
+#     return (min(pesos), max(pesos))
 menor, maior = min_max_pesos([10, 50, 5, 120, 30])
 print(f"Menor: {menor}kg | Maior: {maior}kg")
 
 # Exercício 5
-def formatar_motoristas(*args):
-    \"\"\"
-    Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
-    \"\"\"
-    return [motorista.upper() for motorista in args]
+# def formatar_motoristas(*args):
+#     \"\"\"
+#     Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
+#     \"\"\"
+#     return [motorista.upper() for motorista in args]
 
 lista_formatada = formatar_motoristas("João", "Maria", "Pedro", "Ana")
 print(lista_formatada)
-"""
 
-o a # ==============================================================================
+# o a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -47,16 +50,7 @@ o a # ==========================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 7: Funções
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Modularizar lógicas de cálculo, verificação de dados e geração de relatórios.
 
@@ -116,51 +110,48 @@ INSTRUÇÕES:
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
-def soma_pesos(p1, p2):
-    return p1 + p2
+# def soma_pesos(p1, p2):
+#     return p1 + p2
 print(soma_pesos(15.5, 20.0))
 
 # Exercício 2
-def verificar_caminhao(placa):
-    if placa == "":
-        return "Placa inválida"
-    return f"Placa registrada: {placa}"
+# def verificar_caminhao(placa):
+#     if placa == "":
+#         return "Placa inválida"
+#     return f"Placa registrada: {placa}"
 print(verificar_caminhao("ABC-1234"))
 
 # Exercício 3
-def calcular_eta(distancia_km, velocidade_media=60):
-    return distancia_km / velocidade_media
+# def calcular_eta(distancia_km, velocidade_media=60):
+#     return distancia_km / velocidade_media
 print(f"Tempo de viagem: {calcular_eta(120)} horas")
 
 # Exercício 4
-def min_max_pesos(pesos):
-    return (min(pesos), max(pesos))
+# def min_max_pesos(pesos):
+#     return (min(pesos), max(pesos))
 menor, maior = min_max_pesos([10, 50, 5, 120, 30])
 print(f"Menor: {menor}kg | Maior: {maior}kg")
 
 # Exercício 5
-def formatar_motoristas(*args):
-    \"\"\"
-    Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
-    \"\"\"
-    return [motorista.upper() for motorista in args]
+# def formatar_motoristas(*args):
+#     \"\"\"
+#     Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
+#     \"\"\"
+#     return [motorista.upper() for motorista in args]
 
 lista_formatada = formatar_motoristas("João", "Maria", "Pedro", "Ana")
 print(lista_formatada)
-"""
 
-o como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# o como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -175,16 +166,7 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 7: Funções
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Modularizar lógicas de cálculo, verificação de dados e geração de relatórios.
 
@@ -244,42 +226,40 @@ INSTRUÇÕES:
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
-def soma_pesos(p1, p2):
-    return p1 + p2
+# def soma_pesos(p1, p2):
+#     return p1 + p2
 print(soma_pesos(15.5, 20.0))
 
 # Exercício 2
-def verificar_caminhao(placa):
-    if placa == "":
-        return "Placa inválida"
-    return f"Placa registrada: {placa}"
+# def verificar_caminhao(placa):
+#     if placa == "":
+#         return "Placa inválida"
+#     return f"Placa registrada: {placa}"
 print(verificar_caminhao("ABC-1234"))
 
 # Exercício 3
-def calcular_eta(distancia_km, velocidade_media=60):
-    return distancia_km / velocidade_media
+# def calcular_eta(distancia_km, velocidade_media=60):
+#     return distancia_km / velocidade_media
 print(f"Tempo de viagem: {calcular_eta(120)} horas")
 
 # Exercício 4
-def min_max_pesos(pesos):
-    return (min(pesos), max(pesos))
+# def min_max_pesos(pesos):
+#     return (min(pesos), max(pesos))
 menor, maior = min_max_pesos([10, 50, 5, 120, 30])
 print(f"Menor: {menor}kg | Maior: {maior}kg")
 
 # Exercício 5
-def formatar_motoristas(*args):
-    \"\"\"
-    Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
-    \"\"\"
-    return [motorista.upper() for motorista in args]
+# def formatar_motoristas(*args):
+#     \"\"\"
+#     Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
+#     \"\"\"
+#     return [motorista.upper() for motorista in args]
 
 lista_formatada = formatar_motoristas("João", "Maria", "Pedro", "Ana")
 print(lista_formatada)
-"""
 
 
 
@@ -288,7 +268,6 @@ print(lista_formatada)
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -300,16 +279,7 @@ print(lista_formatada)
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 7: Funções
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Modularizar lógicas de cálculo, verificação de dados e geração de relatórios.
 
@@ -369,38 +339,37 @@ INSTRUÇÕES:
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
-def soma_pesos(p1, p2):
-    return p1 + p2
+# def soma_pesos(p1, p2):
+#     return p1 + p2
 print(soma_pesos(15.5, 20.0))
 
 # Exercício 2
-def verificar_caminhao(placa):
-    if placa == "":
-        return "Placa inválida"
-    return f"Placa registrada: {placa}"
+# def verificar_caminhao(placa):
+#     if placa == "":
+#         return "Placa inválida"
+#     return f"Placa registrada: {placa}"
 print(verificar_caminhao("ABC-1234"))
 
 # Exercício 3
-def calcular_eta(distancia_km, velocidade_media=60):
-    return distancia_km / velocidade_media
+# def calcular_eta(distancia_km, velocidade_media=60):
+#     return distancia_km / velocidade_media
 print(f"Tempo de viagem: {calcular_eta(120)} horas")
 
 # Exercício 4
-def min_max_pesos(pesos):
-    return (min(pesos), max(pesos))
+# def min_max_pesos(pesos):
+#     return (min(pesos), max(pesos))
 menor, maior = min_max_pesos([10, 50, 5, 120, 30])
 print(f"Menor: {menor}kg | Maior: {maior}kg")
 
 # Exercício 5
-def formatar_motoristas(*args):
-    \"\"\"
-    Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
-    \"\"\"
-    return [motorista.upper() for motorista in args]
+# def formatar_motoristas(*args):
+#     \"\"\"
+#     Recebe um número variável de nomes de motoristas e os retorna em maiúsculas.
+#     \"\"\"
+#     return [motorista.upper() for motorista in args]
 
 lista_formatada = formatar_motoristas("João", "Maria", "Pedro", "Ana")
 print(lista_formatada)

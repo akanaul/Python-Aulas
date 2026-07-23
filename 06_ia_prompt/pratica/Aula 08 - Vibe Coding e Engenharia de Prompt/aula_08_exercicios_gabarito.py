@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_08_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,28 +19,22 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 8: Vibe Coding e Engenharia de Prompt
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- O objetivo deste arquivo não é codificar do zero, mas interagir com o Antigravity (ou outra IA).
-- Copie os desafios, abra o chat da IA e teste diferentes prompts.
-- Analise a resposta da IA. Ela fez o que você queria? Se não, refine o prompt.
-"""
+# - O objetivo deste arquivo não é codificar do zero, mas interagir com o Antigravity (ou outra IA).
+# - Copie os desafios, abra o chat da IA e teste diferentes prompts.
+# - Analise a resposta da IA. Ela fez o que você queria? Se não, refine o prompt.
 
 # Exercício 1 — Prompt de Explicação
 # Copie o código abaixo e cole no chat da IA com o prompt:
 # "Explique este código linha a linha para um iniciante em Python. Use analogias de logística."
 
-def _normalize_text(raw_text):
-    if not raw_text:
-        return ""
-    import unicodedata
-    nfkd_form = unicodedata.normalize('NFKD', raw_text.strip())
-    only_ascii = nfkd_form.encode('ASCII', 'ignore')
-    return only_ascii.decode('utf-8').upper()
+# def _normalize_text(raw_text):
+#     if not raw_text:
+#         return ""
+#     import unicodedata
+#     nfkd_form = unicodedata.normalize('NFKD', raw_text.strip())
+#     only_ascii = nfkd_form.encode('ASCII', 'ignore')
+#     return only_ascii.decode('utf-8').upper()
 
 
 # Exercício 2 — Prompt de Geração com Contexto
@@ -60,10 +58,10 @@ def _normalize_text(raw_text):
 # Copie o código e o erro para a IA e use o prompt:
 # "Meu código logístico está falhando com KeyError. Onde está o erro e como posso corrigi-lo usando uma abordagem mais segura para acessar dicionários (ex: .get)?"
 
-trucks_db = {
-    "BR-01": {"driver": "João", "status": "Manutenção"},
-    "BR-02": {"driver": "Maria", "status": "Rota"}
-}
+# trucks_db = {
+#     "BR-01": {"driver": "João", "status": "Manutenção"},
+#     "BR-02": {"driver": "Maria", "status": "Rota"}
+# }
 
 # Simulando sistema buscando um caminhão que não existe
 placa_buscada = "BR-99"
@@ -71,22 +69,21 @@ status_atual = trucks_db[placa_buscada]["status"]
 print(f"O caminhão {placa_buscada} está em: {status_atual}")
 
 
-"""
-GABARITO / COMENTÁRIOS DA RESOLUÇÃO (O que esperar da IA):
+# GABARITO / COMENTÁRIOS DA RESOLUÇÃO (O que esperar da IA):
 
 # Exercício 1
-A IA deve explicar que `unicodedata` remove os acentos (normaliza a sujeira do texto, como tirar a poeira de uma caixa) e o `.upper()` padroniza tudo para letras maiúsculas.
+# A IA deve explicar que `unicodedata` remove os acentos (normaliza a sujeira do texto, como tirar a poeira de uma caixa) e o `.upper()` padroniza tudo para letras maiúsculas.
 
 # Exercício 2
-A IA deve gerar algo parecido com:
-def calculate_overnight_fee(trip_days: int, overnight_rate: float = 150.0) -> float:
-    \"\"\"Calcula a taxa de pernoite baseada nos dias de viagem.\"\"\"
-    if trip_days > 1:
-        return (trip_days - 1) * overnight_rate
-    return 0.0
+# A IA deve gerar algo parecido com:
+# def calculate_overnight_fee(trip_days: int, overnight_rate: float = 150.0) -> float:
+#     \"\"\"Calcula a taxa de pernoite baseada nos dias de viagem.\"\"\"
+#     if trip_days > 1:
+#         return (trip_days - 1) * overnight_rate
+#     return 0.0
 
 # Exercício 3
-A IA deve apontar que acessar dicionários diretamente com colchetes quebra o código se a chave não existir.
-Ela sugerirá alterar para:
+# A IA deve apontar que acessar dicionários diretamente com colchetes quebra o código se a chave não existir.
+# Ela sugerirá alterar para:
 truck_info = trucks_db.get(placa_buscada, {})
 status_atual = truck_info.get("status", "Não encontrado")

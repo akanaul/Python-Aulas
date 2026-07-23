@@ -1,41 +1,44 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_14_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
 
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
+
 # Ex 1:
-logging.basicConfig(filename='operacao.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='operacao.log', level=logging.INFO, 
+#                     format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Iniciando turno")
 logging.error("Falha na conexão com ERP")
 
 # Ex 2:
-def buscar_imagem():
-    try:
-        logging.info("Buscando imagem...")
-        img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
-        if img is None:
-            raise Exception("Imagem não encontrada")
-        print("Encontrada!")
-    except Exception as e:
-        logging.error(f"Erro na busca: {e}")
-        print(f"Erro capturado: {e}")
+# def buscar_imagem():
+#     try:
+#         logging.info("Buscando imagem...")
+#         img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
+#         if img is None:
+#             raise Exception("Imagem não encontrada")
+#         print("Encontrada!")
+#     except Exception as e:
+#         logging.error(f"Erro na busca: {e}")
+#         print(f"Erro capturado: {e}")
 
 buscar_imagem()
 
 # Ex 3:
-nfes = [
-    {"numero": "1001", "valor": 500},
-    {"numero": "1002", "valor": 800},
-    {"numero": "1003", "valor": 1200}
-]
+# nfes = [
+#     {"numero": "1001", "valor": 500},
+#     {"numero": "1002", "valor": 800},
+#     {"numero": "1003", "valor": 1200}
+# ]
 
-for nfe in nfes:
-    print(f"Processando NFE {nfe['numero']}...")
-    time.sleep(1)
-    logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
-"""
+# for nfe in nfes:
+#     print(f"Processando NFE {nfe['numero']}...")
+#     time.sleep(1)
+#     logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -50,7 +53,7 @@ for nfe in nfes:
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo a # ==============================================================================
+# passo a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -59,16 +62,7 @@ passo a # ======================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 14: PyAutoGUI Avançado
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas
-- O gabarito está comentado ao final do arquivo
-"""
 
 import pyautogui
 import time
@@ -117,41 +111,39 @@ print("--- Exercicio 3 ---")
 # Seu código aqui
 pass
 
-"""
-GABARITO:
+# GABARITO:
 
 # Ex 1:
-logging.basicConfig(filename='operacao.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='operacao.log', level=logging.INFO, 
+#                     format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Iniciando turno")
 logging.error("Falha na conexão com ERP")
 
 # Ex 2:
-def buscar_imagem():
-    try:
-        logging.info("Buscando imagem...")
-        img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
-        if img is None:
-            raise Exception("Imagem não encontrada")
-        print("Encontrada!")
-    except Exception as e:
-        logging.error(f"Erro na busca: {e}")
-        print(f"Erro capturado: {e}")
+# def buscar_imagem():
+#     try:
+#         logging.info("Buscando imagem...")
+#         img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
+#         if img is None:
+#             raise Exception("Imagem não encontrada")
+#         print("Encontrada!")
+#     except Exception as e:
+#         logging.error(f"Erro na busca: {e}")
+#         print(f"Erro capturado: {e}")
 
 buscar_imagem()
 
 # Ex 3:
-nfes = [
-    {"numero": "1001", "valor": 500},
-    {"numero": "1002", "valor": 800},
-    {"numero": "1003", "valor": 1200}
-]
+# nfes = [
+#     {"numero": "1001", "valor": 500},
+#     {"numero": "1002", "valor": 800},
+#     {"numero": "1003", "valor": 1200}
+# ]
 
-for nfe in nfes:
-    print(f"Processando NFE {nfe['numero']}...")
-    time.sleep(1)
-    logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
-"""
+# for nfe in nfes:
+#     print(f"Processando NFE {nfe['numero']}...")
+#     time.sleep(1)
+#     logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -166,14 +158,13 @@ for nfe in nfes:
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# passo como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -188,16 +179,7 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 14: PyAutoGUI Avançado
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas
-- O gabarito está comentado ao final do arquivo
-"""
 
 import pyautogui
 import time
@@ -246,41 +228,39 @@ print("--- Exercicio 3 ---")
 # Seu código aqui
 pass
 
-"""
-GABARITO:
+# GABARITO:
 
 # Ex 1:
-logging.basicConfig(filename='operacao.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='operacao.log', level=logging.INFO, 
+#                     format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Iniciando turno")
 logging.error("Falha na conexão com ERP")
 
 # Ex 2:
-def buscar_imagem():
-    try:
-        logging.info("Buscando imagem...")
-        img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
-        if img is None:
-            raise Exception("Imagem não encontrada")
-        print("Encontrada!")
-    except Exception as e:
-        logging.error(f"Erro na busca: {e}")
-        print(f"Erro capturado: {e}")
+# def buscar_imagem():
+#     try:
+#         logging.info("Buscando imagem...")
+#         img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
+#         if img is None:
+#             raise Exception("Imagem não encontrada")
+#         print("Encontrada!")
+#     except Exception as e:
+#         logging.error(f"Erro na busca: {e}")
+#         print(f"Erro capturado: {e}")
 
 buscar_imagem()
 
 # Ex 3:
-nfes = [
-    {"numero": "1001", "valor": 500},
-    {"numero": "1002", "valor": 800},
-    {"numero": "1003", "valor": 1200}
-]
+# nfes = [
+#     {"numero": "1001", "valor": 500},
+#     {"numero": "1002", "valor": 800},
+#     {"numero": "1003", "valor": 1200}
+# ]
 
-for nfe in nfes:
-    print(f"Processando NFE {nfe['numero']}...")
-    time.sleep(1)
-    logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
-"""
+# for nfe in nfes:
+#     print(f"Processando NFE {nfe['numero']}...")
+#     time.sleep(1)
+#     logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -302,7 +282,6 @@ pass
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -314,16 +293,7 @@ pass
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 14: PyAutoGUI Avançado
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas
-- O gabarito está comentado ao final do arquivo
-"""
 
 import pyautogui
 import time
@@ -372,41 +342,39 @@ print("--- Exercicio 3 ---")
 # Seu código aqui
 pass
 
-"""
-GABARITO:
+# GABARITO:
 
 # Ex 1:
-logging.basicConfig(filename='operacao.log', level=logging.INFO, 
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+# logging.basicConfig(filename='operacao.log', level=logging.INFO, 
+#                     format='%(asctime)s - %(levelname)s - %(message)s')
 logging.info("Iniciando turno")
 logging.error("Falha na conexão com ERP")
 
 # Ex 2:
-def buscar_imagem():
-    try:
-        logging.info("Buscando imagem...")
-        img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
-        if img is None:
-            raise Exception("Imagem não encontrada")
-        print("Encontrada!")
-    except Exception as e:
-        logging.error(f"Erro na busca: {e}")
-        print(f"Erro capturado: {e}")
+# def buscar_imagem():
+#     try:
+#         logging.info("Buscando imagem...")
+#         img = pyautogui.locateOnScreen("imagem_que_nao_existe.png")
+#         if img is None:
+#             raise Exception("Imagem não encontrada")
+#         print("Encontrada!")
+#     except Exception as e:
+#         logging.error(f"Erro na busca: {e}")
+#         print(f"Erro capturado: {e}")
 
 buscar_imagem()
 
 # Ex 3:
-nfes = [
-    {"numero": "1001", "valor": 500},
-    {"numero": "1002", "valor": 800},
-    {"numero": "1003", "valor": 1200}
-]
+# nfes = [
+#     {"numero": "1001", "valor": 500},
+#     {"numero": "1002", "valor": 800},
+#     {"numero": "1003", "valor": 1200}
+# ]
 
-for nfe in nfes:
-    print(f"Processando NFE {nfe['numero']}...")
-    time.sleep(1)
-    logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
-"""
+# for nfe in nfes:
+#     print(f"Processando NFE {nfe['numero']}...")
+#     time.sleep(1)
+#     logging.info(f"NFE {nfe['numero']} de valor R${nfe['valor']} processada com sucesso.")
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

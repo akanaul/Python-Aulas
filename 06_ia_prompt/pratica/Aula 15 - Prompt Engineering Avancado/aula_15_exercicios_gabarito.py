@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_15_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,24 +19,15 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 15: Engenharia de Prompt Avançada
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Este exercício é feito em CONJUNTO COM O ANTIGRAVITY (ou ChatGPT).
-- Preencha os prompts que você usou.
-"""
+# - Preencha os prompts que você usou.
 
 # Exercício 1 — [Nível: Básico] Refatoração
 # Pegue a função abaixo, cole no Antigravity e peça para refatorar para boas práticas:
-"""
-def calc(x,y):
-    z = x * 1.5
-    a = y * z
-    return a
-"""
+# def calc(x,y):
+#     z = x * 1.5
+#     a = y * z
+#     return a
 # Qual foi o prompt que você usou? 
 prompt_ex1 = "SEU PROMPT AQUI"
 
@@ -51,31 +46,27 @@ prompt_ex2 = "SEU PROMPT AQUI"
 
 prompt_ex3 = "SEU PROMPT AQUI"
 
-"""
-GABARITO / EXEMPLOS:
+# GABARITO / EXEMPLOS:
 
 # Ex 1:
 prompt_ex1 = "Refatore esta função Python abaixo. Ela calcula o custo do frete baseado em peso (x) e distância (y). Adicione type hints, docstrings explicativas e renomeie as variáveis para inglês focado em logística."
 
 # Ex 2:
-prompt_ex2 = '''
-Crie uma função em Python que extraia a placa de caminhão de uma string.
-Siga os exemplos abaixo:
-Entrada: "O caminhão AAA-1234 chegou" -> Saída: "AAA-1234"
-Entrada: "Veículo mercosul BCD1C34 na doca" -> Saída: "BCD1C34"
-Entrada: "Apenas texto, sem veículo" -> Saída: None
-'''
+# prompt_ex2 = '''
+# Crie uma função em Python que extraia a placa de caminhão de uma string.
+# Siga os exemplos abaixo:
+# Entrada: "O caminhão AAA-1234 chegou" -> Saída: "AAA-1234"
+# Entrada: "Veículo mercosul BCD1C34 na doca" -> Saída: "BCD1C34"
+# Entrada: "Apenas texto, sem veículo" -> Saída: None
 
 # Ex 3:
-prompt_ex3 = '''
-Planeje a arquitetura de um robô Python.
-Pense passo a passo:
-1. Como acessar o Outlook da máquina local (pywin32)?
-2. Como filtrar os emails não lidos com anexo .pdf?
-3. Como baixar o anexo para uma pasta específica renomeando com a data de hoje?
-Apenas me dê o planejamento em texto e os pacotes necessários, não escreva o código.
-'''
-"""
+# prompt_ex3 = '''
+# Planeje a arquitetura de um robô Python.
+# Pense passo a passo:
+# 1. Como acessar o Outlook da máquina local (pywin32)?
+# 2. Como filtrar os emails não lidos com anexo .pdf?
+# 3. Como baixar o anexo para uma pasta específica renomeando com a data de hoje?
+# Apenas me dê o planejamento em texto e os pacotes necessários, não escreva o código.
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

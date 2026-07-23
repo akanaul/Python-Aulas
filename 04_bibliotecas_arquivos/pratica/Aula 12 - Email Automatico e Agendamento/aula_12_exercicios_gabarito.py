@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_12_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,15 +19,7 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 12: E-mail Automático e Agendamento
-Curso: Python + IA para Automação em Logística
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 # 1. Crie um agendamento simples que imprime a frase "Verificando temperatura" a cada 5 segundos.
 import schedule
 import time
@@ -53,15 +49,14 @@ from email.mime.text import MIMEText
 # Seu código aqui
 #
 
-"""
 # GABARITO
 
 # 1. Agendador a cada 5 seg
 import schedule
 import time
 
-def check_temp():
-    print("Verificando temperatura...")
+# def check_temp():
+#     print("Verificando temperatura...")
     
 # schedule.every(5).seconds.do(check_temp)
 # while True:
@@ -73,8 +68,8 @@ html_content = "<h1>Alerta de Estoque</h1><p>Alguns itens estão em falta.</p>"
 print(html_content)
 
 # 3. Agendador às 15:00
-def send_email_fake():
-    print("Enviando e-mail simulado...")
+# def send_email_fake():
+#     print("Enviando e-mail simulado...")
 
 # schedule.every().day.at("15:00").do(send_email_fake)
 
@@ -95,7 +90,6 @@ msg.attach(MIMEText(html_content, 'html'))
 # with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
 #     server.login("user@email", senha)
 #     server.sendmail("de", "para", msg.as_string())
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

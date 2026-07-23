@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_10_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,15 +19,7 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 10: Arquivos txt e csv
-Curso: Python + IA para Automação em Logística
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 # 1. Crie um script que abre um arquivo chamado 'novo_motorista.txt' e escreve o nome de um motorista usando o modo 'w'.
 #
 # Seu código aqui
@@ -53,26 +49,25 @@ import glob
 # Seu código aqui
 #
 
-"""
 # GABARITO
 
 # 1. Escrevendo no arquivo
-with open('novo_motorista.txt', 'w', encoding='utf-8') as f:
-    f.write('Carlos Almeida\n')
+# with open('novo_motorista.txt', 'w', encoding='utf-8') as f:
+#     f.write('Carlos Almeida\n')
 
 # 2. Adicionando (append)
-with open('novo_motorista.txt', 'a', encoding='utf-8') as f:
-    f.write('Ana Paula\n')
-    f.write('João da Silva\n')
+# with open('novo_motorista.txt', 'a', encoding='utf-8') as f:
+#     f.write('Ana Paula\n')
+#     f.write('João da Silva\n')
 
 # 3. Checando se arquivo existe
 import os
-if not os.path.exists('config_email.txt'):
-    with open('config_email.txt', 'w', encoding='utf-8') as f:
-        f.write('email=admin@empresa.com\n')
-    print("Arquivo de config criado.")
-else:
-    print("Arquivo já existe.")
+# if not os.path.exists('config_email.txt'):
+#     with open('config_email.txt', 'w', encoding='utf-8') as f:
+#         f.write('email=admin@empresa.com\n')
+#     print("Arquivo de config criado.")
+# else:
+#     print("Arquivo já existe.")
 
 # 4. Lendo CSV
 import csv
@@ -86,7 +81,6 @@ import csv
 import glob
 txt_files = glob.glob('*.txt')
 print(f"Arquivos TXT encontrados: {txt_files}")
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

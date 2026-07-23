@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_02_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exercício 1
 carrier_name = "Expresso Log"
@@ -39,9 +43,8 @@ fuel_efficiency = 3.5
 liters_needed = distance_km / fuel_efficiency
 
 print(f"Para a rota de {distance_km}km, serão necessários {liters_needed} litros de diesel.")
-"""
 
-o a # ==============================================================================
+# o a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -50,16 +53,7 @@ o a # ==========================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 2: Variáveis e Operadores
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto: Seu sistema logístico precisa calcular algumas métricas da operação do dia.
 
@@ -125,10 +119,9 @@ INSTRUÇÕES:
 
 
 
-"""
-======================================
-GABARITO COMENTADO
-======================================
+# ======================================
+# GABARITO COMENTADO
+# ======================================
 # Exercício 1
 carrier_name = "Expresso Log"
 total_invoices = 150
@@ -164,16 +157,14 @@ fuel_efficiency = 3.5
 liters_needed = distance_km / fuel_efficiency
 
 print(f"Para a rota de {distance_km}km, serão necessários {liters_needed} litros de diesel.")
-"""
 
-o como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# o como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -188,16 +179,7 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 2: Variáveis e Operadores
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto: Seu sistema logístico precisa calcular algumas métricas da operação do dia.
 
@@ -263,10 +245,9 @@ INSTRUÇÕES:
 
 
 
-"""
-======================================
-GABARITO COMENTADO
-======================================
+# ======================================
+# GABARITO COMENTADO
+# ======================================
 # Exercício 1
 carrier_name = "Expresso Log"
 total_invoices = 150
@@ -302,7 +283,6 @@ fuel_efficiency = 3.5
 liters_needed = distance_km / fuel_efficiency
 
 print(f"Para a rota de {distance_km}km, serão necessários {liters_needed} litros de diesel.")
-"""
 
 
 
@@ -311,7 +291,6 @@ print(f"Para a rota de {distance_km}km, serão necessários {liters_needed} litr
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -323,16 +302,7 @@ print(f"Para a rota de {distance_km}km, serão necessários {liters_needed} litr
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 2: Variáveis e Operadores
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto: Seu sistema logístico precisa calcular algumas métricas da operação do dia.
 
@@ -398,10 +368,9 @@ INSTRUÇÕES:
 
 
 
-"""
-======================================
-GABARITO COMENTADO
-======================================
+# ======================================
+# GABARITO COMENTADO
+# ======================================
 # Exercício 1
 carrier_name = "Expresso Log"
 total_invoices = 150

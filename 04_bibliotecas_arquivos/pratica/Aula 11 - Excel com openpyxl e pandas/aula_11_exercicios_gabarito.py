@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_11_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,15 +19,7 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 11: Excel com openpyxl e pandas
-Curso: Python + IA para Automação em Logística
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 # 1. Use pandas para ler um dataframe simulado e mostrar a coluna de placas.
 import pandas as pd
 # Simulando a leitura: df = pd.DataFrame({'Placa': ['ABC', 'DEF'], 'Status': ['OK', 'Manutenção']})
@@ -53,7 +49,6 @@ from openpyxl import Workbook
 # Seu código aqui
 #
 
-"""
 # GABARITO
 
 # 1. Lendo com pandas e mostrando coluna
@@ -84,7 +79,6 @@ from openpyxl.styles import PatternFill
 # for row in range(2, ws.max_row + 1):
 #     if ws.cell(row, 2).value == 'Entregue':
 #         ws.cell(row, 2).fill = fill_green
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

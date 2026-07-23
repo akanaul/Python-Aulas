@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_09a_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,16 +19,7 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 9A: Módulos e POO Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: Seu Nome
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # EXERCÍCIO 1 — [Nível: Básico]
 # O setor logístico precisa calcular o prazo final de uma devolução.
@@ -67,7 +62,6 @@ print("\n--- Exercício 5 ---")
 
 
 
-"""
 ###################### GABARITO ######################
 
 # 1. 
@@ -77,32 +71,31 @@ return_deadline = today_date + timedelta(days=7)
 print(f"Prazo de devolução: {return_deadline}")
 
 # 2.
-class Person:
-    def __init__(self, name, cpf):
-        self.name = name
-        self.cpf = cpf
+# class Person:
+#     def __init__(self, name, cpf):
+#         self.name = name
+#         self.cpf = cpf
 
 my_person = Person("João", "111.111.111-11")
 print(my_person.name)
 
 # 3, 4 e 5:
-class Driver(Person):
-    def __init__(self, name, cpf, plate, route):
-        super().__init__(name, cpf)
-        self.plate = plate
-        self.route = route
+# class Driver(Person):
+#     def __init__(self, name, cpf, plate, route):
+#         super().__init__(name, cpf)
+#         self.plate = plate
+#         self.route = route
         
-    def update_route(self, new_route):
-        self.route = new_route
-        print(f"A rota de {self.name} foi atualizada para {self.route}")
+#     def update_route(self, new_route):
+#         self.route = new_route
+#         print(f"A rota de {self.name} foi atualizada para {self.route}")
         
-    def __str__(self):
-        return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
+#     def __str__(self):
+#         return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
 
 driver_maria = Driver("Maria", "222.222.222-22", "XYZ-9876", "SP-RJ")
 driver_maria.update_route("SP-MG")
 print(driver_maria)
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

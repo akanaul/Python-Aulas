@@ -1,10 +1,11 @@
+# -*- coding: utf-8 -*-
 """
-Exercícios — Aula 00: Mindset Vibe Coding Ético & Copilotos (Gabarito)
+Gabarito Oficial de Referência - aula_00_exercicios_gabarito
 Curso: Python + IA para Automação em Logística
-
-INSTRUÇÕES:
-- Compare suas respostas com este gabarito.
 """
+
+
+# - Compare suas respostas com este gabarito.
 
 # Contexto: Você trabalha na expedição e precisa criar variáveis para um script
 # que vai se conectar ao ERP da transportadora.

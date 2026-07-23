@@ -1,11 +1,14 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_bonus_selenium_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
 
-Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
-"""
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
+
+# Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -20,7 +23,7 @@ Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você ins
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo a # ==============================================================================
+# passo a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -29,15 +32,9 @@ passo a # ======================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula Bônus: Selenium
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Instale as libs: pip install selenium webdriver-manager
-- Rode o código para ver a automação rodando.
-"""
+# - Instale as libs: pip install selenium webdriver-manager
+# - Rode o código para ver a automação rodando.
 
 print("--- Exercicio Bonus ---")
 
@@ -59,10 +56,8 @@ print("--- Exercicio Bonus ---")
 # print("Fechando navegador. Sucesso!")
 # driver.quit()
 
-"""
-GABARITO:
-Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
-"""
+# GABARITO:
+# Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -77,14 +72,13 @@ Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você ins
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# passo como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -99,15 +93,9 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula Bônus: Selenium
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Instale as libs: pip install selenium webdriver-manager
-- Rode o código para ver a automação rodando.
-"""
+# - Instale as libs: pip install selenium webdriver-manager
+# - Rode o código para ver a automação rodando.
 
 print("--- Exercicio Bonus ---")
 
@@ -129,10 +117,8 @@ print("--- Exercicio Bonus ---")
 # print("Fechando navegador. Sucesso!")
 # driver.quit()
 
-"""
-GABARITO:
-Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
-"""
+# GABARITO:
+# Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -154,7 +140,6 @@ pass
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -166,15 +151,9 @@ pass
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula Bônus: Selenium
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Instale as libs: pip install selenium webdriver-manager
-- Rode o código para ver a automação rodando.
-"""
+# - Instale as libs: pip install selenium webdriver-manager
+# - Rode o código para ver a automação rodando.
 
 print("--- Exercicio Bonus ---")
 
@@ -196,10 +175,8 @@ print("--- Exercicio Bonus ---")
 # print("Fechando navegador. Sucesso!")
 # driver.quit()
 
-"""
-GABARITO:
-Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
-"""
+# GABARITO:
+# Se o Chrome abriu sozinho por 3 segundos, navegou pro Google e fechou, você instalou tudo corretamente! Parabéns!
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

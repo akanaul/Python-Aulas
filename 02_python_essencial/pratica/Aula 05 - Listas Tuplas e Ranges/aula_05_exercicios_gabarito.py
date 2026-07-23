@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_05_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exercício 1
 cidades = ["São Paulo", "Rio de Janeiro", "Curitiba", "Belo Horizonte", "Porto Alegre"]
@@ -21,11 +25,11 @@ notas_fiscais = list(range(100, 111))
 print(notas_fiscais)
 
 # Exercício 4
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 capacidade_segundo = frotas[1][1]
 print(f"Capacidade do 2º veículo: {capacidade_segundo} ton")
 
@@ -35,9 +39,8 @@ longas_distancias = [d for d in distancias_km if d > 50]
 soma_longas = sum(longas_distancias)
 print(f"Distâncias longas: {longas_distancias}")
 print(f"Soma total: {soma_longas} km")
-"""
 
-o a # ==============================================================================
+# o a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -46,16 +49,7 @@ o a # ==========================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 5: Listas, Tuplas e Ranges
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Lidar com múltiplas rotas, veículos e sequências de documentos.
 
@@ -92,11 +86,11 @@ INSTRUÇÕES:
 # Exercício 4 — [Nível: Intermediário]
 # Dada uma lista de listas contendo [placa_veiculo, capacidade_toneladas].
 # Acesse e imprima a capacidade do segundo veículo (frotas[1]).
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 #
 # 💡 Dica de Lógica: (como pensar o problema no contexto de logística)
 # 🛠️ Dica de Código: (quais funções/métodos/estruturas Python utilizar)
@@ -117,8 +111,7 @@ distancias_km = [12, 45, 89, 150, 30, 205]
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
 cidades = ["São Paulo", "Rio de Janeiro", "Curitiba", "Belo Horizonte", "Porto Alegre"]
@@ -137,11 +130,11 @@ notas_fiscais = list(range(100, 111))
 print(notas_fiscais)
 
 # Exercício 4
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 capacidade_segundo = frotas[1][1]
 print(f"Capacidade do 2º veículo: {capacidade_segundo} ton")
 
@@ -151,16 +144,14 @@ longas_distancias = [d for d in distancias_km if d > 50]
 soma_longas = sum(longas_distancias)
 print(f"Distâncias longas: {longas_distancias}")
 print(f"Soma total: {soma_longas} km")
-"""
 
-o como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# o como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -175,16 +166,7 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 5: Listas, Tuplas e Ranges
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Lidar com múltiplas rotas, veículos e sequências de documentos.
 
@@ -221,11 +203,11 @@ INSTRUÇÕES:
 # Exercício 4 — [Nível: Intermediário]
 # Dada uma lista de listas contendo [placa_veiculo, capacidade_toneladas].
 # Acesse e imprima a capacidade do segundo veículo (frotas[1]).
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 #
 # 💡 Dica de Lógica: (como pensar o problema no contexto de logística)
 # 🛠️ Dica de Código: (quais funções/métodos/estruturas Python utilizar)
@@ -246,8 +228,7 @@ distancias_km = [12, 45, 89, 150, 30, 205]
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
 cidades = ["São Paulo", "Rio de Janeiro", "Curitiba", "Belo Horizonte", "Porto Alegre"]
@@ -266,11 +247,11 @@ notas_fiscais = list(range(100, 111))
 print(notas_fiscais)
 
 # Exercício 4
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 capacidade_segundo = frotas[1][1]
 print(f"Capacidade do 2º veículo: {capacidade_segundo} ton")
 
@@ -280,7 +261,6 @@ longas_distancias = [d for d in distancias_km if d > 50]
 soma_longas = sum(longas_distancias)
 print(f"Distâncias longas: {longas_distancias}")
 print(f"Soma total: {soma_longas} km")
-"""
 
 
 
@@ -289,7 +269,6 @@ print(f"Soma total: {soma_longas} km")
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -301,16 +280,7 @@ print(f"Soma total: {soma_longas} km")
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 5: Listas, Tuplas e Ranges
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Lidar com múltiplas rotas, veículos e sequências de documentos.
 
@@ -347,11 +317,11 @@ INSTRUÇÕES:
 # Exercício 4 — [Nível: Intermediário]
 # Dada uma lista de listas contendo [placa_veiculo, capacidade_toneladas].
 # Acesse e imprima a capacidade do segundo veículo (frotas[1]).
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 #
 # 💡 Dica de Lógica: (como pensar o problema no contexto de logística)
 # 🛠️ Dica de Código: (quais funções/métodos/estruturas Python utilizar)
@@ -372,8 +342,7 @@ distancias_km = [12, 45, 89, 150, 30, 205]
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
 cidades = ["São Paulo", "Rio de Janeiro", "Curitiba", "Belo Horizonte", "Porto Alegre"]
@@ -392,11 +361,11 @@ notas_fiscais = list(range(100, 111))
 print(notas_fiscais)
 
 # Exercício 4
-frotas = [
-    ["ABC-1234", 12],
-    ["XYZ-9876", 24],
-    ["QWE-5555", 8]
-]
+# frotas = [
+#     ["ABC-1234", 12],
+#     ["XYZ-9876", 24],
+#     ["QWE-5555", 8]
+# ]
 capacidade_segundo = frotas[1][1]
 print(f"Capacidade do 2º veículo: {capacidade_segundo} ton")
 

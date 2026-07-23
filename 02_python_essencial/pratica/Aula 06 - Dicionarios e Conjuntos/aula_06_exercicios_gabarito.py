@@ -1,16 +1,20 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_06_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
 
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
+
 # Exercício 1
-nf = {
-    "chave_acesso": "35230112345678901234550010001234561012345678",
-    "valor": 4500.50,
-    "data": "2023-10-25",
-    "fornecedor": "Industria ABC"
-}
+# nf = {
+#     "chave_acesso": "35230112345678901234550010001234561012345678",
+#     "valor": 4500.50,
+#     "data": "2023-10-25",
+#     "fornecedor": "Industria ABC"
+# }
 print(nf["valor"])
 
 # Exercício 2
@@ -24,8 +28,8 @@ print(cidades_unicas)
 
 # Exercício 4
 status_entregas = {"BR01": "Entregue", "BR02": "Em rota", "BR03": "Pendente"}
-for pacote, status in status_entregas.items():
-    print(f"O pacote {pacote} está com status {status}")
+# for pacote, status in status_entregas.items():
+#     print(f"O pacote {pacote} está com status {status}")
 
 # Exercício 5
 motoristas_seg = {"João", "Maria", "Pedro"}
@@ -36,9 +40,8 @@ apenas_seg = motoristas_seg.difference(motoristas_ter)
 
 print(f"Trabalharam ambos os dias: {ambos_dias}")
 print(f"Trabalharam apenas na segunda: {apenas_seg}")
-"""
 
-o a # ==============================================================================
+# o a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -47,16 +50,7 @@ o a # ==========================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 6: Dicionários e Conjuntos
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Mapear atributos de rotas e lidar com ocorrências únicas em transportes.
 
@@ -117,16 +111,15 @@ motoristas_ter = {"Maria", "José", "Pedro"}
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
-nf = {
-    "chave_acesso": "35230112345678901234550010001234561012345678",
-    "valor": 4500.50,
-    "data": "2023-10-25",
-    "fornecedor": "Industria ABC"
-}
+# nf = {
+#     "chave_acesso": "35230112345678901234550010001234561012345678",
+#     "valor": 4500.50,
+#     "data": "2023-10-25",
+#     "fornecedor": "Industria ABC"
+# }
 print(nf["valor"])
 
 # Exercício 2
@@ -140,8 +133,8 @@ print(cidades_unicas)
 
 # Exercício 4
 status_entregas = {"BR01": "Entregue", "BR02": "Em rota", "BR03": "Pendente"}
-for pacote, status in status_entregas.items():
-    print(f"O pacote {pacote} está com status {status}")
+# for pacote, status in status_entregas.items():
+#     print(f"O pacote {pacote} está com status {status}")
 
 # Exercício 5
 motoristas_seg = {"João", "Maria", "Pedro"}
@@ -152,16 +145,14 @@ apenas_seg = motoristas_seg.difference(motoristas_ter)
 
 print(f"Trabalharam ambos os dias: {ambos_dias}")
 print(f"Trabalharam apenas na segunda: {apenas_seg}")
-"""
 
-o como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# o como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -176,16 +167,7 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 6: Dicionários e Conjuntos
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Mapear atributos de rotas e lidar com ocorrências únicas em transportes.
 
@@ -246,16 +228,15 @@ motoristas_ter = {"Maria", "José", "Pedro"}
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
-nf = {
-    "chave_acesso": "35230112345678901234550010001234561012345678",
-    "valor": 4500.50,
-    "data": "2023-10-25",
-    "fornecedor": "Industria ABC"
-}
+# nf = {
+#     "chave_acesso": "35230112345678901234550010001234561012345678",
+#     "valor": 4500.50,
+#     "data": "2023-10-25",
+#     "fornecedor": "Industria ABC"
+# }
 print(nf["valor"])
 
 # Exercício 2
@@ -269,8 +250,8 @@ print(cidades_unicas)
 
 # Exercício 4
 status_entregas = {"BR01": "Entregue", "BR02": "Em rota", "BR03": "Pendente"}
-for pacote, status in status_entregas.items():
-    print(f"O pacote {pacote} está com status {status}")
+# for pacote, status in status_entregas.items():
+#     print(f"O pacote {pacote} está com status {status}")
 
 # Exercício 5
 motoristas_seg = {"João", "Maria", "Pedro"}
@@ -281,7 +262,6 @@ apenas_seg = motoristas_seg.difference(motoristas_ter)
 
 print(f"Trabalharam ambos os dias: {ambos_dias}")
 print(f"Trabalharam apenas na segunda: {apenas_seg}")
-"""
 
 
 
@@ -290,7 +270,6 @@ print(f"Trabalharam apenas na segunda: {apenas_seg}")
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -302,16 +281,7 @@ print(f"Trabalharam apenas na segunda: {apenas_seg}")
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 6: Dicionários e Conjuntos
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 # Contexto logístico: Mapear atributos de rotas e lidar com ocorrências únicas em transportes.
 
@@ -372,16 +342,15 @@ motoristas_ter = {"Maria", "José", "Pedro"}
 # <Seu código aqui>
 
 
-"""
-GABARITO:
+# GABARITO:
 
 # Exercício 1
-nf = {
-    "chave_acesso": "35230112345678901234550010001234561012345678",
-    "valor": 4500.50,
-    "data": "2023-10-25",
-    "fornecedor": "Industria ABC"
-}
+# nf = {
+#     "chave_acesso": "35230112345678901234550010001234561012345678",
+#     "valor": 4500.50,
+#     "data": "2023-10-25",
+#     "fornecedor": "Industria ABC"
+# }
 print(nf["valor"])
 
 # Exercício 2
@@ -395,8 +364,8 @@ print(cidades_unicas)
 
 # Exercício 4
 status_entregas = {"BR01": "Entregue", "BR02": "Em rota", "BR03": "Pendente"}
-for pacote, status in status_entregas.items():
-    print(f"O pacote {pacote} está com status {status}")
+# for pacote, status in status_entregas.items():
+#     print(f"O pacote {pacote} está com status {status}")
 
 # Exercício 5
 motoristas_seg = {"João", "Maria", "Pedro"}

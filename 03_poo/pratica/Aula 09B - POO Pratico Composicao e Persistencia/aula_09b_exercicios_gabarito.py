@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_09b_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Exemplo de Solução:
 # def main():
@@ -15,16 +19,7 @@ GABARITO MANUAL COMENTADO PASSO A PASSO
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 9B: POO Prático, Composição e Persistência
-Curso: Python + IA para Automação em Logística
-Instrutor: Seu Nome
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 import json
 
@@ -54,19 +49,18 @@ print("\n--- Exercício 3 ---")
 
 
 
-"""
 ###################### GABARITO ######################
 
 # 1. 
-class Vehicle:
-    def __init__(self, model, plate):
-        self.model = model
-        self.plate = plate
+# class Vehicle:
+#     def __init__(self, model, plate):
+#         self.model = model
+#         self.plate = plate
 
-class Driver:
-    def __init__(self, name, vehicle):
-        self.name = name
-        self.vehicle = vehicle
+# class Driver:
+#     def __init__(self, name, vehicle):
+#         self.name = name
+#         self.vehicle = vehicle
 
 my_truck = Vehicle("Scania", "ABC-9999")
 my_driver = Driver("Pedro", my_truck)
@@ -74,19 +68,19 @@ my_driver = Driver("Pedro", my_truck)
 print(f"O motorista {my_driver.name} dirige um {my_driver.vehicle.model}")
 
 # 2.
-class Driver:
-    def __init__(self, name, vehicle):
-        self.name = name
-        self.vehicle = vehicle
+# class Driver:
+#     def __init__(self, name, vehicle):
+#         self.name = name
+#         self.vehicle = vehicle
         
-    def to_dict(self):
-        return {
-            "name": self.name,
-            "vehicle": {
-                "model": self.vehicle.model,
-                "plate": self.vehicle.plate
-            }
-        }
+#     def to_dict(self):
+#         return {
+#             "name": self.name,
+#             "vehicle": {
+#                 "model": self.vehicle.model,
+#                 "plate": self.vehicle.plate
+#             }
+#         }
 
 my_truck = Vehicle("Scania", "ABC-9999")
 my_driver = Driver("Pedro", my_truck)
@@ -97,16 +91,15 @@ print(driver_dict)
 import json
 
 # Salvando
-with open("dados_motorista.json", "w") as file:
-    json.dump(driver_dict, file, indent=4)
+# with open("dados_motorista.json", "w") as file:
+#     json.dump(driver_dict, file, indent=4)
     
 # Carregando
-with open("dados_motorista.json", "r") as file:
-    loaded_data = json.load(file)
+# with open("dados_motorista.json", "r") as file:
+#     loaded_data = json.load(file)
 
 print("Dados lidos do arquivo JSON:")
 print(loaded_data)
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

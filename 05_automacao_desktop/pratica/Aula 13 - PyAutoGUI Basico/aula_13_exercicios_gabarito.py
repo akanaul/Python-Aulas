@@ -1,8 +1,12 @@
+# -*- coding: utf-8 -*-
 """
-======================================
-GABARITO MANUAL COMENTADO PASSO A PASSO
-======================================
+Gabarito Oficial de Referência - aula_13_exercicios_gabarito
+Curso: Python + IA para Automação em Logística
 """
+
+# ======================================
+# GABARITO MANUAL COMENTADO PASSO A PASSO
+# ======================================
 
 # Ex 1:
 print(pyautogui.size())
@@ -28,7 +32,6 @@ time.sleep(1)
 pyautogui.write('recusa_nfe.txt')
 time.sleep(1)
 pyautogui.press('enter')
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -43,7 +46,7 @@ pyautogui.press('enter')
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo a # ==============================================================================
+# passo a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -52,16 +55,7 @@ passo a # ======================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 13: PyAutoGUI Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 import pyautogui
 import time
@@ -110,8 +104,7 @@ print("--- Exercicio 3 ---")
 # Seu código aqui
 pass
 
-"""
-GABARITO:
+# GABARITO:
 
 # Ex 1:
 print(pyautogui.size())
@@ -137,7 +130,6 @@ time.sleep(1)
 pyautogui.write('recusa_nfe.txt')
 time.sleep(1)
 pyautogui.press('enter')
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -152,14 +144,13 @@ pyautogui.press('enter')
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# passo como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -174,16 +165,7 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 13: PyAutoGUI Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 import pyautogui
 import time
@@ -232,8 +214,7 @@ print("--- Exercicio 3 ---")
 # Seu código aqui
 pass
 
-"""
-GABARITO:
+# GABARITO:
 
 # Ex 1:
 print(pyautogui.size())
@@ -259,7 +240,6 @@ time.sleep(1)
 pyautogui.write('recusa_nfe.txt')
 time.sleep(1)
 pyautogui.press('enter')
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -281,7 +261,6 @@ pass
 # ==============================================================================
 # GABARITO (Tente antes de olhar!)
 # ==============================================================================
-"""
 # Exemplo de Solução:
 # def main():
 #     # ==============================================================================
@@ -293,16 +272,7 @@ pass
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 13: PyAutoGUI Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
 
 import pyautogui
 import time
@@ -351,8 +321,7 @@ print("--- Exercicio 3 ---")
 # Seu código aqui
 pass
 
-"""
-GABARITO:
+# GABARITO:
 
 # Ex 1:
 print(pyautogui.size())
@@ -378,7 +347,6 @@ time.sleep(1)
 pyautogui.write('recusa_nfe.txt')
 time.sleep(1)
 pyautogui.press('enter')
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
