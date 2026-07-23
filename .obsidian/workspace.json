@@ -245,6 +245,13 @@
   },
   "active": "4afed96d2b64c385",
   "lastOpenFiles": [
+    "99_referencia_teorica/doc_python/06_arquivos_pathlib_json.md",
+    "99_referencia_teorica/doc_python/05_poo_classes_dataclasses.md",
+    "99_referencia_teorica/doc_python/04_funcoes_type_hints_312.md",
+    "99_referencia_teorica/doc_python/02_estruturas_controle_excecoes.md",
+    "99_referencia_teorica/doc_python/01_sintaxe_variaveis_tipos.md",
+    "99_referencia_teorica/doc_python/00_indice_python_312.md",
+    "99_referencia_teorica/doc_python",
     "MANUAL_DO_PROFESSOR.md",
     "requirements.txt",
     "00_dashboard.md",
@@ -262,7 +269,6 @@
     "02_python_essencial/Aula 06 - Dicionarios e Conjuntos/Aula 6 - Dicionarios e Conjuntos.md",
     "02_python_essencial/Aula 06 - Dicionarios e Conjuntos",
     "01_fundamentos/Aula 03 - Condicionais e Loops/aula_03_exercicios_manual.py",
-    "01_fundamentos/Aula 03 - Condicionais e Loops/aula_03_exercicios_ia.py",
     "01_fundamentos/Aula 03 - Condicionais e Loops/Aula 3 - Condicionais e Loops.md",
     "01_fundamentos/Aula 02 - Variáveis e Operadores/Aula 2 - Variáveis e Operadores.md",
     "MANUAL_DO_ALUNO.md",
@@ -276,12 +282,6 @@
     "02_python_essencial/Aula 05 - Listas Tuplas e Ranges/Aula 5 - Listas Tuplas e Ranges.md",
     "02_python_essencial/Aula 04 - Strings e Formatação/Aula 4 - Strings e Formatação.md",
     "01_fundamentos/Aula 01 - Setup e Primeiros Passos/Aula 1 - Setup Completo e Primeiros Passos.md",
-    "01_fundamentos/Aula 00 - Mindset Vibe Coding Etico/Aula 00 - Mindset Vibe Coding Etico e Copilotos.md",
-    "07_bonus_selenium/07_bonus_selenium.md",
-    "08 - Guia e Recursos/GUIA_GIT.md",
-    "99_referencia_teorica/Tuplas.md",
-    "99_referencia_teorica/Sintaxe.md",
-    "99_referencia_teorica/Strings.md",
     "00 - Mapa Visual do Curso.canvas"
   ]
 }
