@@ -1,26 +1,31 @@
+---
+sticker: "📊"
+---
 # 📊 Dashboard - Curso Python + IA para Automação
 
 > [!TUTOR] Bem-vindo(a) ao seu Dashboard de Aprendizado
 > "A automação de tarefas cotidianas e o uso inteligente da IA são as chaves para a máxima produtividade."
+> 
+> 📘 **Comece Aqui:** Consulte o [[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno]] para entender o ciclo de aprendizado em 4 passos.
 
-> [!EXEMPLO] Status do Copiloto de IA
-> **Google NotebookLM**: Online 🟢 - Base de conhecimento sincronizada.
-> **Antigravity (Modo Tutor)**: Online 🟢 - Copiloto de mentoria ativa.
+> [!EXEMPLO] Status do Copiloto de IA & Vault
+> **Vault Obsidian (19 Plugins):** Protegido & Ativo 🟢 (`python setup_vault.py`)
+> **Antigravity (Modo Tutor):** Online 🟢 - Copiloto de mentoria ativa.
 
-> [!PRATICA] Ferramentas e NAVEGAÇÃO RÁPIDA
+> [!PRATICA] Navegação Rápida & Módulos
+> - 📘 [[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno (Comece Por Aqui)]]
 > - 📋 [[00 - Plano de Estudos e Tarefas|📋 Plano de Estudos, Kanban e Tarefas]]
 > - 📇 [[00 - Central de Flashcards e Revisao|📇 Central de Flashcards & Active Recall]]
 > - 🗺️ [[00 - Indice Geral por Temas (MOC)|🗺️ Índice Geral por Temas (MOC)]]
-> - 🧭 [[00 - Mapa Visual do Curso.canvas|Canvas Interativo do Curso]]
-> - 🔀 [[08 - Guia e Recursos/GUIA_GIT|Guia de Git & Branches]]
-> - 🔌 [[08 - Guia e Recursos/GUIA_PLUGINS_OBSIDIAN|Guia de Plugins do Obsidian]]
+> - 🔀 [[08_guias_recursos/GUIA_GIT|Guia de Git & Branches]]
+> - 🔌 [[08_guias_recursos/GUIA_PLUGINS_OBSIDIAN|Guia de Plugins do Obsidian]]
 
 ---
 
 ## 📈 Painel Dinâmico de Progresso (DataviewJS)
 
 ```dataviewjs
-const pages = dv.pages('"01 - Fundamentos" or "02 - Python Essencial" or "03 - POO" or "04 - Bibliotecas e Arquivos" or "05 - Automacao Desktop" or "06 - IA e Prompt" or "07 - Bonus Selenium"');
+const pages = dv.pages('"01_fundamentos" or "02_python_essencial" or "03_poo" or "04_bibliotecas_arquivos" or "05_automacao_desktop" or "06_ia_prompt" or "07_bonus_selenium"');
 let totalTasks = 0;
 let completedTasks = 0;
 
@@ -49,25 +54,6 @@ TABLE
 FROM #exercicio OR #aula
 SORT file.name ASC
 ```
-
----
-
-## 📝 Matriz de Callouts & Estilos Disponíveis
-
-> [!TUTOR] Modo Tutor (Dicas de Lógica)
-> Utilizado nos arquivos `*_manual.py` para guiar sua lógica sem entregar a resposta pronta.
-
-> [!EXEMPLO] Exemplo Prático do Dia a Dia
-> Demonstrações de código aplicadas a cenários do cotidiano (organizar planilhas, enviar e-mails, mover arquivos).
-
-> [!PRATICA] Aplicação no Trabalho
-> Exemplos de automação focados em cenários reais de trabalho e produtividade.
-
-> [!EXERCICIO] Desafio de Código
-> Atividades práticas com avaliação automatizada via `python avaliar_exercicio.py`.
-
-> [!DICA_IA] Engenharia de Prompt & Copiloto
-> Sugestões de prompts e técnicas para acelerar seu código com a IA.
 
 ---
 

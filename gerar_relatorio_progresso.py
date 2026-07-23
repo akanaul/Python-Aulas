@@ -8,6 +8,11 @@ Este script analisa as tarefas marcadas no vault e exibe um relatório consolida
 
 import os
 import re
+import sys
+
+# Garantir codificação UTF-8 no stdout do Windows
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 def calcular_progresso(vault_path: str = ".") -> dict:
     """Mapeia os marcadores de tarefas [x] vs [ ] no Dashboard."""

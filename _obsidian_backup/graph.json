@@ -1,0 +1,93 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#bloco-1",
+      "color": {
+        "a": 1,
+        "rgb": 5025616
+      }
+    },
+    {
+      "query": "tag:#bloco-2",
+      "color": {
+        "a": 1,
+        "rgb": 2201331
+      }
+    },
+    {
+      "query": "tag:#poo",
+      "color": {
+        "a": 1,
+        "rgb": 10233776
+      }
+    },
+    {
+      "query": "tag:#bloco-3",
+      "color": {
+        "a": 1,
+        "rgb": 16750592
+      }
+    },
+    {
+      "query": "tag:#bloco-4",
+      "color": {
+        "a": 1,
+        "rgb": 16007990
+      }
+    },
+    {
+      "query": "tag:#bloco-5",
+      "color": {
+        "a": 1,
+        "rgb": 48340
+      }
+    },
+    {
+      "query": "tag:#bonus",
+      "color": {
+        "a": 1,
+        "rgb": 16761095
+      }
+    },
+    {
+      "query": "tag:#mini-projeto",
+      "color": {
+        "a": 1,
+        "rgb": 15277667
+      }
+    },
+    {
+      "query": "tag:#prompt",
+      "color": {
+        "a": 1,
+        "rgb": 12216520
+      }
+    },
+    {
+      "query": "tag:#troubleshooting",
+      "color": {
+        "a": 1,
+        "rgb": 16717636
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
+}

@@ -29,7 +29,7 @@ class TestWebAutomation(unittest.TestCase):
         self.ia_script_path = os.path.join(
             curr_dir,
             "..",
-            "07 - Bonus Selenium",
+            "07_bonus_selenium",
             "Aula Bonus - Selenium A Proxima Fronteira",
             "devtools_mcp_ia.py"
         )

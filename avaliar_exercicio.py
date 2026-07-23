@@ -16,6 +16,12 @@ import argparse
 import sys
 import unittest
 
+# Importar auto-restaurador do vault
+try:
+    from setup_vault import auto_heal_vault
+except ImportError:
+    auto_heal_vault = lambda: None
+
 # Garantir codificação UTF-8 no stdout do Windows
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -29,6 +35,7 @@ def run_tests(test_pattern: str = "test_*.py") -> bool:
     return result.wasSuccessful()
 
 def main():
+    auto_heal_vault()
     parser = argparse.ArgumentParser(
         description="Avaliador Automatizado de Exercícios (Curso Python + IA)"
     )

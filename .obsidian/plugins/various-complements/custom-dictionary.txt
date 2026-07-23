@@ -1,0 +1,18 @@
+# Various Complements Custom Dictionary for Curso Python + IA
+# Format: Word <tab> Description (optional)
+
+python avaliar_exercicio.py --issue 	 Comando de avaliação automatizada de exercícios
+python setup_vault.py	 Restaura e protege todas as configurações dos 19 plugins do Obsidian
+python -m unittest discover testes	 Executa a suíte de testes unitários automatizados
+python gerar_relatorio_progresso.py	 Gera relatório consolidado do progresso no vault
+git checkout -b feature/issue-	 Comando Git para criar branch de exercício
+git commit -m "fix(issue-): "	 Mensagem de commit formatada para exercício
+#exercicio	 Tag para identificar tarefas de exercícios praticados
+#aula	 Tag para identificar notas de aula
+#flashcard	 Tag para criar cartões de memória SRS
+#tutor	 Tag para acionar o Modo Tutor da IA
+[!TUTOR]	 Callout do Modo Tutor da IA
+[!EXEMPLO]	 Callout de Exemplo Prático
+[!PRATICA]	 Callout de Aplicação no Trabalho
+[!EXERCICIO]	 Callout de Desafio de Código
+[!DICA_IA]	 Callout de Engenharia de Prompt

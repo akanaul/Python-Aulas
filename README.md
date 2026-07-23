@@ -1,33 +1,45 @@
-# Curso Python + IA para Automação em Logística
+# Curso Python + IA para Automação
 
-Este repositório/vault contém todos os materiais e anotações do curso de Python focado em profissionais de logística.
+Este repositório/vault contém todos os materiais, exercícios automatizados e anotações do curso de Python + IA focado em automação prática do dia a dia.
 
-## ⏱️ Cronograma Recalculado (Acelerado por IA)
+---
 
-Com o uso da IA como copiloto (Antigravity e NotebookLM), o tempo perdido travado em erros sintáticos ou dúvidas simples é drasticamente reduzido.
+## 📘 Guia de Início Rápido
 
-- **Carga de Aula:** 20 sessões de 2h = 40h de aula interativa (Aula 00 + 19 Aulas, incluindo o conceito do Vibe Coding Ético desde o dia 0).
-- **Carga Total com Estudo Acelerado por IA:** ~60 a 68h totais.
-- **Ritmo Intensivo (2 sessões/semana):** ~8 a 9 semanas (~2 meses).
-- **Ritmo Tranquilo (1 sessão/semana):** ~14 a 16 semanas (~3,5 meses).
+Antes de começar, consulte o **[[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno]]** para entender o método Vibe Coding Ético e o ciclo de aprendizado em 4 passos:
+1. **Estudo no Obsidian:** Leitura da aula com o copiloto de IA no Modo Tutor.
+2. **Desenvolvimento na IDE:** Criação de branch Git (`git checkout -b feature/issue-XX`) e edição do script `*_manual.py`.
+3. **Avaliação Automatizada:** Validação com `python avaliar_exercicio.py --issue XX`.
+4. **Commit & Merge:** Salvamento do progresso (`git commit` & `git merge main`).
 
-## 🗺️ Estrutura do Curso
+---
 
-O curso está organizado em tópicos modulares que se complementam, conectando desde a base da programação até ferramentas de automação avançada com apoio de IA.
+## 🗺️ Estrutura de Módulos do Curso
 
-Para facilitar a navegação:
+- `01_fundamentos/` — Lógica, Variáveis, Operadores, Condicionais e Loops.
+- `02_python_essencial/` — Strings, Listas, Tuplas, Dicionários e Funções com Type Hints.
+- `03_poo/` — Programação Orientada a Objetos, Classes e Composição.
+- `04_bibliotecas_arquivos/` — Manipulação de TXT, CSV, Excel (`openpyxl`/`pandas`) e E-mails HTML.
+- `05_automacao_desktop/` — Automação de Interface Desktop com PyAutoGUI.
+- `06_ia_prompt/` — Vibe Coding Ético, Chain-of-Thought e Auditoria Sênior de Código.
+- `07_bonus_selenium/` — Automação Web Dual (Selenium 4 + Chrome DevTools MCP).
+- `08_guias_recursos/` — Guias de Git, Plugins do Obsidian, IDE e Resolução de Erros.
+- `99_referencia_teorica/` — Referências teóricas aprofundadas.
 
-- **Índice por Temas MOC:** Consulte o arquivo [[00 - Indice Geral por Temas (MOC).md|🗺️ Índice Geral por Temas]] para acessar todos os conteúdos e anotações de forma estruturada.
-- **Grafo Colorido do Obsidian:** Para uma visão orgânica da estrutura, utilize o atalho `Ctrl + G` no Obsidian. Isso abrirá um mapa visual (Grafo) mostrando como cada conceito, projeto (como AutoMDFText e AutoPickingPy) e aula estão interconectados em uma grande rede de conhecimento.
+---
 
-## 🧪 Testes Automatizados e Acompanhamento
+## 🛡️ Proteção do Vault Obsidian em 1 Segundo
 
-O curso conta com uma suíte de testes automatizados (`unitteste`) para você validar seus exercícios e mini-projetos:
-- Para rodar os testes: `python -m unitteste discover testes`
-- O Antigravity (Modo Tutor) está configurado para ajudar você a decifrar os erros (FAIL/ERROR) e corrigi-los, baseando-se no TDD (Teste-Driven Developmento).
+Caso abra o vault em uma nova instalação e queira garantir que todos os **19 plugins** fiquem ativos sem Modo Restrito:
+```bash
+python setup_vault.py
+```
 
-Além disso, disponibilizamos o `gerar_relatorio_progresso.py` que consolida o seu progresso e gera um relatório/certificado de conclusão. Consulte o `00 - Dashboard.md` para mais detalhes!
+---
 
-## 🔒 Segurança da IA e Boas Práticas
+## 🧪 Testes Automatizados
 
-Ao usar assistentes de IA (como Antigravity) integrados à sua IDE e ao Obsidian, tenha cuidado para que eles não alterem ou deletem arquivos em massa no seu projeto. Sempre restrinja o contexto (ex: usando `@file`) e utilize prompts com "Trava de Segurança". Recomendamos fortemente a leitura do [[GUIA_USO_IDE_E_SEGURANCA_IA.md|Guia de Uso da IDE & Trava de Segurança da IA]].
+Para validar os exercícios de todos os módulos:
+```bash
+python -m unittest discover testes
+```
