@@ -1,47 +1,101 @@
-# 📇 Central de Flashcards & Active Recall (Spaced Repetition)
+---
+sticker: "📇"
+tags: [flashcards, srs, estudo, python]
+---
+# 📇 Central de Flashcards — Repetição Espaçada (Spaced Repetition)
 
-Bem-vindo(a) à **Central de Flashcards e Revisão Espaçada**! Aqui você pratica a retenção de longo prazo dos conceitos de Python, IA e Automação através do plugin `obsidian-spaced-repetition`.
-
-> [!TUTOR] Como Funciona a Revisão Espaçada?
-> O plugin identifica perguntas e respostas com a tag `#flashcard` ou blocos de texto oculto com `==omissão de texto==` (cloze deletion). Ele agenda revisões diárias nos intervalos ideais para fixar o conhecimento na sua memória sem decoreba!
+> [!TUTOR] Como Usar este Deck de Memorização
+> Pressione `Ctrl + P` (ou `Cmd + P` no Mac) e digite **Spaced Repetition: Review Flashcards**.
+> O Obsidian abrirá a interface interativa com cartões divididos por subdecks!
 
 ---
 
-## 📇 Flashcards de Fixação Rápida
+## 🐍 Subdeck: Fundamentos de Python & PEP 8
+#flashcards/fundamentos
 
-### Python Essencial
-Qual é a diferença entre uma Lista `[ ]` e uma Tupla `( )` em Python? #flashcard/python
-?
-Listas são ==mutáveis== (podem ser alteradas após a criação), enquanto Tuplas são ==imutáveis== (seus valores não mudam).
+Como se declara a codificação UTF-8 no topo de um script Python em sistemas Windows? :: `# -*- coding: utf-8 -*-` ou configurando `getattr(sys.stdout, "reconfigure", None)`.
 
-Como converter uma string `"123"` para um número inteiro em Python? #flashcard/python
-?
-Utiliza-se a função nativa ==`int("123")`==.
+Qual é a regra da PEP 8 para nomenclatura de variáveis e funções em Python? :: Usar `snake_case` com letras minúsculas separadas por underline (ex: `calcular_desconto()`).
 
----
+Qual é a regra da PEP 8 para nomenclatura de Classes em Python? :: Usar `PascalCase` com iniciais maiúsculas sem underline (ex: `ProcessadorDeDados`).
 
-### Automação & Arquivos
-Qual biblioteca nativa do Python é recomendada para manipular caminhos de arquivos de forma multiplataforma? #flashcard/automacao
-?
-A biblioteca ==`pathlib`== (ex: `from pathlib import Path`).
+Como converter com segurança uma string `"150"` para inteiro e flutuante? :: `int("150")` para número inteiro e `float("150")` para número decimal.
 
-O que significa a sigla TDD em desenvolvimento de software? #flashcard/automacao
-?
-==Test-Driven Development== (Desenvolvimento Guiado por Testes).
+No Python 3.12+, qual a grande vantagem das f-strings aprimoradas? :: Permitem aspas aninhadas e reutilização de aspas duplas internas dentro da expressão `{dados["chave"]}`.
 
 ---
 
-### IA & Engenharia de Prompt
-O que é o conceito de Vibe Coding Ético? #flashcard/prompt
-?
-É usar assistentes de IA como copilotos de produtividade mantendo a ==supervisão humana, entendimento do código e responsabilidade sobre os testes==.
+## 📦 Subdeck: Estruturas de Dados & Operadores
+#flashcards/sintaxe
+
+Qual é a diferença entre uma Lista `[]` e uma Tupla `()` em Python? :: Listas são mutáveis (podem ser alteradas), enquanto Tuplas são imutáveis (fixas).
+
+Como remover duplicatas de uma lista mantendo apenas elementos únicos? :: Convertendo a lista para um conjunto `set()` (ex: `list(set(lista_com_duplicatas))`).
+
+O que faz o método `.get()` de um Dicionário em Python? :: Busca o valor de uma chave com segurança. Se a chave não existir, retorna `None` ou um valor padrão em vez de estourar `KeyError`.
+
+Como funciona uma List Comprehension simples para filtrar números pares? :: `[x for x in lista if x % 2 == 0]`
+
+Como combinar duas listas em pares dentro de um loop `for`? :: Usando a função integrada `zip(lista_a, lista_b)`.
+
+Como obter tanto o índice numérico quanto o valor de uma lista num loop `for`? :: Usando a função integrada `enumerate(lista, start=1)`.
 
 ---
 
-## 📊 Tabela Dinâmica de Cartões Cadastrados (Dataview)
+## 🧩 Subdeck: Programação Orientada a Objetos (POO) & Dataclasses
+#flashcards/poo
 
-```dataview
-TABLE file.folder AS "Módulo", tags AS "Tags de Revisão"
-FROM #flashcard OR #flashcard/python OR #flashcard/automacao OR #flashcard/prompt
-SORT file.name ASC
-```
+O que é o método especial `__init__` em uma classe Python? :: É o construtor da classe, executado automaticamente quando um novo objeto é instanciado.
+
+O que o parâmetro `self` representa dentro dos métodos de uma classe? :: Representa a própria instância atual do objeto sendo manipulado.
+
+Para que serve o decorator `@dataclass` do módulo `dataclasses`? :: Elimina o código repetitivo (*boilerplate*) gerando automaticamente `__init__`, `__repr__` e `__eq__`.
+
+No Python 3.10+, qual o benefício de usar `@dataclass(slots=True)`? :: Otimiza o consumo de memória RAM criando slots fixos para os atributos da classe.
+
+Como indicar um atributo como protegido por convenção em Python? :: Adicionando um sublinhado prefixado no nome do atributo (ex: `self._saldo`).
+
+---
+
+## 🛣️ Subdeck: Manipulação de Arquivos & `pathlib`
+#flashcards/pathlib
+
+Qual é a Regra de Ouro para definir caminhos de arquivos seguros no Python? :: Usar `Path(__file__).resolve().parent` para criar caminhos absolutos relativos ao próprio script.
+
+Por que NUNCA devemos escrever caminhos fixos como `C:\Users\...` no código? :: Porque o código quebrará ao ser executado em outro computador, servidor ou sistema (Linux/macOS).
+
+Como ler o conteúdo de um arquivo TXT em UTF-8 em 1 linha com `pathlib`? :: `conteudo = Path("arquivo.txt").read_text(encoding="utf-8")`
+
+Como verificar se um arquivo ou pasta existe antes de abrir usando `pathlib`? :: `Path("caminho").exists()` ou `Path("caminho").is_file()`
+
+Como criar uma pasta caso ela ainda não exista usando `pathlib`? :: `Path("minha_pasta").mkdir(exist_ok=True)`
+
+---
+
+## 🤖 Subdeck: Automação Desktop (PyAutoGUI) & Web (Selenium)
+#flashcards/automacao
+
+Para que serve a instrução `pyautogui.FAILSAFE = True`? :: É uma trava de segurança que cancela a automação do mouse ao movê-lo para o canto superior esquerdo `(0,0)`.
+
+Por que NUNCA devemos usar `time.sleep()` fixo no Selenium WebDriver? :: Porque o tempo de carregamento da rede varia. Devemos usar `WebDriverWait` com `expected_conditions`.
+
+No Selenium, qual é a diferença entre `By.ID` e `By.CSS_SELECTOR`? :: `By.ID` localiza por atributo id único, enquanto `By.CSS_SELECTOR` usa seletores CSS flexíveis.
+
+Como rodar o navegador Chrome no Selenium em segundo plano sem janela física? :: Adicionando `options.add_argument("--headless=new")` ao `chrome_options`.
+
+O que o comando `pyautogui.locateOnScreen("imagem.png", confidence=0.8)` faz? :: Localiza a posição de uma imagem de referência na tela do computador com 80% de precisão.
+
+---
+
+## 🔀 Subdeck: Aprendizado Ativo de Git & Revisão Dupla (IA + Tutor)
+#flashcards/git
+
+Como criar uma nova branch Git isolada para um exercício do curso? :: `git checkout -b feature/issue-XX-exercicio`
+
+Qual é o primeiro passo para avaliar um exercício localmente antes de enviar o PR? :: Rodar no terminal: `python avaliar_exercicio.py --issue XX`.
+
+O que significa quando o avaliador retorna `🎉 ✅ PRÉ-APROVADO PELA IA!`? :: Significa que o código passou em 100% dos testes unitários automatizados locais.
+
+Qual é o papel do Professor/Tutor (@akanaul) na revisão dupla? :: Revisar o Pull Request (PR) submetido pelo aluno no GitHub e fazer o Merge oficial.
+
+Como enviar sua branch para o seu fork no GitHub? :: `git push origin feature/nome-da-branch`
