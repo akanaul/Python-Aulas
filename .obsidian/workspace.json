@@ -245,6 +245,9 @@
   },
   "active": "13ad8413768530d7",
   "lastOpenFiles": [
+    "08_guias_recursos/templates/template_exercicio_resolvido.md",
+    "08_guias_recursos/templates/template_anotacao_aluno.md",
+    "08_guias_recursos/templates",
     "00 - Dashboard.md",
     "Vault.md",
     "01_fundamentos/01_fundamentos.md",
@@ -275,13 +278,10 @@
     "02_python_essencial/Aula 06 - Dicionarios e Conjuntos/aula_06_exercicios_gabarito.py",
     "02_python_essencial/Aula 06 - Dicionarios e Conjuntos/Aula 6 - Dicionarios e Conjuntos.md",
     "02_python_essencial/Aula 06 - Dicionarios e Conjuntos",
-    "01_fundamentos/Aula 03 - Condicionais e Loops/aula_03_exercicios_manual.py",
     "01_fundamentos/Aula 03 - Condicionais e Loops/Aula 3 - Condicionais e Loops.md",
     "01_fundamentos/Aula 02 - Variáveis e Operadores/Aula 2 - Variáveis e Operadores.md",
     "MANUAL_DO_ALUNO.md",
     "99_referencia_teorica/99_referencia_teorica.md",
-    "08_guias_recursos/08_guias_recursos.md",
-    "06_ia_prompt/06_ia_prompt.md",
     "00 - Mapa Visual do Curso.canvas"
   ]
 }
