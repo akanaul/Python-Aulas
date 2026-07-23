@@ -97,6 +97,11 @@ def main():
         action="store_true",
         help="Exibir relatório estatístico do progresso do aluno no vault"
     )
+    parser.add_argument(
+        "--audit", "--debug",
+        action="store_true",
+        help="Modo Depuração & Bug Hunting: exibe diagnóstico detalhado de falhas de lógica"
+    )
     args = parser.parse_args()
 
     if args.progresso:
