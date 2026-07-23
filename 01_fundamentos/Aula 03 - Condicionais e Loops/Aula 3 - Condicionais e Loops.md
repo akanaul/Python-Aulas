@@ -117,3 +117,11 @@ Já controlamos o fluxo e repetimos tarefas! Agora vamos aprender a manipular te
 > 📁 **Arquivo de Trabalho (Manual):** aula_03_exercicios_manual.py
 > 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 03
 > 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-03-condicionais-loops e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
+
+---
+
+## 📝 Anotações Pessoais do Aluno sobre esta Aula
+
+> [!TIP] **Criar Nota de Estudo Relacionada**
+> Quer guardar resumos ou anotações próprias sobre esta aula?
+> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!

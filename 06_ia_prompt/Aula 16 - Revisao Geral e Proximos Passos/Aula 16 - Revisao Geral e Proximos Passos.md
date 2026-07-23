@@ -67,3 +67,11 @@ Você completou o essencial. Se o seu ERP é web (via navegador), o PyAutoGUI so
 > 📁 **Arquivo de Trabalho (Manual):** aula_16_exercicios_manual.py
 > 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 16
 > 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-16-revisao-geral e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
+
+---
+
+## 📝 Anotações Pessoais do Aluno sobre esta Aula
+
+> [!TIP] **Criar Nota de Estudo Relacionada**
+> Quer guardar resumos ou anotações próprias sobre esta aula?
+> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!

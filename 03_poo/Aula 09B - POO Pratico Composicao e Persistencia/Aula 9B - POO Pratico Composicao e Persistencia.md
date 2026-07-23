@@ -103,3 +103,11 @@ Agora que sabemos modelar e salvar dados simples, na Aula 10 mergulharemos em ar
 > 📁 **Arquivo de Trabalho (Manual):** aula_09b_exercicios_manual.py
 > 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 09b
 > 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-09b-poo-pratico e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
+
+---
+
+## 📝 Anotações Pessoais do Aluno sobre esta Aula
+
+> [!TIP] **Criar Nota de Estudo Relacionada**
+> Quer guardar resumos ou anotações próprias sobre esta aula?
+> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!

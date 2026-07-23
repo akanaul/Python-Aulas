@@ -96,3 +96,11 @@ E se o botão do ERP mudar de lugar e o X,Y quebrar? Na Aula 14, vamos dar olhos
 > 📁 **Arquivo de Trabalho (Manual):** aula_13_exercicios_manual.py
 > 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 13
 > 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-13-pyautogui-basico e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
+
+---
+
+## 📝 Anotações Pessoais do Aluno sobre esta Aula
+
+> [!TIP] **Criar Nota de Estudo Relacionada**
+> Quer guardar resumos ou anotações próprias sobre esta aula?
+> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!

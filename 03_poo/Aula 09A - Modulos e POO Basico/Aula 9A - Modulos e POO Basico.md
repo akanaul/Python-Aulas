@@ -102,3 +102,11 @@ Na próxima aula, vamos aprofundar em POO com Composição e aprender como salva
 > 📁 **Arquivo de Trabalho (Manual):** aula_09a_exercicios_manual.py
 > 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 09a
 > 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-09a-poo-basico e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
+
+---
+
+## 📝 Anotações Pessoais do Aluno sobre esta Aula
+
+> [!TIP] **Criar Nota de Estudo Relacionada**
+> Quer guardar resumos ou anotações próprias sobre esta aula?
+> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!

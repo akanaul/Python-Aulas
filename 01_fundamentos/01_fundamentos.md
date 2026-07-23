@@ -16,3 +16,11 @@ tags: [modulo, fundamentos]
 
 ## 🏋️ Mini-Projeto do Módulo
 - [[01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_manual.py|Mini-Projeto 1 (Manual)]]
+
+---
+
+## 📝 Anotações Pessoais do Aluno sobre esta Aula
+
+> [!TIP] **Criar Nota de Estudo Relacionada**
+> Quer guardar resumos ou anotações próprias sobre esta aula?
+> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!
