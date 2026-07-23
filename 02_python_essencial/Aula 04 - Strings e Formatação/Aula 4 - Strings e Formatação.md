@@ -33,6 +33,18 @@ As **f-strings** são os **Etiquetadores Automáticos**: eles colocam os dados n
 
 ```python
 # Chave NFe fictícia
+
+> [!TUTOR] 🚀 Guia Prático de Estudo da Aula (Ciclo de 4 Passos em 1-Clique)
+> 1. 📖 **Conceito:** Leia as explicações e tire dúvidas com a IA no **Modo Tutor**.
+> 2. 👨‍💻 **Código:** Edite e desenvolva sua solução no arquivo `*_manual.py`.
+> 3. ⚡ **Testar no Obsidian (1-Clique):** Clique em **Run** no bloco abaixo para validar:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "avaliar_exercicio.py", "--issue", "01"], capture_output=True, text=True)
+> print(res.stdout)
+> ```
+> 4. 🔀 **Enviar PR:** Se aprovado pela IA, envie o Pull Request no GitHub para o Tutor (@akanaul)!
+
 nfe_key = "35230912345678000199550010009998881234567890"
 
 uf_code = nfe_key[0:2] # Pega '35' (SP)

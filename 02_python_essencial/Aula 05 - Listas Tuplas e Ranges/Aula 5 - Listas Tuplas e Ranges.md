@@ -35,6 +35,18 @@ Iteradores (`iter` e `next`) são como a **Pistola de Leitura Bipadora**: eles p
 
 ```python
 # Lista de SKUs (Pode mudar)
+
+> [!TUTOR] 🚀 Guia Prático de Estudo da Aula (Ciclo de 4 Passos em 1-Clique)
+> 1. 📖 **Conceito:** Leia as explicações e tire dúvidas com a IA no **Modo Tutor**.
+> 2. 👨‍💻 **Código:** Edite e desenvolva sua solução no arquivo `*_manual.py`.
+> 3. ⚡ **Testar no Obsidian (1-Clique):** Clique em **Run** no bloco abaixo para validar:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "avaliar_exercicio.py", "--issue", "01"], capture_output=True, text=True)
+> print(res.stdout)
+> ```
+> 4. 🔀 **Enviar PR:** Se aprovado pela IA, envie o Pull Request no GitHub para o Tutor (@akanaul)!
+
 picking_list = ["SKU-001", "SKU-002", "SKU-003"]
 picking_list.append("SKU-004") 
 print(picking_list)

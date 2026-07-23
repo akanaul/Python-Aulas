@@ -3,6 +3,18 @@ aliases: ["Aula 13 — PyAutoGUI Básico"]
 tags: [aula, bloco-5, python, rpa, pyautogui, desktop]
 ---
 # Aula 13 — PyAutoGUI Básico
+
+> [!TUTOR] 🚀 Guia Prático de Estudo da Aula (Ciclo de 4 Passos em 1-Clique)
+> 1. 📖 **Conceito:** Leia as explicações e tire dúvidas com a IA no **Modo Tutor**.
+> 2. 👨‍💻 **Código:** Edite e desenvolva sua solução no arquivo `*_manual.py`.
+> 3. ⚡ **Testar no Obsidian (1-Clique):** Clique em **Run** no bloco abaixo para validar:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "avaliar_exercicio.py", "--issue", "13"], capture_output=True, text=True)
+> print(res.stdout)
+> ```
+> 4. 🔀 **Enviar PR:** Se aprovado pela IA, envie o Pull Request no GitHub para o Tutor (@akanaul)!
+
 > 💡 **O que você vai aprender:** O conceito de RPA. Como controlar mouse e teclado para operar ERPs travados (como SAP, TOTVS).
 > ⏱️ **Duração estimada:** 2h | 📅 **Bloco:** 5
 

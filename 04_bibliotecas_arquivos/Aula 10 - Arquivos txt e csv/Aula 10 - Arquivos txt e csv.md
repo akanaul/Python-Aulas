@@ -23,6 +23,18 @@ tags: [aula, bloco-4, python, arquivos, csv, txt, pathlib]
 from pathlib import Path
 
 # Encontrar a pasta raiz do repositório (subindo 3 níveis)
+
+> [!TUTOR] 🚀 Guia Prático de Estudo da Aula (Ciclo de 4 Passos em 1-Clique)
+> 1. 📖 **Conceito:** Leia as explicações e tire dúvidas com a IA no **Modo Tutor**.
+> 2. 👨‍💻 **Código:** Edite e desenvolva sua solução no arquivo `*_manual.py`.
+> 3. ⚡ **Testar no Obsidian (1-Clique):** Clique em **Run** no bloco abaixo para validar:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "avaliar_exercicio.py", "--issue", "10"], capture_output=True, text=True)
+> print(res.stdout)
+> ```
+> 4. 🔀 **Enviar PR:** Se aprovado pela IA, envie o Pull Request no GitHub para o Tutor (@akanaul)!
+
 PASTA_ATUAL = Path(__file__).resolve().parent
 PASTA_RAIZ = PASTA_ATUAL.parents[2]
 

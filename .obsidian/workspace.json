@@ -246,6 +246,8 @@
   },
   "active": "d9dcb01d69ee534a",
   "lastOpenFiles": [
+    "scratch/inject_banners.py",
+    "scratch",
     "08_guias_recursos/Recursos Recomendados.md",
     "08_guias_recursos/fluxo_automacao.excalidraw.md",
     "08_guias_recursos/Biblioteca de Prompts.md",
@@ -259,7 +261,6 @@
     "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_ia.py",
     "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_manual.py",
     "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/test_ficha_motorista.py",
-    "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_gabarito.py",
     "01_fundamentos/01_fundamentos.md",
     "meu_caderno_aluno/duvidas/duvida_como_usar_o_pathlib_para_caminhos_seguros_2026-07-23_02-39.md",
     "meu_caderno_aluno/duvidas/duvida_como_usar_o_pathlib_para_caminhos_seguros_2026-07-23_02-38.md",
@@ -281,7 +282,6 @@
     "99_referencia_teorica/doc_python/03_estruturas_dados_modernas.md",
     "99_referencia_teorica/doc_python/06_arquivos_pathlib_json.md",
     "99_referencia_teorica/doc_python/05_poo_classes_dataclasses.md",
-    "99_referencia_teorica/doc_python/04_funcoes_type_hints_312.md",
     "00_central/mapa_visual_curso.canvas",
     "00 - Mapa Visual do Curso.canvas"
   ]

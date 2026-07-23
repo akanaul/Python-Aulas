@@ -3,6 +3,18 @@ aliases: ["Aula Bônus — Automação Web Dual: Selenium & Chrome DevTools MCP"
 tags: [aula, bloco-7, python, selenium, devtools-mcp, web, rpa]
 ---
 # Aula Bônus — Automação Web Dual: Selenium & Chrome DevTools MCP
+
+> [!TUTOR] 🚀 Guia Prático de Estudo da Aula (Ciclo de 4 Passos em 1-Clique)
+> 1. 📖 **Conceito:** Leia as explicações e tire dúvidas com a IA no **Modo Tutor**.
+> 2. 👨‍💻 **Código:** Edite e desenvolva sua solução no arquivo `*_manual.py`.
+> 3. ⚡ **Testar no Obsidian (1-Clique):** Clique em **Run** no bloco abaixo para validar:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "avaliar_exercicio.py", "--issue", "devtools"], capture_output=True, text=True)
+> print(res.stdout)
+> ```
+> 4. 🔀 **Enviar PR:** Se aprovado pela IA, envie o Pull Request no GitHub para o Tutor (@akanaul)!
+
 > 💡 **O que você vai aprender:** Automação Web Profissional. Controlar navegadores web via Selenium tradicional e via a nova abordagem assistida por IA com Chrome DevTools MCP!
 > ⏱️ **Duração estimada:** 2h | 📅 **Bloco:** 7
 
