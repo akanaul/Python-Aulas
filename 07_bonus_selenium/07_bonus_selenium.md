@@ -1,35 +1,65 @@
 ---
 sticker: "🌐"
-tags: [modulo, web-automacao]
+tags:
+  - moc
+  - modulo-07
+  - selenium
+  - devtools-mcp
 ---
-# Módulo 07 — Automação Web Dual (Selenium & Chrome DevTools MCP)
+# 🌐 Módulo 07 (Bônus): Automação Web Dual (Selenium 4 & Chrome DevTools MCP)
 
-> [!TUTOR] Visão Geral do Módulo
-> Aprenda a controlar navegadores de forma headless com Selenium 4 e realizar extrações de dados resilientes assistidas por IA com Chrome DevTools MCP.
-
-## 📚 Conteúdo da Aula
-- [[07_bonus_selenium/Aula Bonus - Selenium A Proxima Fronteira/Aula Bonus - Selenium A Proxima Fronteira|Aula Bônus — Automação Web Dual]]
-
-## 🏋️ Exercícios
-- **Exercício Manual (Tutor):** `devtools_mcp_manual.py`
-- **Exercício IA (One-Shot):** `devtools_mcp_ia.py`
-- **Avaliador Auto:** `python avaliar_exercicio.py --issue 07`
-
+> [!TUTOR] Visão Geral do Módulo Bônus
+> Domine a automação web profissional: raspagem de dados, interação com formulários web em modo headless com Selenium 4 e inspeção inteligente de páginas com Chrome DevTools MCP.
 
 ---
 
-## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+## ⚡ Avaliação 1-Clique dos Exercícios da IDE
 
-> 📌 **Issue Oficial no GitHub:** `# Issue #bonus`
-> 🔀 **Branch de Desenvolvimento:** `git checkout -b feature/issue-bonus-selenium-tradicional`
-> 📁 **Arquivo de Trabalho (Manual):** `aula_bonus_selenium_exercicios_manual.py`
-> 🧪 **Teste Automatizado & Pré-Aprovação IA:** `python avaliar_exercicio.py --issue bonus`
-> 🚀 **Envio de Pull Request (PR):** `git push origin feature/issue-bonus-selenium-tradicional` e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
+> [!EXERCICIO] 🧪 Avaliação 1-Clique dos Exercícios da IDE (Issue #devtools)
+> 📌 **Exercício Avaliado:** Issue #devtools — Automação Web Dual (Selenium & Chrome DevTools MCP)
+> 📁 **Arquivo de Trabalho na IDE:** `07_bonus_selenium/pratica/Aula Bonus - Selenium A Proxima Fronteira/devtools_mcp_manual.py`
+> ⚡ Clique no botão **Run** no canto superior direito do bloco abaixo para testar sua solução:
+
+```python run
+import sys, os, subprocess
+
+def find_vault_root():
+    curr = os.path.abspath(os.getcwd())
+    while curr:
+        if os.path.exists(os.path.join(curr, "avaliar_exercicio.py")):
+            return curr
+        parent = os.path.dirname(curr)
+        if parent == curr:
+            break
+        curr = parent
+    user_home = os.path.expanduser("~")
+    for root, dirs, files in os.walk(user_home):
+        if "avaliar_exercicio.py" in files:
+            return root
+        if root.count(os.sep) - user_home.count(os.sep) >= 4:
+            dirs.clear()
+    return os.path.abspath(".")
+
+vault_root = find_vault_root()
+script_path = os.path.join(vault_root, "avaliar_exercicio.py")
+print("📌 [AVALIAÇÃO 1-CLIQUE] Testando Exercício da Issue #devtools...")
+print("📁 Arquivo Alvo na IDE: 07_bonus_selenium/pratica/Aula Bonus - Selenium A Proxima Fronteira/devtools_mcp_manual.py")
+res = subprocess.run([sys.executable, script_path, "--issue", "devtools"], cwd=vault_root, capture_output=True, text=True, encoding="utf-8", errors="replace")
+print(res.stdout or res.stderr)
+```
 
 ---
 
-## 📝 Anotações Pessoais do Aluno sobre esta Aula
+## 🗺️ Mapa de Conteúdo (Dataview)
 
-> [!TIP] **Criar Nota de Estudo Relacionada**
-> Quer guardar resumos ou anotações próprias sobre esta aula?
-> Pressione Alt + N no Templater e selecione **Template de Anotação do Aluno** para salvar automaticamente em [[meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas|meu_caderno_aluno/anotacoes_aulas/]]!
+```dataview
+TABLE file.folder AS "Subpasta", file.mtime AS "Última Edição"
+FROM "07_bonus_selenium"
+SORT file.name ASC
+```
+
+---
+
+## 📚 Conteúdo Teórico & Referências
+- [[00_hub_referencias_academicas|Hub Central de Referências Acadêmicas]]
+- [[central_avaliador_exercicios|🧪 Central de Verificação de Exercícios]]

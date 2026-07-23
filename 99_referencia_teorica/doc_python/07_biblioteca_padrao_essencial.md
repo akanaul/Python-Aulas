@@ -6,7 +6,7 @@ tags: [python312, stdlib, os, sys, subprocess, re, datetime]
 ## 📌 1. Automação de Sistema (`os`, `sys`, `subprocess`)
 ```python
 import sys
-import subprocess
+import sys, subprocess
 
 # Informações da plataforma e versão do Python
 print(f"Executando no Python {sys.version} em {sys.platform}")

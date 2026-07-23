@@ -1,6 +1,6 @@
 {
   "command_timeout": 5,
-  "templates_folder": "08_guias_recursos/templates",
+  "templates_folder": "_templates",
   "templates_pairs": [
     [
       "",

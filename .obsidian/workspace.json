@@ -11,44 +11,20 @@
             "id": "cdbd8c2e47ba0e30",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
+                "file": "00_central/mapa_visual_curso.canvas",
+                "viewState": {
+                  "x": 841.1505503182728,
+                  "y": 666.6492520958186,
+                  "zoom": -1.5040217696613676
+                }
               },
-              "icon": "lucide-file",
-              "title": "README"
-            }
-          },
-          {
-            "id": "df63592710d9709f",
-            "type": "leaf",
-            "state": {
-              "type": "mk-uri-view",
-              "state": {
-                "path": "https://www.make.md/static/latest.md"
-              },
-              "icon": "lucide-file",
-              "title": "https://www.make.md/static/latest.md"
-            }
-          },
-          {
-            "id": "d9dcb01d69ee534a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "08_guias_recursos/templates/template_anotacao_aluno.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "template_anotacao_aluno"
+              "icon": "lucide-layout-dashboard",
+              "title": "mapa_visual_curso"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,19 +76,8 @@
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
-          },
-          {
-            "id": "59d92e2e0a625704",
-            "type": "leaf",
-            "state": {
-              "type": "mk-path-view",
-              "state": {},
-              "icon": "layout-grid",
-              "title": "Navigator"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -229,7 +194,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "vscode-editor:Create Code File": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -244,44 +208,44 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "d9dcb01d69ee534a",
+  "active": "cdbd8c2e47ba0e30",
   "lastOpenFiles": [
-    "meu_caderno_aluno/diagnostico_erros/erro_issue_test_debug_20260723_055429.md",
-    "__pycache__/avaliar_exercicio.cpython-313.pyc",
-    "06_ia_prompt/pratica/Aula 15 - Prompt Engineering Avancado/aula_15_exercicios_gabarito.py",
-    "06_ia_prompt/pratica/Aula 08 - Vibe Coding e Engenharia de Prompt/aula_08_exercicios_gabarito.py",
-    "05_automacao_desktop/pratica/Aula 14 - PyAutoGUI Avancado/aula_14_exercicios_gabarito.py",
-    "05_automacao_desktop/pratica/Aula 13 - PyAutoGUI Basico/aula_13_exercicios_gabarito.py",
-    "04_bibliotecas_arquivos/pratica/Aula 12 - Email Automatico e Agendamento/aula_12_exercicios_gabarito.py",
-    "03_poo/pratica/Aula 09B - POO Pratico Composicao e Persistencia/aula_09b_exercicios_gabarito.py",
-    "03_poo/pratica/Aula 09A - Modulos e POO Basico/aula_09a_exercicios_gabarito.py",
-    "02_python_essencial/pratica/Aula 06 - Dicionarios e Conjuntos/aula_06_exercicios_gabarito.py",
-    "02_python_essencial/pratica/Aula 05 - Listas Tuplas e Ranges/aula_05_exercicios_gabarito.py",
-    "07_bonus_selenium/teoria/Aula Bonus - Selenium A Proxima Fronteira/Modulo Avancado - Selenium (Fase 2).md",
+    "00_central/central_avaliador_exercicios.md",
+    "testes/__pycache__/test_issue_web_automation.cpython-313.pyc",
+    "testes/__pycache__/test_issue_projeto3.cpython-313.pyc",
+    "testes/__pycache__/test_issue_projeto2.cpython-313.pyc",
+    "testes/__pycache__/test_issue_projeto1_5.cpython-313.pyc",
+    "testes/__pycache__/test_issue_projeto1.cpython-313.pyc",
+    "testes/__pycache__/test_issue_devtools.cpython-313.pyc",
+    "testes/__pycache__/test_issue_dashboard.cpython-313.pyc",
+    "testes/test_issue_web_automation.py",
+    "testes/test_issue_dashboard.py",
+    "testes/test_issue_devtools.py",
+    "00_central/hub_mapeamento_issues.md",
+    "_templates/prompts_antigravity/git_flow.md",
+    "_templates/prompts_antigravity/duvida_aluno.md",
+    "_templates/prompts_antigravity/curadoria_vault.md",
+    "_templates/prompts_antigravity/diagnostico_debug.md",
+    "_templates/prompts_antigravity/tutor_agentico.md",
+    "meu_caderno_aluno/progresso/progresso_issue_all.md",
+    "meu_caderno_aluno/progresso/progresso_issue_01.md",
+    "meu_caderno_aluno/diagnostico_erros/erro_issue_all_20260723_104546.md",
+    "02_python_essencial/pratica/Aula 08 - Vibe Coding e Engenharia de Prompt/Aula 08 - Exercicios Praticos.md",
+    "02_python_essencial/teoria/Aula 08 - Vibe Coding e Engenharia de Prompt.md",
+    "06_ia_prompt/pratica/Aula 08 - Vibe Coding e Engenharia de Prompt/Aula 08 - Exercicios Praticos.md",
     "07_bonus_selenium/teoria/Aula Bonus - Selenium A Proxima Fronteira/Aula Bonus - Selenium A Proxima Fronteira.md",
-    "06_ia_prompt/teoria/Aula 15 - Prompt Engineering Avancado/Aula 15 - Prompt Engineering Avancado.md",
-    "06_ia_prompt/teoria/Aula 16 - Revisao Geral e Proximos Passos/Aula 16 - Revisao Geral e Proximos Passos.md",
-    "06_ia_prompt/teoria/Aula 08 - Vibe Coding e Engenharia de Prompt/Aula 8 - Vibe Coding e Engenharia de Prompt.md",
-    "02_python_essencial/teoria/Aula 06 - Dicionarios e Conjuntos/Aula 6 - Dicionarios e Conjuntos.md",
-    "01_fundamentos/teoria/Aula 02 - Variáveis e Operadores/Aula 2 - Variáveis e Operadores.md",
-    "01_fundamentos/teoria/Aula 01 - Setup e Primeiros Passos/Aula 1 - Setup Completo e Primeiros Passos.md",
-    "01_fundamentos/teoria/Aula 00 - Mindset Vibe Coding Etico/Aula 00 - Mindset Vibe Coding Etico e Copilotos.md",
-    "01_fundamentos/teoria/teoria/Aula 03 - Condicionais e Loops/Aula 3 - Condicionais e Loops.md",
-    "01_fundamentos/teoria/teoria/Aula 02 - Variáveis e Operadores/Aula 2 - Variáveis e Operadores.md",
-    "01_fundamentos/teoria/teoria/Aula 01 - Setup e Primeiros Passos/Aula 1 - Setup Completo e Primeiros Passos.md",
-    "01_fundamentos/teoria/teoria/Aula 00 - Mindset Vibe Coding Etico/Aula 00 - Mindset Vibe Coding Etico e Copilotos.md",
-    "05_automacao_desktop/teoria/teoria/Aula 14 - PyAutoGUI Avancado/Aula 14 - PyAutoGUI Avancado.md",
-    "05_automacao_desktop/teoria/teoria/Aula 13 - PyAutoGUI Basico/Aula 13 - PyAutoGUI Basico.md",
-    "04_bibliotecas_arquivos/teoria/teoria/Aula 12 - Email Automatico e Agendamento/Aula 12 - Email Automatico e Agendamento.md",
-    "04_bibliotecas_arquivos/teoria/teoria/Aula 11 - Excel com openpyxl e pandas/Aula 11 - Excel com openpyxl e pandas.md",
-    "04_bibliotecas_arquivos/teoria/teoria/Aula 10 - Arquivos txt e csv/Aula 10 - Arquivos txt e csv.md",
-    "03_poo/teoria/teoria/Aula 09B - POO Pratico Composicao e Persistencia/Aula 9B - POO Pratico Composicao e Persistencia.md",
-    "03_poo/teoria/teoria/Aula 09A - Modulos e POO Basico/Aula 9A - Modulos e POO Basico.md",
-    "02_python_essencial/teoria/teoria/Aula 07 - Funções/Aula 7 - Funções.md",
-    "02_python_essencial/teoria/teoria/Aula 06 - Dicionarios e Conjuntos/Aula 6 - Dicionarios e Conjuntos.md",
-    "02_python_essencial/teoria/teoria/Aula 05 - Listas Tuplas e Ranges/Aula 5 - Listas Tuplas e Ranges.md",
-    "02_python_essencial/teoria/teoria/Aula 04 - Strings e Formatação/Aula 4 - Strings e Formatação.md",
-    "08_guias_recursos/Recursos Recomendados.md",
+    "07_bonus_selenium/pratica/Aula Bonus - Selenium A Proxima Fronteira/Aula Bonus - Exercicios Praticos.md",
+    "06_ia_prompt/pratica/Aula 16 - Revisao Geral e Proximos Passos/Aula 16 - Exercicios Praticos.md",
+    "06_ia_prompt/pratica/Aula 15 - Prompt Engineering Avancado/Aula 15 - Exercicios Praticos.md",
+    "05_automacao_desktop/pratica/Aula 14 - PyAutoGUI Avancado/Aula 14 - Exercicios Praticos.md",
+    "05_automacao_desktop/pratica/Aula 13 - PyAutoGUI Basico/Aula 13 - Exercicios Praticos.md",
+    "04_bibliotecas_arquivos/pratica/Mini-Projeto 3 - Relatorio KPI de Entregas/Mini-Projeto 3 - Relatorio KPI de Entregas.md",
+    "04_bibliotecas_arquivos/pratica/Aula 12 - Email Automatico e Agendamento/Aula 12 - Exercicios Praticos.md",
+    "04_bibliotecas_arquivos/pratica/Aula 11 - Excel com openpyxl e pandas/Aula 11 - Exercicios Praticos.md",
+    "04_bibliotecas_arquivos/pratica/Aula 10 - Arquivos txt e csv/Aula 10 - Exercicios Praticos.md",
+    "03_poo/pratica/Mini-Projeto 1.5 - Sistema de Cadastro de Motoristas/Mini-Projeto 1.5 - Sistema de Cadastro de Motoristas.md",
+    "03_poo/pratica/Aula 09B - POO Pratico Composicao e Persistencia/Aula 09B - Exercicios Praticos.md",
+    "03_poo/pratica/Aula 09A - Modulos e POO Basico/Aula 09A - Exercicios Praticos.md",
     "00_central/mapa_visual_curso.canvas",
     "00 - Mapa Visual do Curso.canvas"
   ]

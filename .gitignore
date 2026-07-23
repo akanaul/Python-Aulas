@@ -1,12 +1,23 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+/**/__pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
 
-# Distribution / packaging
+# C extensions & Cache
+.pytest_cache/
+/**/.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.space/
+/**/.space/
+.trash/
+/**/.trash/
+
+# Distribution / packaging / build
 .Python
 build/
 develop-eggs/

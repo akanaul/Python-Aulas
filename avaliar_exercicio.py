@@ -77,6 +77,7 @@ def salvar_nota_diagnostico_erro(issue_id: str, falhas_detalhadas: list):
     now = datetime.datetime.now()
     timestamp_str = now.strftime("%Y%m%d_%H%M%S")
     data_formatada = now.strftime("%d/%m/%Y %H:%M:%S")
+    created_iso = now.strftime("%Y-%m-%d %H:%M")
     
     filename = f"erro_issue_{issue_id}_{timestamp_str}.md"
     filepath = os.path.join(caderno_dir, filename)
@@ -92,9 +93,13 @@ def salvar_nota_diagnostico_erro(issue_id: str, falhas_detalhadas: list):
 tags:
   - caderno-aluno
   - diagnostico-erro
+  - flashcard
   - issue-{issue_id}
-data: {data_formatada}
+created: "{created_iso}"
+status: "pendente"
+issue: "{issue_id}"
 ---
+
 # ⚠️ Diagnóstico de Erro — Issue #{issue_id}
 
 > [!CAUTION] Registrado pelo Avaliador Automatizado da IA em {data_formatada}
@@ -103,9 +108,12 @@ data: {data_formatada}
 
 {detalhes_md}
 
-## 📝 Anotações Pessoais do Aluno / Tutor
-- **O que aprendi com este erro:** 
-- **Solução aplicada:** 
+## 🎴 Flashcard para Revisão Espaçada (Spaced Repetition)
+- **Como corrigir o erro na Issue #{issue_id}?** #flashcard
+  - **Resposta:** Verificar causa `{falhas_detalhadas[0]['erro'] if falhas_detalhadas else 'Traceback'}` e aplicar refatoração segundo a dica do Mentor.
+
+## 📚 Referências de Apoio
+- [[00_hub_referencias_academicas|Hub Central de Referências Acadêmicas]]
 """
 
     try:
@@ -115,6 +123,84 @@ data: {data_formatada}
     except Exception as e:
         print(f"⚠️ Não foi possível salvar a nota de erro no caderno: {e}")
         return None
+
+
+def salvar_nota_progresso_sucesso(issue_id: str):
+    """Cria/Atualiza automaticamente uma nota de progresso de sucesso em meu_caderno_aluno/progresso/."""
+    progresso_dir = os.path.join("meu_caderno_aluno", "progresso")
+    os.makedirs(progresso_dir, exist_ok=True)
+    
+    now = datetime.datetime.now()
+    data_formatada = now.strftime("%d/%m/%Y %H:%M:%S")
+    created_iso = now.strftime("%Y-%m-%d %H:%M")
+    
+    filename = f"progresso_issue_{issue_id}.md"
+    filepath = os.path.join(progresso_dir, filename)
+    
+    content = f"""---
+tags:
+  - caderno-aluno
+  - progresso
+  - issue-{issue_id}
+created: "{created_iso}"
+status: "concluido"
+issue: "{issue_id}"
+---
+
+# 🎉 Progresso Registrado — Issue #{issue_id}
+
+> [!SUCCESS] Exercício Pré-Aprovado pela IA em {data_formatada}
+> Parabéns! Sua solução passou em 100% dos testes automatizados locais da **Issue #{issue_id}**.
+
+## 📌 Resumo da Conclusão
+- **Status:** ✅ 100% Aprovado
+- **Módulo / Issue:** Issue #{issue_id}
+- **Data de Aprovação:** {data_formatada}
+
+## 🔀 Próximos Passos recomendados:
+1. `git add .`
+2. `git commit -m "fix(issue-{issue_id}): solucao pre-aprovada pela IA"`
+3. `git push origin feature/issue-{issue_id}`
+4. Abrir o Pull Request (PR) no GitHub para o Professor/Tutor!
+"""
+
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
+        return filepath
+    except Exception as e:
+        print(f"⚠️ Não foi possível registrar o progresso no caderno: {e}")
+        return None
+
+
+def marcar_checklists_concluidos(issue_id: str):
+    """Marca checklists (- [ ] -> - [x]) relacionados à issue aprovada no vault."""
+    import re
+    if not issue_id or issue_id in ("all", "todos"):
+        return 0
+    
+    modificados = 0
+    pattern_issue = re.compile(rf"- \[ \] (.*?\b(issue|aula|mini-projeto)?\s*#?{re.escape(issue_id)}\b.*)", re.IGNORECASE)
+    
+    for root, dirs, files in os.walk("."):
+        if ".git" in root or ".obsidian" in root or "venv" in root or ".trash" in root or "node_modules" in root:
+            continue
+        for f in files:
+            if f.endswith(".md"):
+                filepath = os.path.join(root, f)
+                try:
+                    with open(filepath, "r", encoding="utf-8") as file:
+                        content = file.read()
+                    
+                    if f"#{issue_id}" in content or f"Issue #{issue_id}" in content or f"issue-{issue_id}" in content:
+                        new_content, count = pattern_issue.subn(r"- [x] \1", content)
+                        if count > 0:
+                            with open(filepath, "w", encoding="utf-8") as file:
+                                file.write(new_content)
+                            modificados += count
+                except Exception:
+                    pass
+    return modificados
 
 
 def run_tests(test_pattern: str = "test_*.py"):
@@ -185,14 +271,30 @@ def main():
         print("🎉 ✅ PRÉ-APROVADO PELA IA! (REVISÃO 1 DE 2 OK)")
         print("=" * 65)
         print("Sua implementação passou em 100% dos testes automatizados locais.")
-        print("\n🔀 Próximos Passos (Revisão 2 - Professor/Tutor Humano):")
-        print("   1. Salve suas alterações no Git local:")
+        
+        nota_progresso = salvar_nota_progresso_sucesso(issue_id)
+        if nota_progresso:
+            rel_p = os.path.relpath(nota_progresso)
+            print(f"📝 NOTA DE PROGRESSO REGISTRADA AUTOMATICAMENTE NO SEU CADERNO DE ALUNO!")
+            print(f"📄 Arquivo: {rel_p}")
+            
+        chk_count = marcar_checklists_concluidos(issue_id)
+        if chk_count > 0:
+            print(f"☑️ CHECKLISTS ATUALIZADOS: {chk_count} item(ns) marcado(s) como concluído(s) (- [x]) no Vault!")
+        
+        print("\n🔀 TUTORIAL PASSO A PASSO DE GIT (PRÁTICA NO TERMINAL):")
+        print("   💡 Pratique os comandos no seu terminal para fixar o aprendizado do Git Flow!\n")
+        print(f"   1. Criar/Alternar para a branch da issue:")
+        print(f"      git checkout -b feature/issue-{issue_id}")
+        print(f"   2. Adicionar os arquivos alterados ao staging:")
         print(f"      git add .")
-        print(f"      git commit -m \"fix(issue-{issue_id}): solucao pre-aprovada pela IA\"")
-        print("   2. Envie a branch para o SEU fork no GitHub:")
+        print(f"   3. Registrar o commit convencional (vinculado à issue):")
+        print(f"      git commit -m \"fix(issue-{issue_id}): resolucao aprovada nos testes #{issue_id}\"")
+        print(f"   4. Enviar a branch para o repositório remoto no GitHub:")
         print(f"      git push origin feature/issue-{issue_id}")
-        print("   3. Abra um Pull Request (PR) do seu fork para o REPOSITÓRIO OFICIAL DO PROFESSOR.")
-        print("   4. O Professor/Tutor revisará seu código no GitHub e fará o MERGE oficial!")
+        print(f"   5. Criar o Pull Request (PR) do seu fork para o repositório do Tutor!")
+        print("\n🤖 Dica do Agente Antigravity:")
+        print("   Se preferir que o Agente execute a sequência do Git por você (branch, commit e push), basta pedir no chat!")
         print("=" * 65)
         sys.exit(0)
     else:
@@ -240,9 +342,9 @@ def main():
         print("\n🛠️ CHECKLIST DE DEBBUGGING AUTÔNOMO (5 PASSOS PARA VOCÊ RESOLVER):")
         print("   1. 📍 Localize a linha do erro no arquivo *_manual.py.")
         print("   2. 🔎 Imprima valores com print() antes da linha para inspecionar.")
-        print("   3. 📖 Consulte o Manual Python 3.12 em '99_referencia_teorica/doc_python/'.")
+        print("   3. 📖 Consulte o Hub Acadêmico e PEPs em '99_referencia_teorica/'.")
         print("   4. 🤖 Use o Antigravity no MODO TUTOR (peça dicas de lógica, não a resposta).")
-        print("   5. ⚡ Clique em Run no Obsidian para reavaliar!")
+        print("   5. ⚡ Reavaliação no terminal!")
         print("\n🔄 Após ajustar o código, rode novamente:")
         print(f"   python avaliar_exercicio.py --issue {issue_id}")
         print("=" * 65)

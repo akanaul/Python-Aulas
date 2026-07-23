@@ -3,5 +3,7 @@
   "readableLineLength": true,
   "useMarkdownLinks": false,
   "restricted": false,
-  "livePreview": true
+  "livePreview": true,
+  "showUnsupportedFiles": true,
+  "showFileExtensions": true
 }

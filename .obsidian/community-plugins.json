@@ -3,9 +3,7 @@
   "calendar",
   "code-styler",
   "dataview",
-  "editing-toolbar",
   "highlightr-plugin",
-  "make-md",
   "obsidian-admonition",
   "obsidian-excalidraw-plugin",
   "obsidian-icon-folder",
@@ -16,8 +14,7 @@
   "table-editor-obsidian",
   "templater-obsidian",
   "various-complements",
-  "vscode-editor",
   "obsidian-hover-editor",
   "execute-code",
-  "data-files-editor"
+  "unitade"
 ]

@@ -1,15 +1,30 @@
 ---
 sticker: "🛠️"
-tags: [modulo, guias-recursos]
+tags:
+  - moc
+  - modulo-08
+  - guias-recursos
 ---
-# Módulo 08 — Guias & Recursos Especializados
+# 🛠️ Módulo 08: Guias, Recursos & Ferramentas do Aluno
 
-> [!TUTOR] Central de Recursos Complementares
-> Biblioteca de prompts de IA, referências de recursos recomendados e mapas visuais do curso.
+> [!TUTOR] Visão Geral do Módulo 08
+> Este módulo contém guias práticos, biblioteca de prompts para copilotos, esquemas visuais em Excalidraw, e documentação das ferramentas do curso.
 > 
-> *Nota: Os guias práticos de Git, Pathlib, Plugins e IDE foram consolidados diretamente dentro das notas de aulas oficiais para aprendizado ativo e contínuo.*
+> 📝 **Modelos de Notas:** Os templates oficiais do curso estão centralizados na pasta `_templates/`.
 
-## 📖 Recursos Disponíveis
-- [[08_guias_recursos/Biblioteca de Prompts|🤖 Biblioteca de Prompts & Engenharia de Prompt]]
-- [[08_guias_recursos/Recursos Recomendados|🔗 Recursos Recomendados & Links Úteis]]
-- [[08_guias_recursos/fluxo_automacao.excalidraw|🗺️ Fluxograma de Automação Visual (Excalidraw)]]
+---
+
+## 🗺️ Mapa de Guias & Recursos (Dataview)
+
+```dataview
+TABLE file.folder AS "Subpasta", file.mtime AS "Última Edição"
+FROM "08_guias_recursos"
+SORT file.name ASC
+```
+
+---
+
+## 📚 Links Úteis
+- [[00_hub_referencias_academicas|Hub Central de Referências Acadêmicas]]
+- [[central_avaliador_exercicios|🧪 Central de Verificação de Exercícios]]
+- [[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno]]
