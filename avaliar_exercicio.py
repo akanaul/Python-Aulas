@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Avaliador Automatizado de Exercícios, Gatekeeper Git e Gerador de Relatório de Progresso.
+Avaliador Automatizado de Exercícios, Gatekeeper Git, Gerador de Relatório e Diagnóstico de Erros.
 
 Este script é a ferramenta central do aluno no curso:
 1. Avalia exercícios e testes unitários (python avaliar_exercicio.py --issue XX).
-2. Gera relatórios de progresso do vault (python avaliar_exercicio.py --progresso).
-3. Protege e verifica o vault do Obsidian em background.
+2. Exibe diagnósticos detalhados em falhas (qual parte do exercício falhou e por quê).
+3. Salva a nota de erro no caderno do aluno (meu_caderno_aluno/diagnostico_erros/).
+4. Gera relatórios de progresso do vault (python avaliar_exercicio.py --progresso).
 
 Uso:
     python avaliar_exercicio.py --issue 07
@@ -15,6 +16,7 @@ Uso:
 """
 
 import argparse
+import datetime
 import os
 import sys
 import unittest
@@ -63,17 +65,65 @@ def gerar_relatorio_progresso():
     print(f"✅ Total de Notas de Aulas / Módulos Mapeados: {total_aulas}")
     print(f"✅ Total de Exercícios Práticos Mapeados: {total_exercicios}")
     print("=" * 65)
-    print("💡 Acesse '00_dashboard.md' no Obsidian para ver o painel dinâmico.")
+    print("💡 Acesse '00 - Dashboard.md' no Obsidian para ver o painel dinâmico.")
     print("=" * 65)
 
 
-def run_tests(test_pattern: str = "test_*.py") -> bool:
-    """Executa a suíte de testes unitários e retorna True se todos passarem."""
+def salvar_nota_diagnostico_erro(issue_id: str, falhas_detalhadas: list):
+    """Cria automaticamente uma nota de erro no caderno do aluno meu_caderno_aluno/diagnostico_erros/."""
+    caderno_dir = os.path.join("meu_caderno_aluno", "diagnostico_erros")
+    os.makedirs(caderno_dir, exist_ok=True)
+    
+    now = datetime.datetime.now()
+    timestamp_str = now.strftime("%Y%m%d_%H%M%S")
+    data_formatada = now.strftime("%d/%m/%Y %H:%M:%S")
+    
+    filename = f"erro_issue_{issue_id}_{timestamp_str}.md"
+    filepath = os.path.join(caderno_dir, filename)
+    
+    detalhes_md = ""
+    for idx, falha in enumerate(falhas_detalhadas, 1):
+        detalhes_md += f"### Falha #{idx}: `{falha['teste']}`\n"
+        detalhes_md += f"- ❌ **Causa do Erro:** `{falha['erro']}`\n"
+        detalhes_md += f"- 💡 **Dica do Mentor:** {falha['dica']}\n\n"
+        detalhes_md += f"```text\n{falha['traceback']}\n```\n\n---\n\n"
+
+    content = f"""---
+tags:
+  - caderno-aluno
+  - diagnostico-erro
+  - issue-{issue_id}
+data: {data_formatada}
+---
+# ⚠️ Diagnóstico de Erro — Issue #{issue_id}
+
+> [!CAUTION] Registrado pelo Avaliador Automatizado da IA em {data_formatada}
+
+## 📌 Detalhes das Falhas Encontradas
+
+{detalhes_md}
+
+## 📝 Anotações Pessoais do Aluno / Tutor
+- **O que aprendi com este erro:** 
+- **Solução aplicada:** 
+"""
+
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content)
+        return filepath
+    except Exception as e:
+        print(f"⚠️ Não foi possível salvar a nota de erro no caderno: {e}")
+        return None
+
+
+def run_tests(test_pattern: str = "test_*.py"):
+    """Executa a suíte de testes unitários e retorna (success, result)."""
     loader = unittest.TestLoader()
     suite = loader.discover(start_dir="testes", pattern=test_pattern)
-    runner = unittest.TextTestRunner(verbosity=2)
+    runner = unittest.TextTestRunner(verbosity=0)
     result = runner.run(suite)
-    return result.wasSuccessful()
+    return result.wasSuccessful(), result
 
 
 def main():
@@ -125,10 +175,10 @@ def main():
     print("⏳ Executando testes unitários...\n")
 
     try:
-        success = run_tests(pattern)
+        success, result = run_tests(pattern)
     except Exception as e:
         print(f"\n❌ ERRO NA EXECUÇÃO DOS TESTES: {e}")
-        success = False
+        success, result = False, None
 
     print("\n" + "=" * 65)
     if success:
@@ -148,11 +198,45 @@ def main():
     else:
         print("⚠️ ❌ RECUSADO PELA IA — AJUSTES NECESSÁRIOS")
         print("=" * 65)
-        print("Seu código em *_manual.py ainda não passou nos testes automatizados.")
-        print("\n💡 Dicas do Mentor (Modo Tutor):")
-        print("   - Leia atentamente a mensagem de erro da falha acima.")
-        print("   - Lembre-se: o arquivo *_ia.py serve apenas como referência didática de comparação.")
-        print("   - Trabalhe passo a passo na lógica do arquivo *_manual.py antes de tentar novamente.")
+        
+        falhas_detalhadas = []
+        if result:
+            todas_falhas = result.failures + result.errors
+            print(f"\n🔍 DIAGNÓSTICO DETALHADO ({len(todas_falhas)} falha(s) identificada(s)):\n")
+            
+            for idx, (test_case, tb_text) in enumerate(todas_falhas, 1):
+                test_name = str(test_case)
+                linhas_tb = tb_text.strip().splitlines()
+                causa_erro = linhas_tb[-1] if linhas_tb else "Falha desconhecida no teste"
+                
+                dica_mentor = "Revise a sintaxe e a lógica do arquivo *_manual.py usando a IA no Modo Tutor."
+                if "SyntaxError" in causa_erro:
+                    dica_mentor = "Verifique parênteses, aspas ou dois-pontos (:) não fechados no script."
+                elif "AssertionError" in causa_erro:
+                    dica_mentor = "O resultado retornado pela sua função difere do comportamento esperado."
+                elif "FileNotFoundError" in causa_erro:
+                    dica_mentor = "Verifique se o arquivo ou caminho especificado realmente existe."
+                
+                print(f"📌 [{idx}/{len(todas_falhas)}] Teste: {test_name}")
+                print(f"   ❌ Causa do Erro: {causa_erro}")
+                print(f"   💡 Dica do Mentor: {dica_mentor}\n")
+                
+                falhas_detalhadas.append({
+                    "teste": test_name,
+                    "erro": causa_erro,
+                    "dica": dica_mentor,
+                    "traceback": tb_text
+                })
+                
+            nota_salva = salvar_nota_diagnostico_erro(issue_id, falhas_detalhadas)
+            if nota_salva:
+                rel_path = os.path.relpath(nota_salva)
+                print("=" * 65)
+                print(f"📝 NOTA DE DIAGNÓSTICO DO ERRO SALVA NO SEU CADERNO DE ALUNO!")
+                print(f"📄 Arquivo: {rel_path}")
+                print(f"💡 Abra o arquivo no Obsidian para revisar com seu Tutor ou IA.")
+                print("=" * 65)
+
         print("\n🔄 Após ajustar o código, rode novamente:")
         print(f"   python avaliar_exercicio.py --issue {issue_id}")
         print("=" * 65)
