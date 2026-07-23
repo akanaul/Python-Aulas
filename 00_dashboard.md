@@ -8,18 +8,39 @@ sticker: "📊"
 > 
 > 📘 **Comece Aqui:** Consulte o [[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno]] para entender o ciclo de aprendizado em 4 passos.
 
-> [!EXEMPLO] Status do Copiloto de IA & Vault
-> **Vault Obsidian (19 Plugins):** Protegido & Ativo 🟢 (`python setup_vault.py`)
-> **Antigravity (Modo Tutor):** Online 🟢 - Copiloto de mentoria ativa.
+> [!CAUTION] 🚨 Botão de Pânico / Auto-Recuperação do Obsidian em 1 Segundo
+> **Os plugins parecem desativados ou o Obsidian entrou em Modo Restrito?**
+> Abra o seu terminal na pasta do projeto e rode:
+> ```bash
+> python setup_vault.py
+> ```
+> esse comando força a reativação e restaura instantaneamente todos os **18 plugins**!
 
-> [!PRATICA] Navegação Rápida & Central de Estudos
-> - 📘 [[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno (Comece Por Aqui)]]
-> - 🏛️ [[00_central/00_central|🏛️ Central Hub do Aluno]]
-> - 📋 [[00_central/plano_de_estudos|📋 Plano de Estudos, Kanban e Tarefas]]
-> - 📇 [[00_central/central_flashcards|📇 Central de Flashcards & Active Recall]]
-> - 🗺️ [[00_central/indice_geral_moc|🗺️ Índice Geral por Temas (MOC)]]
-> - 🔀 [[08_guias_recursos/GUIA_GIT|Guia de Git, Issues & Pull Requests]]
-> - 🔌 [[08_guias_recursos/GUIA_PLUGINS_OBSIDIAN|Guia dos 19 Plugins do Obsidian]]
+---
+
+## 🔰 Guia Visual do Iniciante nos 18 Plugins do Obsidian
+
+Este vault vem com **18 plugins profissionais pré-configurados**. Veja como usá-los no dia a dia:
+
+| Plugin | O que faz no vault? | Como o aluno usa? |
+| :--- | :--- | :--- |
+| 📁 **Make.md** | Transforma pastas em notas de capa com stickers. | Clique em qualquer pasta (ex: `01_fundamentos`) para abrir a nota de capa. |
+| 📊 **Dataview** | Painéis dinâmicos e consultas automáticas. | Exibe automaticamente seu progresso nas tabelas deste Dashboard. |
+| 📋 **Kanban** | Quadro de tarefas estilo Trello. | Acesse [[00_central/plano_de_estudos|Plano de Estudos]] para arrastar suas tarefas. |
+| 📇 **Spaced Repetition** | Cartões de memória e repetição espaçada. | Acesse [[00_central/central_flashcards|Central de Flashcards]] ou pressione `Ctrl+P` -> *Spaced Repetition*. |
+| 🎨 **Excalidraw** | Desenhos e fluxogramas visuais interativos. | Clique em arquivos `.excalidraw` em `08_guias_recursos/` para desenhar. |
+| 🛠️ **Editing Toolbar** | Barra de formatação no topo da nota. | Selecione qualquer texto para formatar em negrito, destaques ou callouts. |
+| 🎨 **Code Styler** | Realce de sintaxe de código Python. | Blocos de código ` ```python ` ficam coloridos e com numeração de linhas. |
+| ⚡ **Various Complements** | Autocompletar inteligente enquanto digita. | Digite `python` ou `[!TUTOR]` e pressione `Tab` para autocompletar. |
+
+---
+
+## ⌨️ Atalhos de Teclado Essenciais (Cheat Sheet)
+
+- `Ctrl + P` (ou `Cmd + P` no Mac): **Paleta de Comandos** (Busca rápida de qualquer ação do Obsidian).
+- `Ctrl + O` (ou `Cmd + O` no Mac): **Abrir Arquivo Rápido** (Digite o nome de qualquer aula).
+- `Ctrl + E`: Alternar entre **Modo Edição** e **Modo Leitura**.
+- `Alt + N` / `Alt + E`: Criar nova nota com o **Template do Curso** via Templater.
 
 ---
 
@@ -79,6 +100,9 @@ Para validar suas implementações localmente:
 ```bash
 # Avaliar exercício específico:
 python avaliar_exercicio.py --issue 07
+
+# Ver relatório de progresso do vault:
+python avaliar_exercicio.py --progresso
 
 # Avaliar todos os testes do repositório:
 python -m unittest discover testes
