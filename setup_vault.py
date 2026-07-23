@@ -19,7 +19,9 @@ import sys
 
 # Garantir UTF-8 no stdout
 if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
+    reconfig = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfig):
+        reconfig(encoding="utf-8")
 
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
 VENV_DIR = os.path.join(ROOT_DIR, ".venv")

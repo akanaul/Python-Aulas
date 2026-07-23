@@ -21,7 +21,9 @@ import urllib.error
 
 # Garantir UTF-8 no stdout do Windows
 if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
+    reconfig = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfig):
+        reconfig(encoding="utf-8")
 
 ISSUES_CATALOG = [
     {

@@ -24,7 +24,9 @@ except ImportError:
 
 # Garantir codificação UTF-8 no stdout do Windows
 if hasattr(sys.stdout, "reconfigure"):
-    sys.stdout.reconfigure(encoding="utf-8")
+    reconfig = getattr(sys.stdout, "reconfigure", None)
+    if callable(reconfig):
+        reconfig(encoding="utf-8")
 
 def run_tests(test_pattern: str = "test_*.py") -> bool:
     """Executa a suíte de testes unitários e retorna True se todos passarem."""
