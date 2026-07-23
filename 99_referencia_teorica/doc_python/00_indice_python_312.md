@@ -9,7 +9,7 @@ tags: [python312, referencia, documentacao, offline]
 
 ---
 
-## 📚 Índice da Documentação
+## 📚 Índice Completo da Documentação (Capítulos 01 a 08)
 
 - [[99_referencia_teorica/doc_python/01_sintaxe_variaveis_tipos|01. Sintaxe Básica, Variáveis e Tipos de Dados]]
 - [[99_referencia_teorica/doc_python/02_estruturas_controle_excecoes|02. Estruturas de Controle e Tratamento de Exceções]]
@@ -24,7 +24,7 @@ tags: [python312, referencia, documentacao, offline]
 
 ## ⚡ Novidades de Destaque no Python 3.12 / 3.13
 
-1. **Sintaxe de Tipos Genericos (PEP 695):**
+1. **Sintaxe de Tipos Genéricos (PEP 695):**
    ```python
    type Vetor[T] = list[T]
    def primeiro[T](lista: list[T]) -> T:

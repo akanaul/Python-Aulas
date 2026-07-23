@@ -245,6 +245,9 @@
   },
   "active": "4afed96d2b64c385",
   "lastOpenFiles": [
+    "99_referencia_teorica/doc_python/08_pep8_e_novidades_python312.md",
+    "99_referencia_teorica/doc_python/07_biblioteca_padrao_essencial.md",
+    "99_referencia_teorica/doc_python/03_estruturas_dados_modernas.md",
     "99_referencia_teorica/doc_python/06_arquivos_pathlib_json.md",
     "99_referencia_teorica/doc_python/05_poo_classes_dataclasses.md",
     "99_referencia_teorica/doc_python/04_funcoes_type_hints_312.md",
@@ -279,9 +282,6 @@
     "04_bibliotecas_arquivos/04_bibliotecas_arquivos.md",
     "03_poo/03_poo.md",
     "02_python_essencial/Aula 07 - Funções/Aula 7 - Funções.md",
-    "02_python_essencial/Aula 05 - Listas Tuplas e Ranges/Aula 5 - Listas Tuplas e Ranges.md",
-    "02_python_essencial/Aula 04 - Strings e Formatação/Aula 4 - Strings e Formatação.md",
-    "01_fundamentos/Aula 01 - Setup e Primeiros Passos/Aula 1 - Setup Completo e Primeiros Passos.md",
     "00 - Mapa Visual do Curso.canvas"
   ]
 }
