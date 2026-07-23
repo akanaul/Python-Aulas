@@ -43,3 +43,6 @@ env/
 Thumbs.db
 *.tmp
 *.log
+
+# Teacher non-versioned files
+MANUAL_DO_PROFESSOR.md
