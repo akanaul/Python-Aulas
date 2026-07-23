@@ -237,6 +237,12 @@ def main():
                 print(f"💡 Abra o arquivo no Obsidian para revisar com seu Tutor ou IA.")
                 print("=" * 65)
 
+        print("\n🛠️ CHECKLIST DE DEBBUGGING AUTÔNOMO (5 PASSOS PARA VOCÊ RESOLVER):")
+        print("   1. 📍 Localize a linha do erro no arquivo *_manual.py.")
+        print("   2. 🔎 Imprima valores com print() antes da linha para inspecionar.")
+        print("   3. 📖 Consulte o Manual Python 3.12 em '99_referencia_teorica/doc_python/'.")
+        print("   4. 🤖 Use o Antigravity no MODO TUTOR (peça dicas de lógica, não a resposta).")
+        print("   5. ⚡ Clique em Run no Obsidian para reavaliar!")
         print("\n🔄 Após ajustar o código, rode novamente:")
         print(f"   python avaliar_exercicio.py --issue {issue_id}")
         print("=" * 65)
