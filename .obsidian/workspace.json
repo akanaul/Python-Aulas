@@ -100,7 +100,7 @@
             }
           },
           {
-            "id": "13ad8413768530d7",
+            "id": "a62f05347d463544",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -243,15 +243,15 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "13ad8413768530d7",
+  "active": "703424dcb8305695",
   "lastOpenFiles": [
+    "01_fundamentos/01_fundamentos.md",
     "08_guias_recursos/templates/template_diagnostico_erro.md",
     "08_guias_recursos/templates/template_exercicio_resolvido.md",
     "08_guias_recursos/templates/template_anotacao_aluno.md",
     "08_guias_recursos/templates",
     "00 - Dashboard.md",
     "Vault.md",
-    "01_fundamentos/01_fundamentos.md",
     "08_guias_recursos/GUIA_PATHLIB_CAMINHOS.md",
     "99_referencia_teorica/doc_python/08_pep8_e_novidades_python312.md",
     "99_referencia_teorica/doc_python/07_biblioteca_padrao_essencial.md",

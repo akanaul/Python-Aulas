@@ -3,11 +3,25 @@
 Bem-vindo(a) ao **Curso Python + IA para Automação**! Este manual foi criado para ser o seu guia definitivo de aprendizado, mostrando exatamente como estudar, praticar código, usar o copiloto de IA com segurança e validar seus exercícios através do Git e de testes automatizados.
 
 > [!CAUTION] 🚨 Botão de Pânico / Auto-Recuperação do Obsidian em 1 Segundo
-> Se você abriu o Obsidian e os plugins parecerem desativados ou o Obsidian perguntar sobre **Modo Restrito**, rode no terminal:
-> ```bash
-> python setup_vault.py
+> Se você abriu o Obsidian e os plugins parecerem desativados ou o Obsidian perguntar sobre **Modo Restrito**, execute o bloco abaixo ou rode `python setup_vault.py` no terminal:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "setup_vault.py"], capture_output=True, text=True)
+> print(res.stdout)
 > ```
-> Esse comando reativa instantaneamente todos os **18 plugins pré-configurados**!
+
+---
+
+## ⚡ Execução de Código em 1-Clique no Obsidian (`execute-code`)
+
+Com o novo plugin **Execute Code**, você pode rodar testes e verificar o progresso do curso sem sair da nota no Obsidian!
+
+Clique no botão **Run** acima do bloco de código abaixo para testar seu ambiente:
+```python run
+import sys
+print(f"✅ Python em Execução: {sys.version.split()[0]}")
+print("🚀 Seu ambiente no Obsidian está pronto!")
+```
 
 ---
 
@@ -47,7 +61,7 @@ graph TD
 4. **Modo Tutor Ativo:** A IA dará apenas dicas de lógica sem entregar o código pronto. Complete o script com a sua solução!
 
 ### 📍 Passo 3: Avaliação Automatizada de Exercícios
-Rode o script avaliador no terminal:
+Rode o script avaliador no terminal ou clique no widget de execução 1-clique:
 ```bash
 python avaliar_exercicio.py --issue 07
 ```
@@ -65,12 +79,13 @@ Agora vá ao GitHub no seu browser e abra o **Pull Request (PR)** do seu fork pa
 
 ---
 
-## 🔰 3. Guia Rápido dos 18 Plugins do Vault
+## 🔰 3. Guia Rápido dos 19 Plugins do Vault
 
 | Plugin | O que faz? | Como aproveitar? |
 | :--- | :--- | :--- |
+| ⚡ **Execute Code** | Executa blocos de código Python diretamente no Obsidian. | Clique no botão **Run** acima de qualquer bloco ` ```python run `. |
 | 📁 **Make.md** | Notas de capa de pastas e navegação fluida. | Clique no nome da pasta na barra lateral para abrir a capa. |
-| 📊 **Dataview** | Tabelas e barras de progresso automáticas. | Veja seus resultados em [[00_dashboard\|00_dashboard.md]]. |
+| 📊 **Dataview** | Tabelas e barras de progresso automáticas. | Veja seus resultados em [[00 - Dashboard\|00 - Dashboard.md]]. |
 | 📋 **Kanban** | Gestão visual de tarefas de estudo. | Acesse [[00_central/plano_de_estudos\|Plano de Estudos]]. |
 | 📇 **SRS Flashcards** | Repetição espaçada para memorização. | Pressione `Ctrl+P` e busque *Spaced Repetition*. |
 | ⚡ **Various Complements** | Autocompletar palavras e trechos de código. | Comece a digitar `python` e aperte `Tab`. |

@@ -10,20 +10,40 @@ sticker: "📊"
 
 > [!CAUTION] 🚨 Botão de Pânico / Auto-Recuperação do Obsidian em 1 Segundo
 > **Os plugins parecem desativados ou o Obsidian entrou em Modo Restrito?**
-> Abra o seu terminal na pasta do projeto e rode:
-> ```bash
-> python setup_vault.py
+> Execute o bloco abaixo ou rode `python setup_vault.py` no terminal:
+> ```python run
+> import subprocess
+> res = subprocess.run(["python", "setup_vault.py"], capture_output=True, text=True)
+> print(res.stdout)
 > ```
-> esse comando força a reativação e restaura instantaneamente todos os **18 plugins**!
 
 ---
 
-## 🔰 Guia Visual do Iniciante nos 18 Plugins do Obsidian
+## ⚡ Ações Rápidas (Execução em 1-Clique Direto no Obsidian)
 
-Este vault vem com **18 plugins profissionais pré-configurados**. Veja como usá-los no dia a dia:
+### 📊 Ver Relatório de Progresso Atual
+```python run
+import subprocess
+res = subprocess.run(["python", "avaliar_exercicio.py", "--progresso"], capture_output=True, text=True)
+print(res.stdout)
+```
+
+### 🧪 Testar Todos os Módulos do Repositório
+```python run
+import subprocess
+res = subprocess.run(["python", "avaliar_exercicio.py", "--all"], capture_output=True, text=True)
+print(res.stdout)
+```
+
+---
+
+## 🔰 Guia Visual do Iniciante nos 19 Plugins do Obsidian
+
+Este vault vem com **19 plugins profissionais pré-configurados**. Veja como usá-los no dia a dia:
 
 | Plugin | O que faz no vault? | Como o aluno usa? |
 | :--- | :--- | :--- |
+| ⚡ **Execute Code** | Executa blocos de código Python e comandos diretamente dentro da nota. | Clique no botão **Run** acima do bloco de código ` ```python run `. |
 | 📁 **Make.md** | Transforma pastas em notas de capa com stickers. | Clique em qualquer pasta (ex: `01_fundamentos`) para abrir a nota de capa. |
 | 📊 **Dataview** | Painéis dinâmicos e consultas automáticas. | Exibe automaticamente seu progresso nas tabelas deste Dashboard. |
 | 📋 **Kanban** | Quadro de tarefas estilo Trello. | Acesse [[00_central/plano_de_estudos|Plano de Estudos]] para arrastar suas tarefas. |
@@ -75,35 +95,4 @@ TABLE
     "python avaliar_exercicio.py" AS "Comando de Teste"
 FROM #exercicio OR #aula
 SORT file.name ASC
-```
-
----
-
-## 🗺️ Fluxo de Automação Visual (Mermaid)
-
-```mermaid
-graph LR
-    A[Tarefa Repetitiva Manual] --> B(Mapeamento de Dados)
-    B --> C{Automação Python + IA}
-    C -->|pathlib / os| D[Gestão de Arquivos]
-    C -->|openpyxl / pandas| E[Processamento de Planilhas]
-    C -->|Selenium / DevTools MCP| F[Navegação Web]
-    D & E & F --> G[Resultado Eficiente e Sem Erros]
-    style C fill:#f9f,stroke:#333,stroke-width:3px
-```
-
----
-
-## 🧪 Validação dos Exercícios via Terminal
-
-Para validar suas implementações localmente:
-```bash
-# Avaliar exercício específico:
-python avaliar_exercicio.py --issue 07
-
-# Ver relatório de progresso do vault:
-python avaliar_exercicio.py --progresso
-
-# Avaliar todos os testes do repositório:
-python -m unittest discover testes
 ```
