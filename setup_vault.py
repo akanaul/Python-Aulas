@@ -106,6 +106,24 @@ def auto_heal_vault():
             json.dump(app_data, f, indent=2)
         print("   🛡️ Modo Restrito desativado com sucesso ('restricted': false)!")
 
+    # 3. Garante que course-styles está ativado no appearance.json
+    appearance_json_path = os.path.join(OBSIDIAN_DIR, "appearance.json")
+    app_appearance = {}
+    if os.path.exists(appearance_json_path):
+        try:
+            with open(appearance_json_path, "r", encoding="utf-8") as f:
+                app_appearance = json.load(f)
+        except Exception:
+            app_appearance = {}
+    
+    snippets = app_appearance.get("enabledCssSnippets", [])
+    if "course-styles" not in snippets:
+        snippets.append("course-styles")
+        app_appearance["enabledCssSnippets"] = snippets
+        with open(appearance_json_path, "w", encoding="utf-8") as f:
+            json.dump(app_appearance, f, indent=2)
+        print("   🎨 Tema Cyber Emerald ('course-styles') ativado no appearance.json!")
+
 
 def main():
     print("=" * 65)
