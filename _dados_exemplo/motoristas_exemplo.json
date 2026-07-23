@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "Carlos Silva",
+    "cpf": "123.456.789-00",
+    "cnh_category": "E",
+    "plate": "ABC-1234",
+    "route": "SP-RJ",
+    "status": "Ativo"
+  },
+  {
+    "id": 2,
+    "name": "João Souza",
+    "cpf": "987.654.321-11",
+    "cnh_category": "D",
+    "plate": "XYZ-9876",
+    "route": "SP-MG",
+    "status": "Em Férias"
+  },
+  {
+    "id": 3,
+    "name": "Maria Oliveira",
+    "cpf": "456.123.789-22",
+    "cnh_category": "E",
+    "plate": "DEF-5678",
+    "route": "SP-PR",
+    "status": "Ativo"
+  },
+  {
+    "id": 4,
+    "name": "Pedro Santos",
+    "cpf": "789.456.123-33",
+    "cnh_category": "C",
+    "plate": "GHI-9012",
+    "route": "SP-Interior",
+    "status": "Inativo"
+  },
+  {
+    "id": 5,
+    "name": "Ana Costa",
+    "cpf": "321.654.987-44",
+    "cnh_category": "E",
+    "plate": "JKL-3456",
+    "route": "RJ-MG",
+    "status": "Ativo"
+  }
+]

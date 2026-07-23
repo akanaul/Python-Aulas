@@ -1,0 +1,21 @@
+nf,destino,data_emissao,data_prevista,data_entrega,valor_frete,peso_kg,status
+1001,São Paulo,2026-07-20,2026-07-21,2026-07-21,150.00,12.5,Entregue
+1002,Campinas,2026-07-20,2026-07-22,2026-07-22,80.00,5.0,Entregue
+1003,Santos,2026-07-20,2026-07-22,,90.50,8.2,Em Trânsito
+1004,Curitiba,2026-07-19,2026-07-21,,200.00,15.0,Atrasado
+1005,Belo Horizonte,2026-07-21,2026-07-24,,250.00,22.0,Em Trânsito
+1006,São Paulo,2026-07-21,2026-07-22,,120.00,10.0,Pendente
+1007,Rio de Janeiro,2026-07-22,2026-07-25,,180.00,18.5,Pendente
+1008,Osasco,2026-07-18,2026-07-19,2026-07-19,50.00,3.0,Entregue
+1009,Guarulhos,2026-07-19,2026-07-20,2026-07-21,60.00,4.5,Entregue
+1010,São José dos Campos,2026-07-20,2026-07-23,,110.00,9.0,Em Trânsito
+1011,Jundiaí,2026-07-21,2026-07-22,,75.00,6.0,Pendente
+1012,Sorocaba,2026-07-18,2026-07-20,2026-07-20,85.00,7.2,Entregue
+1013,Ribeirão Preto,2026-07-19,2026-07-22,,140.00,11.5,Atrasado
+1014,Franca,2026-07-21,2026-07-24,,160.00,13.0,Em Trânsito
+1015,Bauru,2026-07-22,2026-07-25,,175.00,14.5,Pendente
+1016,Londrina,2026-07-17,2026-07-21,2026-07-22,220.00,19.0,Entregue
+1017,Maringá,2026-07-18,2026-07-22,,230.00,20.5,Atrasado
+1018,Joinville,2026-07-19,2026-07-23,,240.00,21.0,Em Trânsito
+1019,Florianópolis,2026-07-22,2026-07-27,,280.00,25.0,Pendente
+1020,Porto Alegre,2026-07-20,2026-07-26,,300.00,30.0,Em Trânsito

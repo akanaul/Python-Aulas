@@ -1,0 +1,4 @@
+SMTP_SERVER=smtp.gmail.com
+SMTP_PORT=587
+SENDER_EMAIL=automacao.logistica@empresa.com
+RECEIVER_EMAIL=gestao.expedicao@empresa.com

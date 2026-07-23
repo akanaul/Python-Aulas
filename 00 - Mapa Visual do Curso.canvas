@@ -1,0 +1,47 @@
+{
+	"nodes":[
+		{"id":"n0","type":"text","text":"[[01 - Fundamentos/Aula 00 - Mindset Vibe Coding Etico/Aula 00 - Mindset Vibe Coding Etico e Copilotos.md|Aula 00 - Mindset Vibe Coding Etico & Copilotos]]\n\n#bloco-1","x":-400,"y":0,"width":300,"height":100,"color":"3"},
+		{"id":"n1","type":"text","text":"[[01 - Fundamentos/Aula 01 - Setup e Primeiros Passos/Aula 1 - Setup Completo e Primeiros Passos.md|Aula 1 - Setup Completo e Primeiros Passos]]\n\n#bloco-1","x":0,"y":0,"width":300,"height":100,"color":"3"},
+		{"id":"n2","type":"text","text":"[[01 - Fundamentos/Aula 02 - Variáveis e Operadores/Aula 2 - Variáveis e Operadores.md|Aula 2 - Variáveis e Operadores]]\n\n#bloco-1","x":400,"y":0,"width":300,"height":100,"color":"3"},
+		{"id":"n3","type":"text","text":"[[01 - Fundamentos/Aula 03 - Condicionais e Loops/Aula 3 - Condicionais e Loops.md|Aula 3 - Condicionais e Loops]]\n\n#bloco-1","x":800,"y":0,"width":300,"height":100,"color":"3"},
+		{"id":"n4","type":"text","text":"[[02 - Python Essencial/Aula 04 - Strings e Formatação/Aula 4 - Strings e Formatação.md|Aula 4 - Strings e Formatação]]\n\n#bloco-2","x":0,"y":200,"width":300,"height":100,"color":"4"},
+		{"id":"n5","type":"text","text":"[[02 - Python Essencial/Aula 05 - Listas Tuplas e Ranges/Aula 5 - Listas Tuplas e Ranges.md|Aula 5 - Listas Tuplas e Ranges]]\n\n#bloco-2","x":400,"y":200,"width":300,"height":100,"color":"4"},
+		{"id":"n6","type":"text","text":"[[02 - Python Essencial/Aula 06 - Dicionarios e Conjuntos/Aula 6 - Dicionarios e Conjuntos.md|Aula 6 - Dicionarios e Conjuntos]]\n\n#bloco-2","x":800,"y":200,"width":300,"height":100,"color":"4"},
+		{"id":"n7","type":"text","text":"[[02 - Python Essencial/Aula 07 - Funções/Aula 7 - Funções.md|Aula 7 - Funções]]\n\n#bloco-2","x":1200,"y":200,"width":300,"height":100,"color":"4"},
+		{"id":"n8","type":"text","text":"[[06 - IA e Prompt/Aula 08 - Vibe Coding e Engenharia de Prompt/Aula 8 - Vibe Coding e Engenharia de Prompt.md|Aula 8 - Vibe Coding e Engenharia de Prompt]]\n\n#vibe-coding","x":1600,"y":200,"width":300,"height":100,"color":"5"},
+		{"id":"n9","type":"text","text":"[[03 - POO/Aula 09A - Modulos e POO Basico/Aula 9A - Modulos e POO Basico.md|Aula 9A - Modulos e POO Basico]]\n\n#poo","x":0,"y":400,"width":300,"height":100,"color":"6"},
+		{"id":"n10","type":"text","text":"[[03 - POO/Aula 09B - POO Pratico Composicao e Persistencia/Aula 9B - POO Pratico Composicao e Persistencia.md|Aula 9B - POO Pratico Composicao e Persistencia]]\n\n#poo","x":400,"y":400,"width":300,"height":100,"color":"6"},
+		{"id":"n11","type":"text","text":"[[04 - Bibliotecas e Arquivos/Aula 10 - Arquivos txt e csv/Aula 10 - Arquivos txt e csv.md|Aula 10 - Arquivos txt e csv]]\n\n#bloco-3","x":0,"y":600,"width":300,"height":100,"color":"2"},
+		{"id":"n12","type":"text","text":"[[04 - Bibliotecas e Arquivos/Aula 11 - Excel com openpyxl e pandas/Aula 11 - Excel com openpyxl e pandas.md|Aula 11 - Excel com openpyxl e pandas]]\n\n#bloco-3","x":400,"y":600,"width":300,"height":100,"color":"2"},
+		{"id":"n13","type":"text","text":"[[04 - Bibliotecas e Arquivos/Aula 12 - Email Automatico e Agendamento/Aula 12 - Email Automatico e Agendamento.md|Aula 12 - Email Automatico e Agendamento]]\n\n#bloco-3","x":800,"y":600,"width":300,"height":100,"color":"2"},
+		{"id":"n14","type":"text","text":"[[05 - Automacao Desktop/Aula 13 - PyAutoGUI Basico/Aula 13 - PyAutoGUI Basico.md|Aula 13 - PyAutoGUI Basico]]\n\n#bloco-4","x":0,"y":800,"width":300,"height":100,"color":"1"},
+		{"id":"n15","type":"text","text":"[[05 - Automacao Desktop/Aula 14 - PyAutoGUI Avancado/Aula 14 - PyAutoGUI Avancado.md|Aula 14 - PyAutoGUI Avancado]]\n\n#bloco-4","x":400,"y":800,"width":300,"height":100,"color":"1"},
+		{"id":"n16","type":"text","text":"[[06 - IA e Prompt/Aula 15 - Prompt Engineering Avancado/Aula 15 - Prompt Engineering Avancado.md|Aula 15 - Prompt Engineering Avancado]]\n\n#bloco-5","x":0,"y":1000,"width":300,"height":100,"color":"5"},
+		{"id":"n17","type":"text","text":"[[06 - IA e Prompt/Aula 16 - Revisao Geral e Proximos Passos/Aula 16 - Revisao Geral e Proximos Passos.md|Aula 16 - Revisao Geral e Proximos Passos]]\n\n#bloco-5","x":400,"y":1000,"width":300,"height":100,"color":"5"},
+		{"id":"n18","type":"text","text":"[[07 - Bonus Selenium/Aula Bonus - Selenium A Proxima Fronteira/Aula Bonus - Selenium A Proxima Fronteira.md|Aula Bonus - Selenium A Proxima Fronteira]]\n\n#bonus","x":0,"y":1200,"width":300,"height":100,"color":"6"}
+	],
+	"edges":[
+		{"id":"e0","fromNode":"n0","fromSide":"right","toNode":"n1","toSide":"left"},
+		{"id":"e1","fromNode":"n1","fromSide":"right","toNode":"n2","toSide":"left"},
+		{"id":"e2","fromNode":"n2","fromSide":"right","toNode":"n3","toSide":"left"},
+		{"id":"e3","fromNode":"n3","fromSide":"bottom","toNode":"n4","toSide":"top"},
+		{"id":"e4","fromNode":"n4","fromSide":"right","toNode":"n5","toSide":"left"},
+		{"id":"e5","fromNode":"n5","fromSide":"right","toNode":"n6","toSide":"left"},
+		{"id":"e6","fromNode":"n6","fromSide":"right","toNode":"n7","toSide":"left"},
+		{"id":"e7","fromNode":"n7","fromSide":"right","toNode":"n8","toSide":"left"},
+		{"id":"e8","fromNode":"n8","fromSide":"bottom","toNode":"n9","toSide":"top"},
+		{"id":"e9","fromNode":"n9","fromSide":"right","toNode":"n10","toSide":"left"},
+		{"id":"e10","fromNode":"n10","fromSide":"bottom","toNode":"n11","toSide":"top"},
+		{"id":"e11","fromNode":"n11","fromSide":"right","toNode":"n12","toSide":"left"},
+		{"id":"e12","fromNode":"n12","fromSide":"right","toNode":"n13","toSide":"left"},
+		{"id":"e13","fromNode":"n13","fromSide":"bottom","toNode":"n14","toSide":"top"},
+		{"id":"e14","fromNode":"n14","fromSide":"right","toNode":"n15","toSide":"left"},
+		{"id":"e15","fromNode":"n15","fromSide":"bottom","toNode":"n16","toSide":"top"},
+		{"id":"e16","fromNode":"n16","fromSide":"right","toNode":"n17","toSide":"left"},
+		{"id":"e17","fromNode":"n17","fromSide":"bottom","toNode":"n18","toSide":"top"}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
