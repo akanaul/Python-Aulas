@@ -1,6 +1,5 @@
 import unittest
 import os
-import sys
 
 class TestDashboardUtils(unittest.TestCase):
     def test_evaluator_script_exists(self):
@@ -11,11 +10,12 @@ class TestDashboardUtils(unittest.TestCase):
         self.assertTrue(os.path.exists(script_path), "avaliar_exercicio.py deve existir na raiz.")
 
     def test_dashboard_exists(self):
-        """Garante que o painel principal 00_dashboard.md existe na raiz."""
+        """Garante que o painel principal 00 - Dashboard.md ou 00_dashboard.md existe na raiz."""
         curr_dir = os.path.dirname(os.path.abspath(__file__))
         root_dir = os.path.join(curr_dir, "..")
-        dashboard_path = os.path.join(root_dir, "00_dashboard.md")
-        self.assertTrue(os.path.exists(dashboard_path), "00_dashboard.md deve existir na raiz.")
+        dash1 = os.path.exists(os.path.join(root_dir, "00 - Dashboard.md"))
+        dash2 = os.path.exists(os.path.join(root_dir, "00_dashboard.md"))
+        self.assertTrue(dash1 or dash2, "Dashboard deve existir na raiz.")
 
     def test_central_hub_exists(self):
         """Garante que a pasta 00_central/ existe com seus arquivos organizados."""

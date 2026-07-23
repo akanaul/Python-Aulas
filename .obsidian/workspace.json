@@ -243,8 +243,11 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "4afed96d2b64c385",
+  "active": "13ad8413768530d7",
   "lastOpenFiles": [
+    "00 - Dashboard.md",
+    "Vault.md",
+    "01_fundamentos/01_fundamentos.md",
     "08_guias_recursos/GUIA_PATHLIB_CAMINHOS.md",
     "99_referencia_teorica/doc_python/08_pep8_e_novidades_python312.md",
     "99_referencia_teorica/doc_python/07_biblioteca_padrao_essencial.md",
@@ -258,7 +261,7 @@
     "99_referencia_teorica/doc_python",
     "MANUAL_DO_PROFESSOR.md",
     "requirements.txt",
-    "00_dashboard.md",
+    "00_central/00_dashboard.md",
     "00_central/mapa_visual_curso.canvas",
     "00_central/indice_geral_moc.md",
     "00_central/central_flashcards.md",
@@ -279,9 +282,6 @@
     "99_referencia_teorica/99_referencia_teorica.md",
     "08_guias_recursos/08_guias_recursos.md",
     "06_ia_prompt/06_ia_prompt.md",
-    "05_automacao_desktop/05_automacao_desktop.md",
-    "04_bibliotecas_arquivos/04_bibliotecas_arquivos.md",
-    "03_poo/03_poo.md",
     "00 - Mapa Visual do Curso.canvas"
   ]
 }

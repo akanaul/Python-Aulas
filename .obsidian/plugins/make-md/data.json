@@ -39,7 +39,8 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "//08 - Guia e Recursos",
-    "/"
+    "/",
+    "//01_fundamentos"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
