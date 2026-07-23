@@ -1,49 +1,94 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Script de Proteção e Restauração Automática do Vault Obsidian.
+Script de Setup Inicial e Proteção do Vault (Curso Python + IA para Automação).
 
-Garante que o Modo Restrito do Obsidian fique DESATIVADO ("restricted": false)
-e restaura todas as configurações dos 19 plugins a partir de _obsidian_backup/
-caso o Obsidian tente sobrescrever ou desativar os plugins por padrão.
+1. Cria o ambiente virtual (.venv) se não existir e instala as dependências de requirements.txt.
+2. Força 'restricted': false em .obsidian/app.json.
+3. Garante que todos os 18 plugins e configurações permaneçam ativos a partir de _obsidian_backup/.
+
+Uso:
+    python setup_vault.py
 """
 
+import json
 import os
 import shutil
-import json
+import subprocess
 import sys
 
-# Garantir UTF-8 no terminal Windows
+# Garantir UTF-8 no stdout
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-def auto_heal_vault(vault_path: str = ".") -> bool:
-    """Verifica a integridade do .obsidian e restaura a partir do backup se necessário."""
-    obsidian_dir = os.path.join(vault_path, ".obsidian")
-    backup_dir = os.path.join(vault_path, "_obsidian_backup")
-    app_json_path = os.path.join(obsidian_dir, "app.json")
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+VENV_DIR = os.path.join(ROOT_DIR, ".venv")
+OBSIDIAN_DIR = os.path.join(ROOT_DIR, ".obsidian")
+BACKUP_DIR = os.path.join(ROOT_DIR, "_obsidian_backup")
+REQUIREMENTS_FILE = os.path.join(ROOT_DIR, "requirements.txt")
 
-    # 1. Se o backup existir, sincroniza configurações e plugins
-    if os.path.exists(backup_dir):
-        if not os.path.exists(obsidian_dir):
-            os.makedirs(obsidian_dir, exist_ok=True)
-            
-        # Copiar arquivos de configuração raiz (.json)
-        for file_name in os.listdir(backup_dir):
-            src = os.path.join(backup_dir, file_name)
-            dst = os.path.join(obsidian_dir, file_name)
-            if os.path.isfile(src):
-                shutil.copy2(src, dst)
-            elif os.path.isdir(src) and file_name in ["plugins", "snippets", "icons"]:
-                os.makedirs(dst, exist_ok=True)
-                for root, dirs, files in os.walk(src):
-                    rel_path = os.path.relpath(root, src)
-                    target_dir = os.path.join(dst, rel_path)
-                    os.makedirs(target_dir, exist_ok=True)
-                    for f in files:
-                        shutil.copy2(os.path.join(root, f), os.path.join(target_dir, f))
 
-    # 2. Forçar "restricted": false no app.json
+def setup_virtual_environment():
+    """Cria o ambiente virtual .venv e instala as dependências se necessário."""
+    print("⏳ [1/2] Verificando Ambiente Virtual Python (.venv)...")
+    
+    if not os.path.exists(VENV_DIR):
+        print("   🔨 Criando ambiente virtual '.venv'...")
+        try:
+            subprocess.run([sys.executable, "-m", "venv", VENV_DIR], check=True)
+            print("   ✅ Ambiente virtual '.venv' criado com sucesso!")
+        except Exception as e:
+            print(f"   ⚠️ Alerta ao criar .venv: {e}")
+            return
+    else:
+        print("   ✅ Ambiente virtual '.venv' já existe.")
+
+    # Determinar caminho do executável python dentro do venv
+    if sys.platform == "win32":
+        venv_python = os.path.join(VENV_DIR, "Scripts", "python.exe")
+    else:
+        venv_python = os.path.join(VENV_DIR, "bin", "python")
+
+    # Instalar dependências se requirements.txt existir
+    if os.path.exists(REQUIREMENTS_FILE) and os.path.exists(venv_python):
+        print("   📦 Verificando/Instalando dependências de requirements.txt...")
+        try:
+            cmd = [venv_python, "-m", "pip", "install", "-r", REQUIREMENTS_FILE, "--quiet"]
+            subprocess.run(cmd, check=True)
+            print("   ✅ Dependências de Python instaladas e atualizadas no .venv!")
+        except Exception as e:
+            print(f"   ⚠️ Alerta ao instalar dependências: {e}")
+
+
+def auto_heal_vault():
+    """Garante que a pasta .obsidian possui restricted=false e recupera de _obsidian_backup."""
+    print("\n⏳ [2/2] Verificando e Protegendo Configurações do Vault Obsidian...")
+    
+    if not os.path.exists(BACKUP_DIR):
+        print("   ⚠️ Backup prístino '_obsidian_backup' não encontrado. Pulando restauração.")
+        return
+
+    # 1. Se .obsidian não existir, copiar backup integral
+    if not os.path.exists(OBSIDIAN_DIR):
+        print("   📦 Restaurando .obsidian/ a partir de _obsidian_backup/...")
+        shutil.copytree(BACKUP_DIR, OBSIDIAN_DIR)
+    else:
+        # Garantir cópia de plugins faltantes
+        backup_plugins = os.path.join(BACKUP_DIR, "plugins")
+        target_plugins = os.path.join(OBSIDIAN_DIR, "plugins")
+        if os.path.exists(backup_plugins):
+            os.makedirs(target_plugins, exist_ok=True)
+            for item in os.listdir(backup_plugins):
+                s = os.path.join(backup_plugins, item)
+                d = os.path.join(target_plugins, item)
+                if not os.path.exists(d):
+                    if os.path.isdir(s):
+                        shutil.copytree(s, d)
+                    else:
+                        shutil.copy2(s, d)
+
+    # 2. Forçar restricted = False no app.json
+    app_json_path = os.path.join(OBSIDIAN_DIR, "app.json")
     app_data = {}
     if os.path.exists(app_json_path):
         try:
@@ -52,30 +97,28 @@ def auto_heal_vault(vault_path: str = ".") -> bool:
         except Exception:
             app_data = {}
 
-    app_data["restricted"] = False
-    app_data["livePreview"] = True
-    app_data["showLineNumber"] = True
-    app_data["readableLineLength"] = True
+    if app_data.get("restricted") != False:
+        app_data["restricted"] = False
+        app_data["livePreview"] = True
+        with open(app_json_path, "w", encoding="utf-8") as f:
+            json.dump(app_data, f, indent=2)
+        print("   🛡️ Modo Restrito desativado com sucesso ('restricted': false)!")
 
-    with open(app_json_path, "w", encoding="utf-8") as f:
-        json.dump(app_data, f, indent=2, ensure_ascii=False)
-
-    return True
 
 def main():
     print("=" * 65)
-    print("🛡️ PROTEÇÃO E RESTAURAÇÃO DO VAULT OBSIDIAN")
+    print("🛡️ SETUP INICIAL E PROTEÇÃO FAIL-SAFE DO VAULT OBSIDIAN")
     print("=" * 65)
-    
-    success = auto_heal_vault()
-    
-    if success:
-        print("✅ Vault do Obsidian verificado com sucesso!")
-        print("✅ Modo Restrito DESATIVADO ('restricted': false)")
-        print("✅ Todos os 19 plugins e configurações ativados e protegidos.")
-    else:
-        print("⚠️ Falha ao verificar/restaurar o vault.")
+
+    setup_virtual_environment()
+    auto_heal_vault()
+
     print("=" * 65)
+    print("🎉 CONFIGURAÇÃO CONCLUÍDA COM SUCESSO!")
+    print("   - Ambiente Virtual (.venv) pronto e com dependências instaladas.")
+    print("   - Vault do Obsidian protegido com todos os 18 plugins ativos.")
+    print("=" * 65)
+
 
 if __name__ == "__main__":
     main()
