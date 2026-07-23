@@ -46,6 +46,21 @@ graph TD
     G --> C
 ```
 
+### 🔀 O Ciclo de Aprendizado Git & Dupla Revisão (IA + Professor)
+
+Neste curso, você aprende **Git e Pull Requests reais** desde o primeiro dia:
+
+```mermaid
+graph TD
+    A[1. Fork do Repositório no GitHub] --> B[2. Clone do SEU Fork e python setup_vault.py]
+    B --> C[3. Criar Branch: git checkout -b feature/issue-00]
+    C --> D[4. Editar aula_00_exercicios_manual.py com Modo Tutor da IA]
+    D --> E[5. Testar Localmente: python avaliar_exercicio.py --issue 00]
+    E -->|✅ IA Pré-Aprovou| F[6. Push: git push origin feature/issue-00]
+    F --> G[7. Abrir PR para o Professor @akanaul no GitHub]
+    G --> H[8. Professor aprova e faz o MERGE no repositório oficial!]
+```
+
 ---
 
 ## 💻 Exemplos
@@ -99,10 +114,9 @@ route_id = 4099
 ---
 
 ## 🏋️ Exercícios
-> 📁 Arquivos de prática: 
-> `aula_00_exercicios_manual.py`
-> `aula_00_exercicios_ia.py`
-> `aula_00_exercicios_gabarito.py`
+> 📌 **Issue Relacionada no GitHub:** `# Issue #00`
+> 📁 **Arquivo de Trabalho (Manual):** `01_fundamentos/Aula 00 - Mindset Vibe Coding Etico/aula_00_exercicios_manual.py`
+> 🧪 **Comando de Teste:** `python avaliar_exercicio.py --issue 00`
 
 **Exercício 1 — [Nível: Básico]**
 Audite um trecho de código gerado pela IA identificando problemas de segurança (dados fictícios vs reais).
