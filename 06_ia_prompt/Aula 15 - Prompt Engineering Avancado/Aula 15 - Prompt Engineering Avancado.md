@@ -70,3 +70,14 @@ Antes de gerar o código Python em um bloco único, escreva em tópicos como voc
 ## 👣 Rodapé / Conexão com a Próxima Aula
 O auge da interação Humano-IA. Na Aula 16, faremos um fechamento épico unindo todos os conhecimentos em um único mindset.
 #aula #bloco-6 #python #prompt
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #15
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-15-prompt-avancado
+> 📁 **Arquivo de Trabalho (Manual):** aula_15_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 15
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-15-prompt-avancado e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

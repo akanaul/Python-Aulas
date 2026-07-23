@@ -92,3 +92,14 @@ with file_path.open("w", encoding="utf-8") as f:
 ## 👣 Rodapé / Conexão com a Próxima Aula
 Agora que sabemos modelar e salvar dados simples, na Aula 10 mergulharemos em arquivos de texto e CSV massivos!
 #aula #bloco-3 #python #poo #persistencia
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #09b
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-09b-poo-pratico
+> 📁 **Arquivo de Trabalho (Manual):** aula_09b_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 09b
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-09b-poo-pratico e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

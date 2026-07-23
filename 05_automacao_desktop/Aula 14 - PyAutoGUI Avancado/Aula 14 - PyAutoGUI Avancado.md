@@ -90,3 +90,14 @@ if btn:
 ## 👣 Rodapé / Conexão com a Próxima Aula
 PyAutoGUI é poderoso, mas para a WEB, existe algo 100x melhor e nativo, sem problemas de mouse! Mas antes, mergulharemos em Engenharia de Prompt nas Aulas 8, 15 e 16!
 #aula #bloco-5 #python #pyautogui
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #14
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-14-pyautogui-avancado
+> 📁 **Arquivo de Trabalho (Manual):** aula_14_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 14
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-14-pyautogui-avancado e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

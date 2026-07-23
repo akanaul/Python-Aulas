@@ -82,3 +82,14 @@ wb.save('relatorio_estoque_formatado.xlsx')
 ## 👣 Rodapé / Conexão com a Próxima Aula
 Agora que o relatório está pronto, precisamos enviá-lo. Na próxima aula: Automação de Emails e Agendamento.
 #aula #bloco-4 #python #excel
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #11
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-11-excel-pandas
+> 📁 **Arquivo de Trabalho (Manual):** aula_11_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 11
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-11-excel-pandas e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

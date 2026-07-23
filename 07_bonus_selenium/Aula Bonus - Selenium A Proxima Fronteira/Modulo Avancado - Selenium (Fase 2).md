@@ -47,3 +47,13 @@ Ao final desta fase, você será capaz de criar robôs que operam sozinhos "em s
 --
 #modulo-2 #selenium #web-scraping #curs
 `
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #devtools
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-devtools-devtools-mcp
+> 📁 **Arquivo de Trabalho (Manual):** devtools_mcp_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue devtools
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-devtools-devtools-mcp e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

@@ -131,3 +131,14 @@ Agora que o nosso mindset está blindado e entendemos como colaborar com a IA de
 
 ---
 #aula #bloco-1 #python #ia #vibe-coding
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** `# Issue #00`
+> 🔀 **Branch de Desenvolvimento:** `git checkout -b feature/issue-00-vibe-coding`
+> 📁 **Arquivo de Trabalho (Manual):** `aula_00_exercicios_manual.py`
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** `python avaliar_exercicio.py --issue 00`
+> 🚀 **Envio de Pull Request (PR):** `git push origin feature/issue-00-vibe-coding` e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

@@ -121,3 +121,14 @@ Agora que dominamos a base de Python moderna e avançada, estamos prontos para s
 
 ---
 #aula #bloco-2 #python
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #07
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-07-funcoes-pep8
+> 📁 **Arquivo de Trabalho (Manual):** aula_07_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 07
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-07-funcoes-pep8 e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

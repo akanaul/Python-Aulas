@@ -70,3 +70,14 @@ Quando o código quebrar, NUNCA tente corrigir na mão se você é iniciante.
 ## 👣 Rodapé / Conexão com a Próxima Aula
 A base está feita. Na Aula 15, usaremos frameworks avançados como Zero-Shot e Few-Shot para prompts complexos.
 #aula #bloco-6 #python #prompt
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #08
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-08-prompt-engineering
+> 📁 **Arquivo de Trabalho (Manual):** aula_08_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 08
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-08-prompt-engineering e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

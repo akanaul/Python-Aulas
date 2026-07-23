@@ -93,3 +93,14 @@ schedule.every().day.at("07:00").do(job_report)
 ## 👣 Rodapé / Conexão com a Próxima Aula
 E se o sistema não tem API, não permite CSV, e exige que alguém clique na tela? Entramos no mundo do RPA na Aula 13 com PyAutoGUI!
 #aula #bloco-4 #python #email
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #12
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-12-email-agendamento
+> 📁 **Arquivo de Trabalho (Manual):** aula_12_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 12
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-12-email-agendamento e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

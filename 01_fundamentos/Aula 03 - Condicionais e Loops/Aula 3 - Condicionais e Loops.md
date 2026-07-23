@@ -106,3 +106,14 @@ Já controlamos o fluxo e repetimos tarefas! Agora vamos aprender a manipular te
 
 ---
 #aula #bloco-1 #python
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #03
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-03-condicionais-loops
+> 📁 **Arquivo de Trabalho (Manual):** aula_03_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 03
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-03-condicionais-loops e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

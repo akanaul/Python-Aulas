@@ -85,3 +85,14 @@ paste_text("Carga Sensível — Transporte Cauteloso!")
 ## 👣 Rodapé / Conexão com a Próxima Aula
 E se o botão do ERP mudar de lugar e o X,Y quebrar? Na Aula 14, vamos dar olhos ao nosso robô usando visão computacional (locateOnScreen)!
 #aula #bloco-5 #python #pyautogui
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #13
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-13-pyautogui-basico
+> 📁 **Arquivo de Trabalho (Manual):** aula_13_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 13
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-13-pyautogui-basico e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

@@ -81,3 +81,14 @@ with csv_path.open("r", encoding="utf-8") as f:
 ## 👣 Rodapé / Conexão com a Próxima Aula
 TXT e CSV são ótimos, mas o mundo corporativo fala Excel! Na próxima aula, dominaremos `.xlsx` com `openpyxl`.
 #aula #bloco-4 #python #csv #txt
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #10
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-10-arquivos-txt-csv
+> 📁 **Arquivo de Trabalho (Manual):** aula_10_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 10
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-10-arquivos-txt-csv e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

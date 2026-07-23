@@ -80,3 +80,14 @@ def parse_playground_table(html: str):
 Com a automação desktop (PyAutoGUI), automação web (Selenium + Chrome DevTools MCP) e processamento de dados (pandas/openpyxl), você domina a suíte completa de automação em Python!
 #aula #bloco-7 #python #selenium #devtools-mcp #issue-07
 
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #bonus
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-bonus-selenium-tradicional
+> 📁 **Arquivo de Trabalho (Manual):** aula_bonus_selenium_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue bonus
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-bonus-selenium-tradicional e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

@@ -56,3 +56,14 @@ Revise todos os scripts construídos até agora. Melhore-os usando POO.
 ## 👣 Rodapé / Conexão com a Próxima Aula
 Você completou o essencial. Se o seu ERP é web (via navegador), o PyAutoGUI sofre. É aí que entramos no Módulo Bônus: Selenium 4!
 #aula #bloco-6 #python #revisao
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #16
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-16-revisao-geral
+> 📁 **Arquivo de Trabalho (Manual):** aula_16_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 16
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-16-revisao-geral e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

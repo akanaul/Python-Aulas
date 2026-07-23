@@ -102,3 +102,14 @@ Agora que estruturamos dados perfeitos, nossos códigos vão começar a ficar gr
 
 ---
 #aula #bloco-2 #python
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #06
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-06-dicionarios-conjuntos
+> 📁 **Arquivo de Trabalho (Manual):** aula_06_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 06
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-06-dicionarios-conjuntos e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

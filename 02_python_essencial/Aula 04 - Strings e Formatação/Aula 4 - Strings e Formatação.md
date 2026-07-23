@@ -102,3 +102,14 @@ Com os textos dominados, está na hora de aprender a transportar MÚLTIPLOS iten
 
 ---
 #aula #bloco-2 #python
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #04
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-04-strings-formatacao
+> 📁 **Arquivo de Trabalho (Manual):** aula_04_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 04
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-04-strings-formatacao e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

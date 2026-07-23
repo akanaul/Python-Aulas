@@ -90,3 +90,14 @@ Na próxima aula, vamos entender como armazenar informações (variáveis) de fo
 
 ---
 #aula #bloco-1 #python
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #01
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-01-setup-passos
+> 📁 **Arquivo de Trabalho (Manual):** aula_01_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 01
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-01-setup-passos e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!

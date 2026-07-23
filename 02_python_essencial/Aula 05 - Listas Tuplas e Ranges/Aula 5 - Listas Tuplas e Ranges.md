@@ -101,3 +101,14 @@ Agora que você sabe agrupar dados simples, vamos elevar o nível. E se precisar
 
 ---
 #aula #bloco-2 #python
+
+
+---
+
+## 🔀 Aprendizado Ativo de Git, Issue & Pull Request
+
+> 📌 **Issue Oficial no GitHub:** # Issue #05
+> 🔀 **Branch de Desenvolvimento:** git checkout -b feature/issue-05-listas-tuplas
+> 📁 **Arquivo de Trabalho (Manual):** aula_05_exercicios_manual.py
+> 🧪 **Teste Automatizado & Pré-Aprovação IA:** python avaliar_exercicio.py --issue 05
+> 🚀 **Envio de Pull Request (PR):** git push origin feature/issue-05-listas-tuplas e abra o PR no GitHub para a revisão final do Tutor (@akanaul)!
