@@ -136,7 +136,7 @@ def main():
     print("=" * 65)
     print("🎉 CONFIGURAÇÃO CONCLUÍDA COM SUCESSO!")
     print("   - Ambiente Virtual (.venv) pronto e com dependências instaladas.")
-    print("   - Vault do Obsidian protegido com todos os 18 plugins ativos.")
+    print("   - Vault do Obsidian protegido com todos os 21 plugins ativos.")
     print("=" * 65)
 
 

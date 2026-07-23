@@ -1,6 +1,12 @@
 ---
-aliases: ["Aula 00 — Mindset Vibe Coding Ético & Copilotos"]
-tags: [aula, bloco-1, ia, vibe-coding, etica]
+aliases:
+  - Aula 00 — Mindset Vibe Coding Ético & Copilotos
+tags:
+  - aula
+  - bloco-1
+  - ia
+  - vibe-coding
+  - etica
 ---
 > 💡 **O que você vai aprender:** Entender o Vibe Coding Ético desde o dia zero, usar IA sem ficar preguiçoso e os 3 Mandamentos do Dev Ético.
 > ⏱️ **Duração estimada:** 2h | 📅 **Bloco:** 1
@@ -27,13 +33,13 @@ tags: [aula, bloco-1, ia, vibe-coding, etica]
 O termo "Vibe Coding", popularizado por figuras como Andrej Karpathy, descreve uma nova forma de programar onde você interage com a IA (como o Antigravity) usando linguagem natural. Você passa a "vibe" (a ideia, a intenção) e a IA gera a estrutura. Para um profissional de logística migrando para a tecnologia, isso é como ter um assistente júnior que digita rápido, mas precisa ser guiado por alguém que entende a operação (você).
 
 ### Vibe Coding Cego vs Vibe Coding Ético
-- **Vibe Coding Cego:** Copiar e colar código gerado pela IA sem ler ou entender. Na logística, isso é como despachar um caminhão sem conferir a nota fiscal ou o roteiro. O risco de acidente é alto.
+- **Vibe Coding Cego:** Copiar e colar código gerado pela IA sem ler ou entender. Na logística, isso é como despachar um caminhão sem conferir a nota fiscal ou a escala. O risco de acidente é alto.
 - **Vibe Coding Ético:** Usar a IA como acelerador para rascunhar o código, mas auditar linha por linha antes de executar. É a união da sua expertise em processos de negócios (estoque, rotas, ERP) com a capacidade técnica da IA.
 
 ### Segurança e os 3 Mandamentos do Dev Ético
 1. **Nunca envie dados sensíveis:** Senhas de ERP, dados de clientes ou planilhas confidenciais jamais devem ser colocados em prompts.
 2. **Entenda o que vai rodar:** A responsabilidade do código em produção é sua, não do copiloto.
-3. **Use a IA para aprender, não para terceirizar o pensamento:** Pergunte "Como isso funciona?" em vez de apenas "Corrija isso".
+3. **Use a IA para aprender, não para terceirizar o pensamento:** Pergunte "Como isso funciona?" em vez de apenas "Corrija isso" quando há tempo para análise antes de aplicar o código.
 
 ```mermaid
 graph TD
@@ -83,7 +89,7 @@ driver_status = "available"
 # Se a IA inventar variáveis obscuras, você as refatora para o seu contexto.
 # Exemplo ético: nunca colocar a senha real do sistema no script.
 
-erp_password = "USE_ENVIRONMENT_VARIABLES" # NUNCA coloque 'senha123' aqui
+erp_password = "USE_ENVIRONMENT_VARIABLES" # NUNCA coloque 'senha123' aqui, defira para um arquivo .env seguro.
 route_id = 4099
 ```
 
@@ -92,16 +98,16 @@ route_id = 4099
 > "Atue como um desenvolvedor sênior. Crie um script Python simples que leia uma variável de quantidade de caixas (box_quantity). Adicione comentários em português explicando a lógica. Não use bibliotecas complexas ainda. Quero auditar cada linha."
 
 > 🤖 **Prompt de auditoria:**
-> "Eu recebi este trecho de código: `[cole o código]`. Explique para mim, como se eu fosse um iniciante familiarizado apenas com Excel, o que a linha 3 está fazendo."
+> "Eu recebi este trecho de código: `[cole o código]` ou insira arquivo de contexto. Explique para mim, como se eu fosse um iniciante familiarizado apenas com Excel, o que a linha 3 está fazendo."
 
 ---
 
 ## 📋 Referência Rápida
-| Conceito | Prática Antiética | Prática Vibe Coding Ético |
-|---|---|---|
-| **Senhas/Credenciais** | Colar direto no script para a IA resolver | Usar variáveis de ambiente ou placeholders |
-| **Erros no código** | "Corrija esse erro [cola o log gigante]" | "Explique a causa deste erro no contexto de processamento de rotas e sugira a correção" |
-| **Entendimento** | Copiar o script inteiro sem ler | Ler, comentar e testar pequenas partes (scaffolding) |
+| Conceito               | Prática Antiética                         | Prática Vibe Coding Ético                                                               |
+| ---------------------- | ----------------------------------------- | --------------------------------------------------------------------------------------- |
+| **Senhas/Credenciais** | Colar direto no script para a IA resolver | Usar variáveis de ambiente ou placeholders                                              |
+| **Erros no código**    | "Corrija esse erro [cola o log gigante]"  | "Explique a causa deste erro no contexto de processamento de rotas e sugira a correção" |
+| **Entendimento**       | Copiar o script inteiro sem ler           | Ler, comentar e testar pequenas partes (scaffolding)                                    |
 
 ---
 

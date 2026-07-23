@@ -37,12 +37,14 @@
             "id": "d9dcb01d69ee534a",
             "type": "leaf",
             "state": {
-              "type": "mk-space",
+              "type": "markdown",
               "state": {
-                "path": "01_fundamentos"
+                "file": "08_guias_recursos/templates/template_anotacao_aluno.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "01_fundamentos"
+              "title": "template_anotacao_aluno"
             }
           }
         ],
@@ -100,7 +102,7 @@
             }
           },
           {
-            "id": "a62f05347d463544",
+            "id": "59d92e2e0a625704",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
@@ -204,8 +206,8 @@
             "state": {
               "type": "review-queue-list-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "review-queue-list-view"
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           },
           {
@@ -223,8 +225,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -243,28 +244,35 @@
       "obsidian-spaced-repetition:Review flashcards": false
     }
   },
-  "active": "703424dcb8305695",
+  "active": "d9dcb01d69ee534a",
   "lastOpenFiles": [
+    "08_guias_recursos/Recursos Recomendados.md",
+    "08_guias_recursos/fluxo_automacao.excalidraw.md",
+    "08_guias_recursos/Biblioteca de Prompts.md",
+    "requirements.txt",
+    "01_fundamentos/Aula 00 - Mindset Vibe Coding Etico/Aula 00 - Mindset Vibe Coding Etico e Copilotos.md",
+    "avaliar_exercicio.py",
+    "_dados_exemplo/gerar_planilha_exemplo.py",
+    "_dados_exemplo/web_playground.html",
+    "setup_vault.py",
+    "01_fundamentos/Aula 00 - Mindset Vibe Coding Etico/aula_00_exercicios_ia.py",
+    "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_ia.py",
+    "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_manual.py",
+    "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/test_ficha_motorista.py",
+    "01_fundamentos/Mini-Projeto 1 - Gerador de Ficha de Motorista/projeto_gabarito.py",
+    "01_fundamentos/01_fundamentos.md",
     "meu_caderno_aluno/duvidas/duvida_como_usar_o_pathlib_para_caminhos_seguros_2026-07-23_02-39.md",
     "meu_caderno_aluno/duvidas/duvida_como_usar_o_pathlib_para_caminhos_seguros_2026-07-23_02-38.md",
-    "gerar_nota_agente.py",
     "meu_caderno_aluno/diario_progresso/diario_progresso.md",
-    "meu_caderno_aluno/diario_progresso",
     "meu_caderno_aluno/diagnostico_erros/diagnostico_erros.md",
-    "meu_caderno_aluno/diagnostico_erros",
     "meu_caderno_aluno/duvidas/duvidas.md",
-    "meu_caderno_aluno/duvidas",
     "meu_caderno_aluno/anotacoes_aulas/anotacoes_aulas.md",
-    "meu_caderno_aluno/anotacoes_aulas",
     "meu_caderno_aluno/meu_caderno_aluno.md",
-    "meu_caderno_aluno",
     "08_guias_recursos/templates/template_diario_progresso.md",
     "08_guias_recursos/templates/template_duvida_estudo.md",
-    "01_fundamentos/01_fundamentos.md",
     "08_guias_recursos/templates/template_diagnostico_erro.md",
     "08_guias_recursos/templates/template_exercicio_resolvido.md",
     "08_guias_recursos/templates/template_anotacao_aluno.md",
-    "08_guias_recursos/templates",
     "00 - Dashboard.md",
     "Vault.md",
     "08_guias_recursos/GUIA_PATHLIB_CAMINHOS.md",
@@ -274,14 +282,7 @@
     "99_referencia_teorica/doc_python/06_arquivos_pathlib_json.md",
     "99_referencia_teorica/doc_python/05_poo_classes_dataclasses.md",
     "99_referencia_teorica/doc_python/04_funcoes_type_hints_312.md",
-    "99_referencia_teorica/doc_python/02_estruturas_controle_excecoes.md",
-    "99_referencia_teorica/doc_python/01_sintaxe_variaveis_tipos.md",
-    "99_referencia_teorica/doc_python/00_indice_python_312.md",
-    "99_referencia_teorica/doc_python",
-    "MANUAL_DO_PROFESSOR.md",
-    "requirements.txt",
     "00_central/mapa_visual_curso.canvas",
-    "00_central",
     "00 - Mapa Visual do Curso.canvas"
   ]
 }

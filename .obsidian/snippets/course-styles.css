@@ -153,3 +153,26 @@ body {
   border-left: 3px solid #10b981 !important;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
 }
+
+/* 8. Hover Editor Popover Styling */
+.popover.hover-editor {
+  border: 1px solid rgba(16, 185, 129, 0.4) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(16, 185, 129, 0.2) !important;
+  border-radius: 12px !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.popover.hover-editor .popover-titlebar {
+  background-color: #1e293b !important;
+  border-bottom: 1px solid #334155 !important;
+  color: #34d399 !important;
+  font-weight: 700 !important;
+}
+
+/* 9. Data Files Editor (JSON / CSV Visual Editor) */
+.data-files-editor-container {
+  background-color: #0f172a !important;
+  border-radius: 8px !important;
+  border: 1px solid #334155 !important;
+  padding: 12px !important;
+}

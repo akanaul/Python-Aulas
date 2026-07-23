@@ -17,7 +17,7 @@ Guarde estes links! Eles serão muito úteis durante sua jornada de automação 
 - **Antigravity**: Seu assistente integrado na IDE. Use e abuse!
 
 ## 📺 Canais no YouTube (PT-BR)
-- Curso em Vídeo (Python Básico)
+- Cursos em Vídeo/Guanabara (Curso em vídeo extensivo para Python Básico)
 - Hashtag Programação (Python focado em mercado/dados)
 - Dev Aprender
 

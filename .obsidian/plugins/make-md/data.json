@@ -40,7 +40,11 @@
   "expandedSpaces": [
     "//08 - Guia e Recursos",
     "/",
-    "//01_fundamentos"
+    "//02_python_essencial",
+    "//01_fundamentos",
+    "//01_fundamentos/01_fundamentos/Aula 00 - Mindset Vibe Coding Etico",
+    "//08_guias_recursos",
+    "//08_guias_recursos/08_guias_recursos/templates"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",

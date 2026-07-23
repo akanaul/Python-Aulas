@@ -16,5 +16,8 @@
   "table-editor-obsidian",
   "templater-obsidian",
   "various-complements",
-  "vscode-editor"
+  "vscode-editor",
+  "obsidian-hover-editor",
+  "execute-code",
+  "data-files-editor"
 ]

@@ -37,12 +37,14 @@ print(res.stdout)
 
 ---
 
-## 🔰 Guia Visual do Iniciante nos 19 Plugins do Obsidian
+## 🔰 Guia Visual do Iniciante nos 21 Plugins do Obsidian
 
-Este vault vem com **19 plugins profissionais pré-configurados**. Veja como usá-los no dia a dia:
+Este vault vem com **21 plugins profissionais pré-configurados**. Veja como usá-los no dia a dia:
 
 | Plugin | O que faz no vault? | Como o aluno usa? |
 | :--- | :--- | :--- |
+| 🪟 **Hover Editor** | Pré-visualização e edição flutuante ao passar o mouse sobre links. | Passe o mouse sobre qualquer link `[[aula]]` para abrir a janela flutuante editável. |
+| 📊 **Data Files Editor** | Editor visual de tabelas para arquivos CSV, JSON e YAML. | Clique em arquivos `.csv` ou `.json` em `_dados_exemplo/` para ver e editar como planilha. |
 | ⚡ **Execute Code** | Executa blocos de código Python e comandos diretamente dentro da nota. | Clique no botão **Run** acima do bloco de código ` ```python run `. |
 | 📁 **Make.md** | Transforma pastas em notas de capa com stickers. | Clique em qualquer pasta (ex: `01_fundamentos`) para abrir a nota de capa. |
 | 📊 **Dataview** | Painéis dinâmicos e consultas automáticas. | Exibe automaticamente seu progresso nas tabelas deste Dashboard. |
