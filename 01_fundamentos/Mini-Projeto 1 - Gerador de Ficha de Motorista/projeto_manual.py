@@ -1,16 +1,16 @@
+# -*- coding: utf-8 -*-
 """
-=============================================================================
-🌟 MINI-PROJETO 4: Robô de Preenchimento de Formulário
-=============================================================================
+Exercícios - projeto_manual
 Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
-INSTRUÇÕES PEDAGÓGICAS:
-- Não copie e cole o código completo da IA! Tente resolver cada # TODO passo a passo.
-- Dica: Variáveis, argumentos e funções estão em inglês. A lógica e os
-  comentários em português para facilitar o entendimento.
-=============================================================================
+INSTRUÇÕES:
+- Resolva cada exercício no espaço indicado.
+- Use a IA Antigravity no MODO TUTOR (pedindo dicas de lógica).
 """
+
+# -*- coding: utf-8 -*-
+
+
 
 import pyautogui
 import time

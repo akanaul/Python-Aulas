@@ -1,19 +1,17 @@
+# -*- coding: utf-8 -*-
 """
-Exercícios — Aula 16: Título
+Exercícios - aula_16_exercicios_manual
 Curso: Python + IA para Automação em Logística
 
-⭐ REGRA DE OURO ⭐
-Resolva este exercício MANUALMENTE.
-Use a IA **apenas** no MODO TUTOR (pedindo dicas, não a resposta).
-
-Dica de Lógica: Pense passo a passo como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
-
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
+INSTRUÇÕES:
+- Resolva cada exercício no espaço indicado.
+- Use a IA Antigravity no MODO TUTOR (pedindo dicas de lógica).
 """
+
+# -*- coding: utf-8 -*-
+
+
+
 
 # ==============================================================================
 # SEU CÓDIGO AQUI

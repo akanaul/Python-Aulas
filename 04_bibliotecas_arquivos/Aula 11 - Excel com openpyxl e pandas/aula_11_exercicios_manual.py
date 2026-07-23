@@ -1,29 +1,23 @@
+# -*- coding: utf-8 -*-
 """
-Exercícios — Aula 11: Título
-Curso: Python + IA para Automação em Logística
-
-⭐ REGRA DE OURO ⭐
-Resolva este exercício MANUALMENTE.
-Use a IA **apenas** no MODO TUTOR (pedindo dicas, não a resposta).
-
-Dica de Lógica: Pense # ==============================================================================
-# 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
-# 1. Tente resolver cada exercício SOZINHO primeiro.
-# 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
-#    usando os prompts de dica sugeridos (sem pedir a resposta direta!).
-# 3. O GABARITO DETALHADO E COMENTADO está no final deste arquivo.
-#    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
-# ==============================================================================
-
-"""
-Exercícios — Aula 11: Excel com openpyxl e pandas
+Exercícios - aula_11_exercicios_manual
 Curso: Python + IA para Automação em Logística
 
 INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
+- Resolva cada exercício no espaço indicado.
+- Use a IA Antigravity no MODO TUTOR (pedindo dicas de lógica).
 """
+
+# -*- coding: utf-8 -*-
+# Exercícios - aula_11_exercicios_manual
+# Curso: Python + IA para Automação
+
+# INSTRUÇÕES:
+
+
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 # 1. Use pandas para ler um dataframe simulado e mostrar a coluna de placas.
 import pandas as pd
 # Simulando a leitura: df = pd.DataFrame({'Placa': ['ABC', 'DEF'], 'Status': ['OK', 'Manutenção']})
@@ -53,7 +47,6 @@ from openpyxl import Workbook
 # Seu código aqui
 #
 
-"""
 # GABARITO
 
 # 1. Lendo com pandas e mostrando coluna
@@ -84,7 +77,6 @@ from openpyxl.styles import PatternFill
 # for row in range(2, ws.max_row + 1):
 #     if ws.cell(row, 2).value == 'Entregue':
 #         ws.cell(row, 2).fill = fill_green
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -99,7 +91,7 @@ from openpyxl.styles import PatternFill
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo a # ==============================================================================
+# passo a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -108,15 +100,9 @@ passo a # ======================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 11: Excel com openpyxl e pandas
-Curso: Python + IA para Automação em Logística
-
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 # 1. Use pandas para ler um dataframe simulado e mostrar a coluna de placas.
 import pandas as pd
 # Simulando a leitura: df = pd.DataFrame({'Placa': ['ABC', 'DEF'], 'Status': ['OK', 'Manutenção']})
@@ -146,7 +132,6 @@ from openpyxl import Workbook
 # Seu código aqui
 #
 
-"""
 # GABARITO
 
 # 1. Lendo com pandas e mostrando coluna
@@ -177,7 +162,6 @@ from openpyxl.styles import PatternFill
 # for row in range(2, ws.max_row + 1):
 #     if ws.cell(row, 2).value == 'Entregue':
 #         ws.cell(row, 2).fill = fill_green
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -192,14 +176,13 @@ from openpyxl.styles import PatternFill
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# passo como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -214,15 +197,9 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 11: Excel com openpyxl e pandas
-Curso: Python + IA para Automação em Logística
-
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 # 1. Use pandas para ler um dataframe simulado e mostrar a coluna de placas.
 import pandas as pd
 # Simulando a leitura: df = pd.DataFrame({'Placa': ['ABC', 'DEF'], 'Status': ['OK', 'Manutenção']})
@@ -252,7 +229,6 @@ from openpyxl import Workbook
 # Seu código aqui
 #
 
-"""
 # GABARITO
 
 # 1. Lendo com pandas e mostrando coluna
@@ -283,7 +259,6 @@ from openpyxl.styles import PatternFill
 # for row in range(2, ws.max_row + 1):
 #     if ws.cell(row, 2).value == 'Entregue':
 #         ws.cell(row, 2).fill = fill_green
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA

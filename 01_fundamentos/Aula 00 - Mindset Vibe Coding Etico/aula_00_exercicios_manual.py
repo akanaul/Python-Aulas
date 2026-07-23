@@ -1,12 +1,17 @@
+# -*- coding: utf-8 -*-
 """
-Exercícios — Aula 00: Mindset Vibe Coding Ético & Copilotos (Manual)
+Exercícios - aula_00_exercicios_manual
 Curso: Python + IA para Automação em Logística
 
 INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado sem usar a IA desta vez.
-- O foco é auditar e refletir sobre a segurança.
-- O gabarito está em aula_00_exercicios_gabarito.py
+- Resolva cada exercício no espaço indicado.
+- Use a IA Antigravity no MODO TUTOR (pedindo dicas de lógica).
 """
+
+# -*- coding: utf-8 -*-
+
+
+
 
 # Contexto: Você trabalha na expedição e precisa criar variáveis para um script
 # que vai se conectar ao ERP da transportadora.

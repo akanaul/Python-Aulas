@@ -7,7 +7,7 @@ on:
 
 jobs:
   avalia_pr_aluno:
-    name: 🧪 Executar Testes & Pré-Aprovação de IA
+    name: 🧪 Executar Suíte de Testes & Pré-Aprovação de IA
     runs-on: ubuntu-latest
 
     permissions:
@@ -19,10 +19,10 @@ jobs:
       - name: 📥 Checkout do Código
         uses: actions/checkout@v4
 
-      - name: 🐍 Configurar Python 3.11
+      - name: 🐍 Configurar Python 3.12
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.12'
           cache: 'pip'
 
       - name: 📦 Instalar Dependências
@@ -30,7 +30,7 @@ jobs:
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: 🧪 Executar Avaliador Automatizado
+      - name: 🧪 Executar Avaliador Automatizado nos Exercícios do Aluno
         id: run_evaluator
         continue-on-error: true
         run: |
@@ -45,7 +45,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `### 🤖 Avaliação Automatizada de IA — Copiloto Tutor\n\n🎉 ✅ **STATUS: PRÉ-APROVADO PELA IA! (REVISÃO 1 DE 2 OK)**\n\nParabéns! Sua solução passou em **100% dos testes automatizados**.\n\n📌 **Próxima Etapa (Revisão 2 - Professor/Tutor Humano):**\nO Tutor/Professor **@akanaul** foi notificado e fará a revisão do seu código para aprovar o **Merge** oficial no repositório principal!`
+              body: `### 🤖 Avaliação Automatizada de IA — Copiloto Tutor\n\n🎉 ✅ **STATUS: PRÉ-APROVADO PELA IA! (REVISÃO 1 DE 2 OK)**\n\nParabéns! Sua solução passou em **100% dos testes automatizados dos exercícios (\`*_manual.py\`)**.\n\n📌 **Próxima Etapa (Revisão 2 - Professor/Tutor Humano):**\nO Tutor/Professor **@akanaul** foi notificado e fará a revisão técnica do seu código para aprovar o **Merge** oficial no repositório principal!`
             });
             github.rest.issues.addLabels({
               issue_number: context.issue.number,
@@ -63,7 +63,7 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `### 🤖 Avaliação Automatizada de IA — Copiloto Tutor\n\n⚠️ ❌ **STATUS: RECUSADO PELA IA — AJUSTES NECESSÁRIOS**\n\nSeu código em \`*_manual.py\` ainda não passou em todos os testes automatizados.\n\n💡 **O que fazer:**\n1. Verifique os logs de teste da execução do GitHub Actions acima.\n2. Lembre-se: o arquivo \`*_ia.py\` serve apenas como referência didática de comparação.\n3. Faça as correções necessárias no arquivo \`*_manual.py\`, comite e faça o \`git push\` na mesma branch para atualizar este Pull Request!`
+              body: `### 🤖 Avaliação Automatizada de IA — Copiloto Tutor\n\n⚠️ ❌ **STATUS: RECUSADO PELA IA — AJUSTES NECESSÁRIOS**\n\nSeu código nos exercícios \`*_manual.py\` ainda não passou em todos os testes automatizados.\n\n💡 **O que fazer:**\n1. Verifique os logs de teste da execução do GitHub Actions acima para identificar a falha.\n2. Lembre-se: use o Antigravity / IA no **Modo Tutor** para tirar dúvidas de lógica sem pedir a resposta pronta.\n3. Faça as correções no arquivo \`*_manual.py\`, faça \`git commit\` e \`git push\` para atualizar este Pull Request!`
             });
             github.rest.issues.addLabels({
               issue_number: context.issue.number,

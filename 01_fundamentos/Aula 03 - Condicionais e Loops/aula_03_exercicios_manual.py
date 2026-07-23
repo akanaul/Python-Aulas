@@ -1,30 +1,23 @@
+# -*- coding: utf-8 -*-
 """
-Exercícios — Aula 03: Título
+Exercícios - aula_03_exercicios_manual
 Curso: Python + IA para Automação em Logística
-
-⭐ REGRA DE OURO ⭐
-Resolva este exercício MANUALMENTE.
-Use a IA **apenas** no MODO TUTOR (pedindo dicas, não a resposta).
-
-Dica de Lógica: Pense # ==============================================================================
-# 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
-# 1. Tente resolver cada exercício SOZINHO primeiro.
-# 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
-#    usando os prompts de dica sugeridos (sem pedir a resposta direta!).
-# 3. O GABARITO DETALHADO E COMENTADO está no final deste arquivo.
-#    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
-# ==============================================================================
-
-"""
-Exercícios — Aula 3: Condicionais e Loops
-Curso: Python + IA para Automação em Logística
-Instrutor: [Nome]
 
 INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
+- Resolva cada exercício no espaço indicado.
+- Use a IA Antigravity no MODO TUTOR (pedindo dicas de lógica).
 """
+
+# -*- coding: utf-8 -*-
+# Exercícios - aula_03_exercicios_manual
+# Curso: Python + IA para Automação
+
+# INSTRUÇÕES:
+
+
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 
 # Contexto: Você precisa classificar e roteirizar cargas na expedição.
 

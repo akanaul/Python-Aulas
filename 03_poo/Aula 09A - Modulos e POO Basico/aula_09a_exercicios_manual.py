@@ -1,30 +1,23 @@
+# -*- coding: utf-8 -*-
 """
-Exercícios — Aula 09a: Título
+Exercícios - aula_09a_exercicios_manual
 Curso: Python + IA para Automação em Logística
-
-⭐ REGRA DE OURO ⭐
-Resolva este exercício MANUALMENTE.
-Use a IA **apenas** no MODO TUTOR (pedindo dicas, não a resposta).
-
-Dica de Lógica: Pense # ==============================================================================
-# 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
-# 1. Tente resolver cada exercício SOZINHO primeiro.
-# 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
-#    usando os prompts de dica sugeridos (sem pedir a resposta direta!).
-# 3. O GABARITO DETALHADO E COMENTADO está no final deste arquivo.
-#    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
-# ==============================================================================
-
-"""
-Exercícios — Aula 9A: Módulos e POO Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: Seu Nome
 
 INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
+- Resolva cada exercício no espaço indicado.
+- Use a IA Antigravity no MODO TUTOR (pedindo dicas de lógica).
 """
+
+# -*- coding: utf-8 -*-
+# Exercícios - aula_09a_exercicios_manual
+# Curso: Python + IA para Automação
+
+# INSTRUÇÕES:
+
+
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 
 # EXERCÍCIO 1 — [Nível: Básico]
 # O setor logístico precisa calcular o prazo final de uma devolução.
@@ -67,7 +60,6 @@ print("\n--- Exercício 5 ---")
 
 
 
-"""
 ###################### GABARITO ######################
 
 # 1. 
@@ -77,32 +69,31 @@ return_deadline = today_date + timedelta(days=7)
 print(f"Prazo de devolução: {return_deadline}")
 
 # 2.
-class Person:
-    def __init__(self, name, cpf):
-        self.name = name
-        self.cpf = cpf
+# class Person:
+#     def __init__(self, name, cpf):
+#         self.name = name
+#         self.cpf = cpf
 
 my_person = Person("João", "111.111.111-11")
 print(my_person.name)
 
 # 3, 4 e 5:
-class Driver(Person):
-    def __init__(self, name, cpf, plate, route):
-        super().__init__(name, cpf)
-        self.plate = plate
-        self.route = route
+# class Driver(Person):
+#     def __init__(self, name, cpf, plate, route):
+#         super().__init__(name, cpf)
+#         self.plate = plate
+#         self.route = route
         
-    def update_route(self, new_route):
-        self.route = new_route
-        print(f"A rota de {self.name} foi atualizada para {self.route}")
+#     def update_route(self, new_route):
+#         self.route = new_route
+#         print(f"A rota de {self.name} foi atualizada para {self.route}")
         
-    def __str__(self):
-        return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
+#     def __str__(self):
+#         return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
 
 driver_maria = Driver("Maria", "222.222.222-22", "XYZ-9876", "SP-RJ")
 driver_maria.update_route("SP-MG")
 print(driver_maria)
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -117,7 +108,7 @@ print(driver_maria)
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo a # ==============================================================================
+# passo a # ==============================================================================
 # 🛑 REGRA DE OURO PARA O APRENDIZADO DE LOGÍSTICA:
 # 1. Tente resolver cada exercício SOZINHO primeiro.
 # 2. Se travar, use a dica do exercício ou peça ajuda ao Antigravity (IA copiloto)
@@ -126,16 +117,9 @@ passo a # ======================================================================
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 9A: Módulos e POO Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: Seu Nome
-
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 
 # EXERCÍCIO 1 — [Nível: Básico]
 # O setor logístico precisa calcular o prazo final de uma devolução.
@@ -178,7 +162,6 @@ print("\n--- Exercício 5 ---")
 
 
 
-"""
 ###################### GABARITO ######################
 
 # 1. 
@@ -188,32 +171,31 @@ return_deadline = today_date + timedelta(days=7)
 print(f"Prazo de devolução: {return_deadline}")
 
 # 2.
-class Person:
-    def __init__(self, name, cpf):
-        self.name = name
-        self.cpf = cpf
+# class Person:
+#     def __init__(self, name, cpf):
+#         self.name = name
+#         self.cpf = cpf
 
 my_person = Person("João", "111.111.111-11")
 print(my_person.name)
 
 # 3, 4 e 5:
-class Driver(Person):
-    def __init__(self, name, cpf, plate, route):
-        super().__init__(name, cpf)
-        self.plate = plate
-        self.route = route
+# class Driver(Person):
+#     def __init__(self, name, cpf, plate, route):
+#         super().__init__(name, cpf)
+#         self.plate = plate
+#         self.route = route
         
-    def update_route(self, new_route):
-        self.route = new_route
-        print(f"A rota de {self.name} foi atualizada para {self.route}")
+#     def update_route(self, new_route):
+#         self.route = new_route
+#         print(f"A rota de {self.name} foi atualizada para {self.route}")
         
-    def __str__(self):
-        return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
+#     def __str__(self):
+#         return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
 
 driver_maria = Driver("Maria", "222.222.222-22", "XYZ-9876", "SP-RJ")
 driver_maria.update_route("SP-MG")
 print(driver_maria)
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
@@ -228,14 +210,13 @@ print(driver_maria)
 # - Se houver manipulação de UI/arquivos, verificar se há proteções (failsafe, close).
 # ---------------------------------------------------------------------------
 
-passo como você faria no Excel ou no papel.
-Dica de Código: Lembre-se da sintaxe vista na aula.
+# passo como você faria no Excel ou no papel.
+# Dica de Código: Lembre-se da sintaxe vista na aula.
 
-🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
-"Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
-Meu código até agora é este: [COLE AQUI]. 
-Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
-"""
+# 🤖 PROMPT TUTOR PARA A IA (Copie e cole se travar):
+# "Atue como meu tutor de Python. Estou tentando resolver um exercício sobre [TEMA]. 
+# Meu código até agora é este: [COLE AQUI]. 
+# Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar."
 
 # ==============================================================================
 # SEU CÓDIGO AQUI
@@ -250,16 +231,9 @@ Não me dê a resposta direta. Aponte o erro e me dê uma dica de como consertar
 #    Consulte o gabarito APENAS se tiver tentado de verdade e continuar travado!
 # ==============================================================================
 
-"""
-Exercícios — Aula 9A: Módulos e POO Básico
-Curso: Python + IA para Automação em Logística
-Instrutor: Seu Nome
-
-INSTRUÇÕES:
-- Resolva cada exercício no espaço indicado
-- Use o Antigravity para tirar dúvidas (mas tente primeiro!)
-- O gabarito está comentado ao final do arquivo
-"""
+# INSTRUÇÕES:
+# - Resolva cada exercício no espaço indicado
+# - O gabarito está comentado ao final do arquivo
 
 # EXERCÍCIO 1 — [Nível: Básico]
 # O setor logístico precisa calcular o prazo final de uma devolução.
@@ -302,7 +276,6 @@ print("\n--- Exercício 5 ---")
 
 
 
-"""
 ###################### GABARITO ######################
 
 # 1. 
@@ -312,32 +285,31 @@ return_deadline = today_date + timedelta(days=7)
 print(f"Prazo de devolução: {return_deadline}")
 
 # 2.
-class Person:
-    def __init__(self, name, cpf):
-        self.name = name
-        self.cpf = cpf
+# class Person:
+#     def __init__(self, name, cpf):
+#         self.name = name
+#         self.cpf = cpf
 
 my_person = Person("João", "111.111.111-11")
 print(my_person.name)
 
 # 3, 4 e 5:
-class Driver(Person):
-    def __init__(self, name, cpf, plate, route):
-        super().__init__(name, cpf)
-        self.plate = plate
-        self.route = route
+# class Driver(Person):
+#     def __init__(self, name, cpf, plate, route):
+#         super().__init__(name, cpf)
+#         self.plate = plate
+#         self.route = route
         
-    def update_route(self, new_route):
-        self.route = new_route
-        print(f"A rota de {self.name} foi atualizada para {self.route}")
+#     def update_route(self, new_route):
+#         self.route = new_route
+#         print(f"A rota de {self.name} foi atualizada para {self.route}")
         
-    def __str__(self):
-        return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
+#     def __str__(self):
+#         return f"Motorista: {self.name} | CPF: {self.cpf} | Placa: {self.plate} | Rota: {self.route}"
 
 driver_maria = Driver("Maria", "222.222.222-22", "XYZ-9876", "SP-RJ")
 driver_maria.update_route("SP-MG")
 print(driver_maria)
-"""
 
 # ---------------------------------------------------------------------------
 # SISTEMA DE AUDITORIA COM IA
