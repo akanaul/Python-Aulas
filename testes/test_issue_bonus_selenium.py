@@ -8,7 +8,7 @@ class TestStudentExercise_BONUS_SELENIUM(unittest.TestCase):
     def setUp(self):
         self.curr_dir = os.path.dirname(os.path.abspath(__file__))
         self.root_dir = os.path.join(self.curr_dir, "..")
-        self.file_path = os.path.normpath(os.path.join(self.root_dir, r"07_bonus_selenium\Aula Bonus - Selenium A Proxima Fronteira\aula_bonus_selenium_exercicios_manual.py"))
+        self.file_path = os.path.normpath(os.path.join(self.root_dir, "07_bonus_selenium/pratica/Aula Bonus - Selenium A Proxima Fronteira/aula_bonus_selenium_exercicios_manual.py"))
 
     def test_file_exists(self):
         """Garante que o arquivo de exercício do aluno existe."""

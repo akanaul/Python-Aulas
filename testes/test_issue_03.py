@@ -8,7 +8,7 @@ class TestStudentExercise_03(unittest.TestCase):
     def setUp(self):
         self.curr_dir = os.path.dirname(os.path.abspath(__file__))
         self.root_dir = os.path.join(self.curr_dir, "..")
-        self.file_path = os.path.normpath(os.path.join(self.root_dir, r"01_fundamentos\Aula 03 - Condicionais e Loops\aula_03_exercicios_manual.py"))
+        self.file_path = os.path.normpath(os.path.join(self.root_dir, "01_fundamentos/pratica/Aula 03 - Condicionais e Loops/aula_03_exercicios_manual.py"))
 
     def test_file_exists(self):
         """Garante que o arquivo de exercício do aluno existe."""

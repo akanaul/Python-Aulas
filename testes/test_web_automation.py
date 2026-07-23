@@ -30,6 +30,7 @@ class TestWebAutomation(unittest.TestCase):
             curr_dir,
             "..",
             "07_bonus_selenium",
+            "pratica",
             "Aula Bonus - Selenium A Proxima Fronteira",
             "devtools_mcp_ia.py"
         )
