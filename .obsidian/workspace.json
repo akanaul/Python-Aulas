@@ -245,6 +245,9 @@
   },
   "active": "703424dcb8305695",
   "lastOpenFiles": [
+    "meu_caderno_aluno/duvidas/duvida_como_usar_o_pathlib_para_caminhos_seguros_2026-07-23_02-39.md",
+    "meu_caderno_aluno/duvidas/duvida_como_usar_o_pathlib_para_caminhos_seguros_2026-07-23_02-38.md",
+    "gerar_nota_agente.py",
     "meu_caderno_aluno/diario_progresso/diario_progresso.md",
     "meu_caderno_aluno/diario_progresso",
     "meu_caderno_aluno/diagnostico_erros/diagnostico_erros.md",
@@ -277,11 +280,8 @@
     "99_referencia_teorica/doc_python",
     "MANUAL_DO_PROFESSOR.md",
     "requirements.txt",
-    "00_central/00_dashboard.md",
     "00_central/mapa_visual_curso.canvas",
-    "00_central/indice_geral_moc.md",
     "00_central",
-    "criar_issues_github.py",
     "00 - Mapa Visual do Curso.canvas"
   ]
 }
