@@ -12,13 +12,14 @@ sticker: "📊"
 > **Vault Obsidian (19 Plugins):** Protegido & Ativo 🟢 (`python setup_vault.py`)
 > **Antigravity (Modo Tutor):** Online 🟢 - Copiloto de mentoria ativa.
 
-> [!PRATICA] Navegação Rápida & Módulos
+> [!PRATICA] Navegação Rápida & Central de Estudos
 > - 📘 [[MANUAL_DO_ALUNO|📘 Manual Oficial do Aluno (Comece Por Aqui)]]
-> - 📋 [[00 - Plano de Estudos e Tarefas|📋 Plano de Estudos, Kanban e Tarefas]]
-> - 📇 [[00 - Central de Flashcards e Revisao|📇 Central de Flashcards & Active Recall]]
-> - 🗺️ [[00 - Indice Geral por Temas (MOC)|🗺️ Índice Geral por Temas (MOC)]]
-> - 🔀 [[08_guias_recursos/GUIA_GIT|Guia de Git & Branches]]
-> - 🔌 [[08_guias_recursos/GUIA_PLUGINS_OBSIDIAN|Guia de Plugins do Obsidian]]
+> - 🏛️ [[00_central/00_central|🏛️ Central Hub do Aluno]]
+> - 📋 [[00_central/plano_de_estudos|📋 Plano de Estudos, Kanban e Tarefas]]
+> - 📇 [[00_central/central_flashcards|📇 Central de Flashcards & Active Recall]]
+> - 🗺️ [[00_central/indice_geral_moc|🗺️ Índice Geral por Temas (MOC)]]
+> - 🔀 [[08_guias_recursos/GUIA_GIT|Guia de Git, Issues & Pull Requests]]
+> - 🔌 [[08_guias_recursos/GUIA_PLUGINS_OBSIDIAN|Guia dos 19 Plugins do Obsidian]]
 
 ---
 

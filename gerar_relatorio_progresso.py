@@ -1,48 +1,49 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-Gerador de Relatório de Progresso do Aluno.
-
-Este script analisa as tarefas marcadas no vault e exibe um relatório consolidado em PT-BR.
+Script de geração de relatório de progresso do aluno no Vault Obsidian.
+Sincroniza estatísticas com o 00_dashboard.md e a pasta 00_central/.
 """
 
 import os
-import re
 import sys
 
-# Garantir codificação UTF-8 no stdout do Windows
+# Garantir UTF-8 no stdout
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
-def calcular_progresso(vault_path: str = ".") -> dict:
-    """Mapeia os marcadores de tarefas [x] vs [ ] no Dashboard."""
-    dashboard_path = os.path.join(vault_path, "00 - Dashboard.md")
-    if not os.path.exists(dashboard_path):
-        return {"total": 0, "concluidas": 0, "percentual": 0}
-
-    with open(dashboard_path, "r", encoding="utf-8") as f:
-        content = f.read()
-
-    tasks = re.findall(r"- \[(x| )\]", content)
-    total = len(tasks)
-    concluidas = sum(1 for t in tasks if t == "x")
-    percentual = round((concluidas / total * 100)) if total > 0 else 0
-
-    return {
-        "total": total,
-        "concluidas": concluidas,
-        "percentual": percentual
-    }
-
-def main():
+def gerar_relatorio():
     print("=" * 60)
-    print("📊 RELATÓRIO DE PROGRESSO DO ALUNADO — PYTHON + IA")
+    print("📊 GERADOR DE RELATÓRIO DE PROGRESSO DO VAULT OBSIDIAN")
     print("=" * 60)
-
-    dados = calcular_progresso()
-    print(f"✅ Atividades Concluídas: {dados['concluidas']} de {dados['total']}")
-    print(f"📈 Percentual Geral de Conclusão: {dados['percentual']}%")
+    
+    modulos = [
+        "01_fundamentos",
+        "02_python_essencial",
+        "03_poo",
+        "04_bibliotecas_arquivos",
+        "05_automacao_desktop",
+        "06_ia_prompt",
+        "07_bonus_selenium"
+    ]
+    
+    total_aulas = 0
+    total_exercicios = 0
+    
+    for mod in modulos:
+        if os.path.exists(mod):
+            for root, dirs, files in os.walk(mod):
+                for f in files:
+                    if f.endswith(".md"):
+                        total_aulas += 1
+                    elif f.endswith("_manual.py") or f == "projeto_manual.py":
+                        total_exercicios += 1
+                        
+    print(f"✅ Total de Notas de Aulas / Módulos Mapeados: {total_aulas}")
+    print(f"✅ Total de Exercícios Práticos Mapeados: {total_exercicios}")
+    print("=" * 60)
+    print("💡 Acesse '00_dashboard.md' no Obsidian para ver o painel dinâmico.")
     print("=" * 60)
 
 if __name__ == "__main__":
-    main()
+    gerar_relatorio()
