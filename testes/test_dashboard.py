@@ -3,12 +3,12 @@ import os
 import sys
 
 class TestDashboardUtils(unittest.TestCase):
-    def test_progress_script_importable(self):
-        """Garante que o script gerar_relatorio_progresso.py carrega sem erros de sintaxe."""
+    def test_evaluator_script_exists(self):
+        """Garante que o script central avaliar_exercicio.py existe na raiz."""
         curr_dir = os.path.dirname(os.path.abspath(__file__))
         root_dir = os.path.join(curr_dir, "..")
-        script_path = os.path.join(root_dir, "gerar_relatorio_progresso.py")
-        self.assertTrue(os.path.exists(script_path), "gerar_relatorio_progresso.py deve existir na raiz.")
+        script_path = os.path.join(root_dir, "avaliar_exercicio.py")
+        self.assertTrue(os.path.exists(script_path), "avaliar_exercicio.py deve existir na raiz.")
 
     def test_dashboard_exists(self):
         """Garante que o painel principal 00_dashboard.md existe na raiz."""
